@@ -1,0 +1,11 @@
+section {
+	// margin: $spacing 0;
+}
+.section-inner {
+	margin: 0 auto;
+	max-width: $max-width;
+	padding: $spacing;
+	@include bp(l) {
+		padding: $spacing 0;
+	}
+}

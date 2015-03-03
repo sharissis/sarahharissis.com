@@ -1,0 +1,12 @@
+.work-links {
+	text-align: center;
+	li {
+		margin: 1em 0;
+	}
+	> li > a {
+		font-size: 1.25rem;
+		@include bp(m) {
+			font-size: 1.5rem;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+.masthead {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+	min-height: 25rem;
+	@extend %white-text;
+	.section-inner {
+		min-height: 25rem;
+		padding: $spacing*2 $spacing $spacing;
+		@include bp(l) {
+			padding: 4% 0 $spacing;
+		}
+	}
+	.contact-links a .fa {
+		color: $almost-white;
+		-webkit-transition: color 0.25s ease;
+	    -moz-transition: color 0.25s ease;
+	    -o-transition: color 0.25s ease;
+		transition: color 0.25s ease;
+		&:hover {
+			color: $primary;
+		}
+	}
+	.scroll-arrow {
+		display: block;
+		position: absolute;
+		bottom: $spacing/2;
+		left: 50%;
+		margin-left: -41px; // Half of icon's width
+		&:hover {
+			.fa {
+				color: $primary;
+			}
+			@include bp(l) {
+				bottom: $spacing/3;
+			}
+		}
+		@include bp(l) {
+			-webkit-transition: color 0.25s ease;
+		    -moz-transition: bottom 0.25s ease;
+		    -o-transition: bottom 0.25s ease;
+			transition: bottom 0.25s ease;
+		}
+	}
+}

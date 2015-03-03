@@ -1,0 +1,12 @@
+.footer {
+	background-color: $almost-black;
+	@extend %white-text;
+	.footer-inner {
+		margin: 0 auto;
+		max-width: $max-width;
+		padding: $spacing;
+	}
+	.copyright {
+		margin: 0;
+	}
+}

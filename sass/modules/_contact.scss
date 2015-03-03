@@ -1,0 +1,25 @@
+.contact {
+	border-top: $section-border;
+	background: url(i/bgs/restaurant.png);
+	// @extend %white-background;
+	h2 {
+		@extend %section-heading;
+	}
+	.contact-links {
+		width: 13.25rem;
+		margin: 1.25rem auto;
+		li {
+			margin: 0 0 0 1rem;
+			&:first-child {
+				margin: 0;
+			}
+		}
+		a .fa {
+			color: $almost-white;
+			transition: color 0.25s ease;
+			&:hover {
+				color: $link-color;
+			}
+		}
+	}
+}

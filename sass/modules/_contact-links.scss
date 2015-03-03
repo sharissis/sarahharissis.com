@@ -1,0 +1,12 @@
+.contact-links {
+	li {
+		float: left;
+		margin: 0 0 0 1rem;
+		&:first-child {
+			margin: 0;
+		}
+	}
+	.label {
+		display: none;
+	}
+}
