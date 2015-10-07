@@ -97,21 +97,15 @@ b {
 a {
 	color: $link-color;
 	text-decoration: none;
-	-webkit-transition: color 0.25s ease;
-    -moz-transition: color 0.25s ease;
-    -o-transition: color 0.25s ease;
-	transition: color 0.25s ease;
 	outline: none;
+	@include transition(color 0.25s ease);
 	@extend %font-normal;
 	img {
 		outline: none;
 	}
 	.fa {
 		color: $link-color;
-		-webkit-transition: color 0.25s ease;
-	    -moz-transition: color 0.25s ease;
-	    -o-transition: color 0.25s ease;
-		transition: color 0.25s ease;
+		@include transition(all 0.25s ease);
 		&:hover {
 			color: $link-hover-color;
 		}
@@ -141,10 +135,7 @@ img {
 	background-color: $primary;
 	color: $almost-white;
 	padding: 0.5rem;
-	-webkit-transition: background-color 0.25s ease;
-    -moz-transition: background-color 0.25s ease;
-    -o-transition: background-color 0.25s ease;
-	transition: background-color 0.25s ease;
+	@include transition(background-color 0.25s ease);
 	@include border-radius(0.25rem);
 	@extend %font-normal;
 	&:hover {

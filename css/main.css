@@ -2866,56 +2866,58 @@ p {
 a {
   color: #489c96;
   text-decoration: none;
+  outline: none;
   -webkit-transition: color 0.25s ease;
   -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
   -o-transition: color 0.25s ease;
   transition: color 0.25s ease;
-  outline: none;
 }
-/* line 106, ../sass/layout/_common.scss */
+/* line 103, ../sass/layout/_common.scss */
 a img {
   outline: none;
 }
-/* line 109, ../sass/layout/_common.scss */
+/* line 106, ../sass/layout/_common.scss */
 a .fa {
   color: #489c96;
-  -webkit-transition: color 0.25s ease;
-  -moz-transition: color 0.25s ease;
-  -o-transition: color 0.25s ease;
-  transition: color 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
-/* line 115, ../sass/layout/_common.scss */
+/* line 109, ../sass/layout/_common.scss */
 a .fa:hover {
   color: #306764;
 }
-/* line 119, ../sass/layout/_common.scss */
+/* line 113, ../sass/layout/_common.scss */
 a:hover {
   color: #306764;
 }
-/* line 121, ../sass/layout/_common.scss */
+/* line 115, ../sass/layout/_common.scss */
 a:hover .fa {
   color: #306764;
 }
 
-/* line 126, ../sass/layout/_common.scss */
+/* line 120, ../sass/layout/_common.scss */
 ul, ol {
   list-style: none;
   margin: 1.25rem 0;
   line-height: 125%;
 }
-/* line 130, ../sass/layout/_common.scss */
+/* line 124, ../sass/layout/_common.scss */
 ul li, ol li {
   margin: 0.25rem 0;
 }
 
-/* line 134, ../sass/layout/_common.scss */
+/* line 128, ../sass/layout/_common.scss */
 img {
   border: 0;
   max-width: 100%;
   display: block;
 }
 
-/* line 139, ../sass/layout/_common.scss */
+/* line 133, ../sass/layout/_common.scss */
 .button {
   display: inline-block;
   background-color: #72beb9;
@@ -2923,6 +2925,7 @@ img {
   padding: 0.5rem;
   -webkit-transition: background-color 0.25s ease;
   -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
   -o-transition: background-color 0.25s ease;
   transition: background-color 0.25s ease;
   -webkit-border-radius: 0.25rem;
@@ -2931,14 +2934,14 @@ img {
   -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }
-/* line 150, ../sass/layout/_common.scss */
+/* line 141, ../sass/layout/_common.scss */
 .button:hover {
   color: #efede9;
   background-color: #489c96;
 }
 
 /* For modern browsers */
-/* line 157, ../sass/layout/_common.scss */
+/* line 148, ../sass/layout/_common.scss */
 .clearfix:before, .accordion-body:before,
 .clearfix:after,
 .accordion-body:after {
@@ -2946,24 +2949,24 @@ img {
   display: table;
 }
 
-/* line 161, ../sass/layout/_common.scss */
+/* line 152, ../sass/layout/_common.scss */
 .clearfix:after, .accordion-body:after {
   clear: both;
 }
 
 /* For IE 6/7 */
-/* line 165, ../sass/layout/_common.scss */
+/* line 156, ../sass/layout/_common.scss */
 .clearfix, .accordion-body {
   zoom: 1;
 }
 
-/* line 168, ../sass/layout/_common.scss */
+/* line 159, ../sass/layout/_common.scss */
 .muted {
   opacity: 0.66;
   font-size: 0.75rem;
 }
 
-/* line 172, ../sass/layout/_common.scss */
+/* line 163, ../sass/layout/_common.scss */
 .s-layer .s-top-circle, .s-layer .s-bottom-circle, .h-layer .h-left-circle, .h-layer .h-right-circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -2972,31 +2975,31 @@ img {
   border-radius: 50%;
 }
 
-/* line 179, ../sass/layout/_common.scss */
+/* line 170, ../sass/layout/_common.scss */
 .header .tagline, a, .button, .main-nav a {
   font-weight: normal;
   /* Fallback */
   font-weight: 400;
 }
 
-/* line 183, ../sass/layout/_common.scss */
+/* line 174, ../sass/layout/_common.scss */
 h1, h2, h3, h4, h5, h6, b {
   font-weight: normal;
   /* Fallback */
   font-weight: 700;
 }
 
-/* line 188, ../sass/layout/_common.scss */
+/* line 179, ../sass/layout/_common.scss */
 .footer *:not(a), .masthead *:not(a) {
   color: #efede9;
 }
 
-/* line 192, ../sass/layout/_common.scss */
+/* line 183, ../sass/layout/_common.scss */
 .work {
   background-color: #efede9;
 }
 
-/* line 198, ../sass/layout/_common.scss */
+/* line 189, ../sass/layout/_common.scss */
 .about h2, .work h2, .contact h2 {
   text-align: center;
   letter-spacing: 1px;
@@ -3101,14 +3104,15 @@ h1, h2, h3, h4, h5, h6, b {
   color: #efede9;
   -webkit-transition: color 0.25s ease;
   -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
   -o-transition: color 0.25s ease;
   transition: color 0.25s ease;
 }
-/* line 22, ../sass/modules/_masthead.scss */
+/* line 19, ../sass/modules/_masthead.scss */
 .masthead .contact-links a .fa:hover {
   color: #72beb9;
 }
-/* line 26, ../sass/modules/_masthead.scss */
+/* line 23, ../sass/modules/_masthead.scss */
 .masthead .scroll-arrow {
   display: block;
   position: absolute;
@@ -3116,21 +3120,22 @@ h1, h2, h3, h4, h5, h6, b {
   left: 50%;
   margin-left: -41px;
 }
-/* line 33, ../sass/modules/_masthead.scss */
+/* line 30, ../sass/modules/_masthead.scss */
 .masthead .scroll-arrow:hover .fa {
   color: #72beb9;
 }
 @media only screen and (min-width: 1100px) {
-  /* line 32, ../sass/modules/_masthead.scss */
+  /* line 29, ../sass/modules/_masthead.scss */
   .masthead .scroll-arrow:hover {
     bottom: 0.5rem;
   }
 }
 @media only screen and (min-width: 1100px) {
-  /* line 26, ../sass/modules/_masthead.scss */
+  /* line 23, ../sass/modules/_masthead.scss */
   .masthead .scroll-arrow {
-    -webkit-transition: color 0.25s ease;
+    -webkit-transition: bottom 0.25s ease;
     -moz-transition: bottom 0.25s ease;
+    -ms-transition: bottom 0.25s ease;
     -o-transition: bottom 0.25s ease;
     transition: bottom 0.25s ease;
   }
@@ -3227,6 +3232,15 @@ h1, h2, h3, h4, h5, h6, b {
 /* line 6, ../sass/modules/_work-links.scss */
 .work-links > li > a {
   font-size: 1.25rem;
+}
+/* line 8, ../sass/modules/_work-links.scss */
+.work-links > li > a .fa-arrow-circle-right {
+  position: relative;
+  left: 0px;
+}
+/* line 12, ../sass/modules/_work-links.scss */
+.work-links > li > a:hover .fa-arrow-circle-right {
+  left: 5px;
 }
 @media only screen and (min-width: 768px) {
   /* line 6, ../sass/modules/_work-links.scss */

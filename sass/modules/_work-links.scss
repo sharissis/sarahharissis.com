@@ -5,6 +5,13 @@
 	}
 	> li > a {
 		font-size: 1.25rem;
+		.fa-arrow-circle-right {
+			position: relative;
+			left: 0px;
+		}
+		&:hover .fa-arrow-circle-right {
+			left: 5px;
+		}
 		@include bp(m) {
 			font-size: 1.5rem;
 		}

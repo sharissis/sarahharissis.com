@@ -15,10 +15,7 @@
 	}
 	.contact-links a .fa {
 		color: $almost-white;
-		-webkit-transition: color 0.25s ease;
-	    -moz-transition: color 0.25s ease;
-	    -o-transition: color 0.25s ease;
-		transition: color 0.25s ease;
+		@include transition(color 0.25s ease);
 		&:hover {
 			color: $primary;
 		}
@@ -38,10 +35,7 @@
 			}
 		}
 		@include bp(l) {
-			-webkit-transition: color 0.25s ease;
-		    -moz-transition: bottom 0.25s ease;
-		    -o-transition: bottom 0.25s ease;
-			transition: bottom 0.25s ease;
+			@include transition(bottom 0.25s ease);
 		}
 	}
 }
