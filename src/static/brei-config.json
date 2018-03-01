@@ -1,0 +1,7 @@
+{
+	"generatorVersion": "3.4.2",
+	"deploy": "../../web",
+	"name": "sarah-harissis",
+	"version": "0.0.1",
+	"debug": "false"
+}

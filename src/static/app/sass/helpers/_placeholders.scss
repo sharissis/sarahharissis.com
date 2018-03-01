@@ -1,0 +1,45 @@
+// Placeholders are extendable blocks of styles
+// that can be used via @extend, with the
+// behavior that there won't be a large
+// mass of classes created in your final CSS
+// document.
+//
+// Use placeholders if you do not need a
+// generic root class to inherit styles from, and
+// just need a grouping of styles to share.
+
+%list-reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+%inline-list {
+	@extend %list-reset;
+
+	li {
+		display: inline-block;
+	}
+
+}
+
+%overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+// Maintains 1:1 image proportions. Works best when direct child uses %overlay.
+%square-scale {
+
+	&:before {
+		content: '';
+		padding-top: 100%;
+		display: block;
+	}
+
+}
