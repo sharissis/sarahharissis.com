@@ -1,3 +1,14 @@
 {
-	"title": "Panels"
+	"title": "Panels",
+	"panels": [
+		{
+			"bg-color": "green"
+		},
+		{
+			"bg-color": "pink"
+		},
+		{
+			"bg-color": "blue"
+		}
+	]
 }

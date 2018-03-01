@@ -6,9 +6,9 @@ module: true
 
 <!-- module:panels -->
 {{#parseFixture 'panels.json'}}
-<div id="panels" class="panels">
+<div id="panels" class="panels clearfix">
 
-	{{#each this}}
+	{{#each panels}}
 
 		{{> panel this }}
 
