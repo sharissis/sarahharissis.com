@@ -1,0 +1,20 @@
+---
+title: "Panels"
+layout: module.hbs
+module: true
+---
+
+<!-- module:panels -->
+{{#parseFixture 'panels.json'}}
+<div id="panels" class="panels">
+
+	{{#each this}}
+
+		{{> panel this }}
+
+	{{/each}}
+
+</div>
+{{/parseFixture}}
+
+<!-- end module:panels -->
