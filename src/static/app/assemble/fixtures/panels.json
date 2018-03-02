@@ -2,13 +2,17 @@
 	"title": "Panels",
 	"panels": [
 		{
-			"bg-color": "green"
+			"id": "about",
+			"title": "About",
+			"overlay": true
 		},
 		{
-			"bg-color": "pink"
+			"id": "work",
+			"title": "Work"
 		},
 		{
-			"bg-color": "blue"
+			"id": "contact",
+			"title": "Contact"
 		}
 	]
 }

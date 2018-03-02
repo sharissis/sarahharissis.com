@@ -4,9 +4,11 @@
 	$this: &;
 	$color: $black;
 	$background-color: $white;
+	$transition-time: 1.5s;
 
 	// Styles
-	width: 300vw; // To fit 3 panels
+	width: 100vw; // To fit 3 panels
 	height: 100vh;
+	position: relative;
 
 }

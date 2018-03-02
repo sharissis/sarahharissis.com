@@ -6,8 +6,33 @@
 	$background-color: $white;
 
 	// Styles
-	width: 100vw;
+	width: 100%;
 	height: 100%;
-	float: left;
+
+	&--work,
+	&--contact {
+		display: none; // Temp
+	}
+
+	&,
+	&__overlay {
+		@extend %overlay;
+	}
+
+	&__center {
+		@include absolute-center;
+		background-color: $geyser;
+		width: 33.33333%;
+		min-width: rem-calc(160);
+		max-width: rem-calc(500);
+		display: block;
+
+		&:before {
+			content: '';
+			padding-top: 100%;
+			display: block;
+		}
+
+	}
 
 }

@@ -1,5 +1,20 @@
 <!-- partial:panel -->
-<section id="{{id}}" class="panel panel--{{id}}" style="background-color: {{bg-color}};">
+<section id="{{id}}" class="panel panel--{{id}}">
 	I am panel {{id}}
+
+	{{#if overlay}}
+
+		<div class="panel__overlay">
+			<a href="#" class="panel__center" title="Click to interact">
+				<span class="show-for-sr">Click to interact</span>
+			</a>
+		</div>
+
+	{{/if}}
+
+	<div class="panel__content">
+
+	</div>
+
 </section>
 <!-- end partial:panel -->
