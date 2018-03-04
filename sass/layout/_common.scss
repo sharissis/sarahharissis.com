@@ -33,7 +33,7 @@ body.home {
 		background-attachment: fixed;
 	}
 }
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -52,7 +52,7 @@ h1 {
 h2 {
 	font-size: 1.75rem;
 	@include bp(m) {
-		font-size: 2.25rem;
+		font-size: 2rem;
 	}
 }
 h3 {
@@ -188,6 +188,4 @@ img {
 }
 %section-heading {
 	text-align: center;
-	letter-spacing: 1px;
-	// text-transform: uppercase;
 }

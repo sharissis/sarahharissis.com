@@ -1,6 +1,9 @@
 $(function() {
 
 	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+	var currentYear = (new Date).getFullYear();
+
+	$('#year').text(currentYear);
 
 	if (!isMobile) {
 		$('body.home').addClass('bg-fixed');
@@ -64,5 +67,5 @@ $(function() {
 	        }, 500);
 		}
 	}
-  
+
 });

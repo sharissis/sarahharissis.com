@@ -1,6 +1,5 @@
 //------- Fonts --------//
-$primary-font: 'Roboto', Arial, sans-serif;
-$display-font: 'Handlee', Arial, sans-serif;
+$primary-font: 'Assistant', Helvetica, Arial, sans-serif;
 
 //------- Colors -------//
 $white: #FFF;
@@ -19,6 +18,6 @@ $link-hover-color: darken($link-color, 15%);
 //---- Measurements ----//
 $spacing: 1.5rem;
 $min-width: 320px;
-$max-width: 960px;
-$std-margin: 1.25rem 0;
+$max-width: 900px;
+$std-margin: 1rem 0;
 $section-border: 1px solid darken($almost-white, 10%);

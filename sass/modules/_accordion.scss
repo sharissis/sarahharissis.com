@@ -19,7 +19,6 @@
 	border: 1px solid transparent; /* Bug fix for jumpy slideToggle */
 	@extend .clearfix;
 	.work & {
-		border-bottom: $section-border;
 		margin-bottom: $spacing;
 	}
 }
