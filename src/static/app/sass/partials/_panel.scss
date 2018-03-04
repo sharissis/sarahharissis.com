@@ -19,18 +19,42 @@
 		@extend %overlay;
 	}
 
+	&__overlay {
+
+		#{$this}__center {
+			transform: scale(1) translate(-50%, -50%);
+			transition: transform $transition-time;
+			transform-origin: top left;
+
+			.md-no-touchevents & {
+
+				&:hover,
+				&:focus {
+					transform: scale(1.1) translate(-50%, -50%);
+				}
+
+			}
+
+		}
+
+	}
+
 	&__center {
-		@include absolute-center;
 		background-color: $geyser;
-		width: 33.33333%;
-		min-width: rem-calc(160);
-		max-width: rem-calc(500);
+		width: 25%;
+		min-width: rem-calc(90);
+		max-width: rem-calc(200);
 		display: block;
 
 		&:before {
 			content: '';
-			padding-top: 100%;
+			padding-top: 180%; // Proportions of logo
 			display: block;
+		}
+
+		&,
+		.icon {
+			@include absolute-center;
 		}
 
 	}

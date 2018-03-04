@@ -70,9 +70,10 @@ $sail: #b3d4fc;
 $silver: #cccccc;
 $mineshaft: #333333;
 $deepmineshaft: #222222;
+$almost-black: #231E24;
 
 $body-background: $white;
-// $body-font-color: $black;
+$body-font-color: $almost-black;
 $body-font-family: 'Quicksand', sans-serif;
 // $body-antialiased: true;
 // $global-margin: 1rem;
@@ -158,8 +159,8 @@ $header-styles: (
 // $code-background: $light-gray;
 // $code-border: 1px solid $medium-gray;
 // $code-padding: rem-calc(2 5 1);
-// $anchor-color: $primary-color;
-// $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color: $almost-black;
+$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
 // $hr-width: $global-width;
