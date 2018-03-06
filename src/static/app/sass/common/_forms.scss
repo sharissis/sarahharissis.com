@@ -17,13 +17,6 @@ textarea,
 select {
 	background-color: $white;
 	max-width: 100%;
-
-	&[placeholder],
-	&:placeholder-shown {
-		color: $placeholder-color;
-		line-height: $placeholder-line-height;
-	}
-
 }
 
 // Set word-break back to normal so that text inputs don't wrap
@@ -67,29 +60,24 @@ fieldset {
 
 ::placeholder {
 	color: $placeholder-color;
-	line-height: $placeholder-line-height;
 }
 
 ::-webkit-input-placeholder {
 	color: $placeholder-color;
-	line-height: $placeholder-line-height;
 }
 
 :-moz-placeholder {
 	opacity: 1; // FF Fix
 	color: $placeholder-color;
-	line-height: $placeholder-line-height;
 }
 
 ::-moz-placeholder {
 	opacity: 1; // FF Fix
 	color: $placeholder-color;
-	line-height: $placeholder-line-height;
 }
 
 :-ms-input-placeholder {
 	color: $placeholder-color;
-	line-height: $placeholder-line-height;
 }
 
 // scss-lint:enable VendorPrefix

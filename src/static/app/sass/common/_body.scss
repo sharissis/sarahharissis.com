@@ -1,4 +1,6 @@
 body {
+	color: $geyser;
+	background-color: $almost-black;
 	overflow-x: hidden; // Prevents horizontal scroll bug that occurs a lot in IE
 	position: relative;
 

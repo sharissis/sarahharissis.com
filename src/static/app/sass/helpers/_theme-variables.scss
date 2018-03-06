@@ -4,13 +4,14 @@
 // Foundation overrides
 @import 'overrides/_foundation';
 
-// Global Variables
-$transition-time: 0.425s; // Common transition time for hover states, etc.
+// Breakpoints
 $header-breakpoint: large; // Used for consistent mobile to desktop header style switching
 $below-header-breakpoint: medium down;
-$placeholder-color: $black;
-$placeholder-line-height: normal;
-$standard-padding: rem-calc(20);
+$layout-breakpoint: rem-calc(900);
+
+// Timing
+$transition-time: 0.425s; // Common transition time for hover states, etc.
+$panel-transition-time: 1.5s;
 
 // Fonts
 $quicksand: 'Quicksand', sans-serif;
@@ -19,4 +20,8 @@ $vollkorn: 'Vollkorn', serif;
 $dosis: 'Dosis', sans-serif;
 
 // Colors
+$placeholder-color: $black;
 $geyser: #dae4e3;
+
+// Misc
+$standard-padding: rem-calc(20);

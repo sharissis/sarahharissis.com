@@ -3,8 +3,7 @@
 	"panels": [
 		{
 			"id": "about",
-			"title": "About",
-			"overlay": true
+			"title": "About"
 		},
 		{
 			"id": "work",

@@ -1,0 +1,52 @@
+.portrait {
+
+	// Variables
+	$this: &;
+	$color: $black;
+	$background-color: $white;
+	$transition-time: $panel-transition-time;
+
+	// Styles
+	position: absolute;
+	top: 49%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	max-width: rem-calc(800);
+	transition: top $transition-time;
+
+	@include breakpoint($layout-breakpoint) {
+		transition: left $transition-time;
+		width: 33.33333%;
+	}
+
+	&:hover,
+	&:focus {
+
+		#{$this}__image {
+
+			&--primary {
+				display: none;
+			}
+
+			&--secondary {
+				display: block;
+			}
+
+		}
+
+	}
+
+	&__image {
+		border-radius: 100%;
+		display: none;
+		width: 100%;
+		height: 100%;
+
+		&--primary {
+			display: block;
+		}
+
+	}
+
+}
