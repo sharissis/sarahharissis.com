@@ -17,175 +17,214 @@
 	</head>
 	<body id="home" class="home">
 
-		<!---------- MASTHEAD ---------->
+		<nav class="access-nav">
+			<ul>
+				<li><a class="show-on-focus" href="#masthead" tabindex="-1">Jump to Masthead</a></li>
+				<li><a class="show-on-focus" href="#header" tabindex="-1">Jump to Header</a></li>
+				<li><a class="show-on-focus" href="#main" tabindex="-1">Jump to Main Content</a></li>
+				<li><a class="show-on-focus" href="#about" tabindex="-1">Jump to About section</a></li>
+				<li><a class="show-on-focus" href="#work" tabindex="-1">Jump to Work section</a></li>
+				<li><a class="show-on-focus" href="#contact" tabindex="-1">Jump to Contact section</a></li>
+				<li><a class="show-on-focus" href="#footer" tabindex="-1">Jump to Footer</a></li>
+			</ul>
+		</nav>
+
 		<section id="masthead" class="masthead">
 			<div class="section-inner">
+
 				<header id="header" class="header">
 					<img class="header-logo" src="img/header-logo-lg.png" alt="Sarah Harissis" width="90" height="90">
 					<h1>Sarah Harissis</h1>
 					<h2 class="tagline">Front-End Developer &amp; UX Designer</h2>
 				</header>
-				<ul class="contact-links clearfix">
-					<li>
-						<a href="docs/Sarah_Harissis_Resume.pdf" download="Sarah_Harissis_Resume.pdf" title="Download My Resume">
-							<i class="fa fa-2x fa-file-text-o"></i>
-							<span class="label"> Download My Resume</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/sarahharissis" title="Follow me on Twitter" target="_blank">
-							<i class="fa fa-2x fa-twitter"></i>
-							<span class="label"> @sarahharissis</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/sarahharissis" title="Connect with me on LinkedIn" target="_blank">
-							<i class="fa fa-2x fa-linkedin-square"></i>
-							<span class="label"> sarahharissis</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/sharissis-brei" title="View my Github" target="_blank">
-							<i class="fa fa-2x fa-github"></i>
-							<span class="label"> sharissis</span>
-						</a>
-					</li>
-					<li>
-						<a href="mailto:sarahharissis@gmail.com" title="Email me">
-							<i class="fa fa-2x fa-paper-plane"></i>
-							<span class="label"> sarahharissis@gmail.com</span>
-						</a>
-					</li>
-				</ul>
+
+				<nav class="contact-links">
+					<ul class="clearfix">
+						<li>
+							<a href="docs/Sarah_Harissis_Resume.pdf" download="Sarah_Harissis_Resume.pdf" title="Download My Resume">
+								<i class="fa fa-2x fa-file-text-o"></i>
+								<span class="label"> Download My Resume</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/sarahharissis" title="Connect with me on LinkedIn" target="_blank">
+								<i class="fa fa-2x fa-linkedin-square"></i>
+								<span class="label"> sarahharissis</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/sharissis-brei" title="View my Github" target="_blank">
+								<i class="fa fa-2x fa-github"></i>
+								<span class="label"> sharissis</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/sarahharissis" title="Follow me on Twitter" target="_blank">
+								<i class="fa fa-2x fa-twitter"></i>
+								<span class="label"> @sarahharissis</span>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:sarahharissis@gmail.com" title="Email me">
+								<i class="fa fa-2x fa-paper-plane"></i>
+								<span class="label"> sarahharissis@gmail.com</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+
 				<a href="#" id="scroll-arrow" class="scroll-arrow" title="Scroll Down">
 					<i class="fa fa-angle-down fa-4x fa-fw"></i>
+					<span class="show-for-sr">Scroll down to the next section</span>
 				</a>
+
 			</div>
 		</section>
 
-		<!---------- CONTENT ---------->
-		<section id="about" class="about">
-			<div class="section-inner clearfix">
-				<h2>A Bit About Me</h2>
-				<p>I'm Sarah, a twentysomething living in <a href="https://www.google.com/maps/place/Pittsburgh,+PA/@40.4313684,-79.9805005,12z/data=!3m1!4b1!4m2!3m1!1s0x8834f16f48068503:0x8df915a15aa21b34" title="Pittsburgh, Pennsylvania" target="_blank">Pittsburgh, Pennsylvania</a>. I graduated from <a href="http://www.cmu.edu/" title="Carnegie Mellon University" target="_blank">Carnegie Mellon University</a> in 2011, where I studied Communication Design and Human-Computer Interaction. I'm currently employed as a User Interface Developer at <a href="http://barkleyrei.com/" title="BarkleyREI" target="_blank">BarkleyREI</a>, where I develop engaging, responsive web experiences for tourism and higher education clients.</p>
-				<p>In my free time, I like to learn and try new things, especially when it comes to development. Most recently, I've been spending some time learning CSS Grid and Javascript ES6. To keep up with best practices and trends, I regularly visit development and design blogs and forums, including <a href="http://css-tricks.com/" title="CSS Tricks" target="_blank">CSS Tricks</a>, <a href="http://www.smashingmagazine.com/" title="Smashing Magazine" target="_blank">Smashing Magazine</a>, and <a href="http://www.reddit.com/r/webdev" title="r/webdev" target="_blank">r/webdev on Reddit</a>.</p>
-			</div>
-		</section>
+		<main id="main" class="main">
 
-		<section id="work" class="work">
-			<div class="section-inner">
-				<h2>Recent Work</h2>
-				<ul class="work-links">
-					<li>
-						<a href="https://www.chapman.edu/academics/degrees-and-programs.aspx" title="Chapman University Degrees and Programs" target="_blank">Chapman University Degrees and Programs <i class="fa fa-arrow-circle-right"></i></a>
-					</li>
-					<li>
-						<a href="https://www.jewell.edu/" title="William Jewell College" target="_blank">William Jewell College <i class="fa fa-arrow-circle-right"></i></a>
-					</li>
-					<li>
-						<a href="https://curry.virginia.edu/" title="University of Virginia Curry School of Education" target="_blank">University of Virginia Curry School of Education <i class="fa fa-arrow-circle-right"></i></a>
-					</li>
-					<li>
-						<a href="http://www.wondersofwildlife.org/" title="Wonders of Wildlife" target="_blank">Wonders of Wildlife <i class="fa fa-arrow-circle-right"></i></a>
-					</li>
-					<li>
-						<a href="https://www.texasstateaquarium.org/" title="Texas State Aquarium" target="_blank">Texas State Aquarium <i class="fa fa-arrow-circle-right"></i></a>
-					</li>
-					<li>
-						<a href="http://www.exploreminnesota.com/" title="Explore Minnesota" target="_blank">Explore Minnesota <i class="fa fa-arrow-circle-right"></i></a>
-					</li>
-					<li>
-						<a href="https://www.chemeketa.edu/" title="Chemeketa Community College" target="_blank">Chemeketa Community College <i class="fa fa-arrow-circle-right"></i></a>
-					</li>
-					<li>
-						<a href="http://www.goucher.edu/" title="Goucher College" target="_blank">Goucher College <i class="fa fa-arrow-circle-right"></i></a>
-					</li>
-					<li>
-						<a href="http://www.willamette.edu/" title="Willamette University" target="_blank">Willamette University <i class="fa fa-arrow-circle-right"></i></a>
-					</li>
-					<li>
-						<a href="http://map.davidson.edu/" title="Davidson College Interactive Map" target="_blank">Davidson College Interactive Map <i class="fa fa-arrow-circle-right"></i></a>
-					</li>
-					<li>
-						<a href="http://www.lionsclubs.org/" title="Lions Clubs International" target="_blank">Lions Clubs International <i class="fa fa-arrow-circle-right"></i></a>
-					</li>
-					<li>
-						<a class="accordion-trigger" href="#" title="CSS3 Logo">CSS3 Logo <i class="fa fa-plus-circle"></i><i class="fa fa-minus-circle"></i></a>
-						<div class="accordion-body">
-							<p class="blurb">My personal logo is very geometric, so when I saw <a href="http://www.bchanx.com/logos-in-pure-css-demo" title="CSS3 Logos" target="_blank">these famous logos made in pure CSS by bchanx</a>, I was inspired to experiment with CSS3 shapes and create my own.</p>
-							<p>
-								<a id="overlap-button" class="overlap-button button" href="#" title="Toggle Overlap">Toggle Overlap</a>
-							</p>
-							<div id="css-column" class="css-column">
-								<h3>CSS3</h3>
-								<div class="css3-logo-outer-container">
-									<div class="css3-logo-container">
-										<div class="s-layer">
-											<div class="s-top-circle"></div>
-											<div class="s-bottom-circle"></div>
-											<div class="s-connector"></div>
-										</div>
-										<div class="h-layer">
-											<div class="h-left-bar"></div>
-											<div class="h-left-circle"></div>
-											<div class="h-connector"></div>
-											<div class="h-right-bar"></div>
-											<div class="h-right-circle"></div>
+			<section id="about" class="about">
+				<div class="section-inner clearfix">
+					<h2>A Bit About Me</h2>
+					<p>I'm Sarah, a twentysomething living in <a href="https://www.google.com/maps/place/Pittsburgh,+PA/@40.4313684,-79.9805005,12z/data=!3m1!4b1!4m2!3m1!1s0x8834f16f48068503:0x8df915a15aa21b34" title="Pittsburgh, Pennsylvania" target="_blank">Pittsburgh, Pennsylvania</a>. I graduated from <a href="http://www.cmu.edu/" title="Carnegie Mellon University" target="_blank">Carnegie Mellon University</a> in 2011, where I studied Communication Design and Human-Computer Interaction. I'm currently employed as a User Interface Developer at <a href="http://barkleyrei.com/" title="BarkleyREI" target="_blank">BarkleyREI</a>, where I develop engaging, responsive web experiences for tourism and higher education clients.</p>
+					<p>In my free time, I like to learn and try new things, especially when it comes to development. Most recently, I've been spending some time learning CSS Grid and Javascript ES6. To keep up with best practices and trends, I regularly visit development and design blogs and forums, including <a href="http://css-tricks.com/" title="CSS Tricks" target="_blank">CSS Tricks</a>, <a href="http://www.smashingmagazine.com/" title="Smashing Magazine" target="_blank">Smashing Magazine</a>, and <a href="http://www.reddit.com/r/webdev" title="r/webdev" target="_blank">r/webdev on Reddit</a>.</p>
+					<p style="text-align: center;">
+						<strong>A newly designed website is in the works. Check back soon for updates!</strong>
+					</p>
+				</div>
+			</section>
+
+			<section id="work" class="work">
+				<div class="section-inner">
+					<h2>My Work</h2>
+					<p>As a developer at a busy, fast-paced agency, I'm usually working on multiple projects simultaneously. Here are a few recent projects that I've taken prominent role in developing from PSDs to responsive, pixel-perfect, and fully-functional web experiences.</p>
+					<ul class="work-links">
+						<li>
+							<a href="https://www.chapman.edu/academics/degrees-and-programs.aspx" title="Chapman University Degrees and Programs" target="_blank">Chapman University Degrees and Programs <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="http://www.wondersofwildlife.org/" title="Wonders of Wildlife" target="_blank">Wonders of Wildlife <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="https://www.jewell.edu/" title="William Jewell College" target="_blank">William Jewell College <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="http://www.jjc.edu/" title="Joliet Junior College" target="_blank">Joliet Junior College <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="https://curry.virginia.edu/" title="University of Virginia Curry School of Education" target="_blank">University of Virginia Curry School of Education <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="https://engineering.virginia.edu/" title="University of Virginia Curry School of Engineering" target="_blank">University of Virginia School of Engineering <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="https://www.texasstateaquarium.org/" title="Texas State Aquarium" target="_blank">Texas State Aquarium <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="http://www.exploreminnesota.com/" title="Explore Minnesota" target="_blank">Explore Minnesota <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="https://www.chemeketa.edu/" title="Chemeketa Community College" target="_blank">Chemeketa Community College <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="http://www.goucher.edu/" title="Goucher College" target="_blank">Goucher College <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="https://veterinary.rossu.edu/" title="Ross University School of Veterinary Medicine" target="_blank">Ross University School of Veterinary Medicine <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="http://www.willamette.edu/" title="Willamette University" target="_blank">Willamette University <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="http://www.visitcorpuschristitx.org/" title="Visit Corpus Christi" target="_blank">Visit Corpus Christi <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="http://map.davidson.edu/" title="Davidson College Interactive Map" target="_blank">Davidson College Interactive Map <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a href="http://www.lionsclubs.org/" title="Lions Clubs International" target="_blank">Lions Clubs International <i class="fa fa-arrow-circle-right"></i></a>
+						</li>
+						<li>
+							<a class="accordion-trigger" href="#" title="CSS3 Logo">CSS3 Logo <i class="fa fa-plus-circle"></i><i class="fa fa-minus-circle"></i></a>
+							<div class="accordion-body">
+								<p class="blurb">My personal logo is very geometric, so when I saw <a href="http://www.bchanx.com/logos-in-pure-css-demo" title="CSS3 Logos" target="_blank">these famous logos made in pure CSS by bchanx</a>, I was inspired to experiment with CSS3 shapes and create my own.</p>
+								<p>
+									<a id="overlap-button" class="overlap-button button" href="#" title="Toggle overlap of CSS logo and image logo">Toggle Overlap</a>
+								</p>
+								<div id="css-column" class="css-column">
+									<h3>CSS3</h3>
+									<div class="css3-logo-outer-container">
+										<div class="css3-logo-container">
+											<div class="s-layer">
+												<div class="s-top-circle"></div>
+												<div class="s-bottom-circle"></div>
+												<div class="s-connector"></div>
+											</div>
+											<div class="h-layer">
+												<div class="h-left-bar"></div>
+												<div class="h-left-circle"></div>
+												<div class="h-connector"></div>
+												<div class="h-right-bar"></div>
+												<div class="h-right-circle"></div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div id="image-column" class="image-column">
-								<h3>Image</h3>
-								<div class="image-logo-container">
-									<img src="img/logo-compare.png" alt="PNG Logo" width="275" height="275">
+								<div id="image-column" class="image-column">
+									<h3>Image</h3>
+									<div class="image-logo-container">
+										<img src="img/logo-compare.png" alt="PNG Logo" width="275" height="275">
+									</div>
 								</div>
 							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
+						</li>
+					</ul>
+				</div>
+			</section>
 
-		<section id="contact" class="contact">
-			<div class="section-inner">
-				<h2>Get in Touch</h2>
-				<ul class="contact-links clearfix">
-					<li>
-						<a href="docs/Sarah_Harissis_Resume_2014.pdf" download="Sarah_Harissis_Resume_2014.pdf" title="Download My Resume">
-							<i class="fa fa-2x fa-file-text-o"></i>
-							<span class="label"> Download My Resume</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/sarahharissis" title="Follow me on Twitter" target="_blank">
-							<i class="fa fa-2x fa-twitter"></i>
-							<span class="label"> @sarahharissis</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/sarahharissis" title="Connect with me on LinkedIn" target="_blank">
-							<i class="fa fa-2x fa-linkedin-square"></i>
-							<span class="label"> sarahharissis</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/sharissis-brei" title="View my Github" target="_blank">
-							<i class="fa fa-2x fa-github"></i>
-							<span class="label"> sharissis</span>
-						</a>
-					</li>
-					<li>
-						<a href="mailto:sarahharissis@gmail.com" title="Email me">
-							<i class="fa fa-2x fa-paper-plane"></i>
-							<span class="label"> sarahharissis@gmail.com</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</section>
+			<section id="contact" class="contact">
+				<div class="section-inner">
+					<h2>Get in Touch</h2>
+					<p>Interested in working together? I'd love to hear from you!</p>
+					<nav class="contact-links">
+						<ul class="clearfix">
+							<li>
+								<a href="docs/Sarah_Harissis_Resume_2014.pdf" download="Sarah_Harissis_Resume_2014.pdf" title="Download My Resume">
+									<i class="fa fa-2x fa-file-text-o"></i>
+									<span class="label"> Download My Resume</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/sarahharissis" title="Connect with me on LinkedIn" target="_blank">
+									<i class="fa fa-2x fa-linkedin-square"></i>
+									<span class="label"> sarahharissis</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/sharissis-brei" title="View my Github" target="_blank">
+									<i class="fa fa-2x fa-github"></i>
+									<span class="label"> sharissis</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/sarahharissis" title="Follow me on Twitter" target="_blank">
+									<i class="fa fa-2x fa-twitter"></i>
+									<span class="label"> @sarahharissis</span>
+								</a>
+							</li>
+							<li>
+								<a href="mailto:sarahharissis@gmail.com" title="Email me">
+									<i class="fa fa-2x fa-paper-plane"></i>
+									<span class="label"> sarahharissis@gmail.com</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</section>
 
-		<!---------- FOOTER ---------->
+		</main>
+
 		<footer id="footer" class="footer">
 			<div class="footer-inner">
 				<p class="copyright muted">&copy; Designed and developed by Sarah Harissis, <span id="year">2018</span>. All Rights Reserved.</p>
@@ -201,6 +240,8 @@
 			ga('create', 'UA-55195467-1', 'auto');
 			ga('send', 'pageview');
 		</script>
+
 		<script type="text/javascript" src="js/main.js"></script>
+
 	</body>
 </html>

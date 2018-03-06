@@ -146,15 +146,15 @@ img {
 /* For modern browsers */
 .clearfix:before,
 .clearfix:after {
-    content: "";
-    display: table;
+	content: "";
+	display: table;
 }
 .clearfix:after {
-    clear: both;
+	clear: both;
 }
 /* For IE 6/7 */
 .clearfix {
-    zoom: 1;
+	zoom: 1;
 }
 .muted {
 	opacity: 0.66;
@@ -188,4 +188,22 @@ img {
 }
 %section-heading {
 	text-align: center;
+}
+.show-on-focus,
+.show-for-sr {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+}
+.show-on-focus {
+	&:focus,
+	&:active {
+		position: static !important;
+		width: auto;
+		height: auto;
+		overflow: visible;
+		clip: auto;
+	}
 }

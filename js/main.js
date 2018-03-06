@@ -21,10 +21,9 @@ $(function() {
 
 	$('#scroll-arrow').on('click', function(event){
 		event.preventDefault();
-		var nextSection = $(this).closest('section').next('section');
 		$("html, body").animate({
-        	scrollTop: $(nextSection).offset().top
-	    }, 800);
+        	scrollTop: $('#main').offset().top
+	    }, 1000);
 	});
 
 	$('.accordion-trigger').on('click', function(event){
