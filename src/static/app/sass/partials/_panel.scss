@@ -7,31 +7,13 @@
 	$transition-time: $panel-transition-time;
 
 	// Styles
+	opacity: 0;
+	transition: opacity $panel-transition-time;
 	width: 100%;
 	height: 100%;
 
-	&--work,
-	&--contact {
-		display: none;
-	}
-
-	&__content {
-		opacity: 0;
-		position: absolute;
-		top: 49%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 50%;
-		max-width: rem-calc(800);
-		transition: opacity $transition-time, top $transition-time;
-		padding: rem-calc(20);
-		width: 100%;
-
-		@include breakpoint($layout-breakpoint) {
-			transition: opacity $transition-time, left $transition-time;
-			width: 33.33333%;
-		}
-
+	&--active {
+		opacity: 1;
 	}
 
 }

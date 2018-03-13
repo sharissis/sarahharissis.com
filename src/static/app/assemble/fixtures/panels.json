@@ -2,12 +2,17 @@
 	"title": "Panels",
 	"panels": [
 		{
-			"id": "about",
-			"title": "About"
+			"modifiers": ["active"],
+			"id": "hello",
+			"title": "Hello!"
 		},
 		{
 			"id": "work",
 			"title": "Work"
+		},
+		{
+			"id": "about",
+			"title": "About"
 		},
 		{
 			"id": "contact",

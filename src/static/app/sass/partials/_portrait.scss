@@ -7,18 +7,8 @@
 	$transition-time: $panel-transition-time;
 
 	// Styles
-	position: absolute;
-	top: 49%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 50%;
-	max-width: rem-calc(800);
-	transition: top $transition-time;
-
-	@include breakpoint($layout-breakpoint) {
-		transition: left $transition-time;
-		width: 33.33333%;
-	}
+	width: rem-calc(300);
+	height: rem-calc(300);
 
 	&:hover,
 	&:focus {

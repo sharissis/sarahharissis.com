@@ -1,21 +1,10 @@
 <!-- partial:panel -->
-<section id="{{id}}" class="panel panel--{{id}}">
-
-	{{#if overlay}}
-
-		<div class="panel__overlay">
-			<a href="#" class="panel__center" title="Click to interact">
-				<span class="show-for-sr">Click to interact</span>
-				{{svg "logo"}}
-			</a>
+<section id="js-panel--{{id}}" class="panel panel--{{id}}{{#each modifiers}} panel--{{this}}{{/each}}">
+	<div class="row">
+		<div class="panel__content columns small-12">
+			<h2>I am panel {{id}}.</h2>
+			<p>{{placeholderText medium}}</p>
 		</div>
-
-	{{/if}}
-
-	<div class="panel__content">
-		<h2>I am panel content.</h2>
-		<p>{{placeholderText medium}}</p>
 	</div>
-
 </section>
 <!-- end partial:panel -->
