@@ -2907,15 +2907,21 @@ ul, ol {
 ul li, ol li {
   margin: 0.25rem 0;
 }
-
 /* line 128, ../sass/layout/_common.scss */
+.access-nav ul,
+.access-nav ul li, .access-nav ol,
+.access-nav ol li {
+  margin: 0;
+}
+
+/* line 134, ../sass/layout/_common.scss */
 img {
   border: 0;
   max-width: 100%;
   display: block;
 }
 
-/* line 133, ../sass/layout/_common.scss */
+/* line 139, ../sass/layout/_common.scss */
 .button {
   display: inline-block;
   background-color: #72beb9;
@@ -2932,14 +2938,14 @@ img {
   -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }
-/* line 141, ../sass/layout/_common.scss */
+/* line 147, ../sass/layout/_common.scss */
 .button:hover {
   color: #EFEDE9;
   background-color: #489c96;
 }
 
 /* For modern browsers */
-/* line 147, ../sass/layout/_common.scss */
+/* line 153, ../sass/layout/_common.scss */
 .clearfix:before, .accordion-body:before,
 .clearfix:after,
 .accordion-body:after {
@@ -2947,24 +2953,24 @@ img {
   display: table;
 }
 
-/* line 152, ../sass/layout/_common.scss */
+/* line 158, ../sass/layout/_common.scss */
 .clearfix:after, .accordion-body:after {
   clear: both;
 }
 
 /* For IE 6/7 */
-/* line 156, ../sass/layout/_common.scss */
+/* line 162, ../sass/layout/_common.scss */
 .clearfix, .accordion-body {
   zoom: 1;
 }
 
-/* line 159, ../sass/layout/_common.scss */
+/* line 165, ../sass/layout/_common.scss */
 .muted {
   opacity: 0.66;
   font-size: 0.75rem;
 }
 
-/* line 163, ../sass/layout/_common.scss */
+/* line 169, ../sass/layout/_common.scss */
 .s-layer .s-top-circle, .s-layer .s-bottom-circle, .h-layer .h-left-circle, .h-layer .h-right-circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -2973,36 +2979,36 @@ img {
   border-radius: 50%;
 }
 
-/* line 170, ../sass/layout/_common.scss */
+/* line 176, ../sass/layout/_common.scss */
 .header .tagline, a, .button, .main-nav a {
   font-weight: normal;
   /* Fallback */
   font-weight: 400;
 }
 
-/* line 174, ../sass/layout/_common.scss */
+/* line 180, ../sass/layout/_common.scss */
 h1, h2, h3, h4, h5, h6, b {
   font-weight: normal;
   /* Fallback */
   font-weight: 700;
 }
 
-/* line 179, ../sass/layout/_common.scss */
+/* line 185, ../sass/layout/_common.scss */
 .footer *:not(a), .masthead *:not(a) {
   color: #EFEDE9;
 }
 
-/* line 183, ../sass/layout/_common.scss */
+/* line 189, ../sass/layout/_common.scss */
 .work {
   background-color: #EFEDE9;
 }
 
-/* line 189, ../sass/layout/_common.scss */
+/* line 195, ../sass/layout/_common.scss */
 .about h2, .work h2, .contact h2 {
   text-align: center;
 }
 
-/* line 192, ../sass/layout/_common.scss */
+/* line 198, ../sass/layout/_common.scss */
 .show-on-focus,
 .show-for-sr {
   position: absolute !important;
@@ -3012,7 +3018,7 @@ h1, h2, h3, h4, h5, h6, b {
   clip: rect(0, 0, 0, 0);
 }
 
-/* line 201, ../sass/layout/_common.scss */
+/* line 207, ../sass/layout/_common.scss */
 .show-on-focus:focus, .show-on-focus:active {
   position: static !important;
   width: auto;
@@ -3175,33 +3181,47 @@ h1, h2, h3, h4, h5, h6, b {
 .about {
   background: url(i/bgs/school.png);
 }
-/* line 8, ../sass/modules/_about.scss */
-.about .about-left p:first-child {
-  margin-top: 0;
+@media only screen and (min-width: 768px) {
+  /* line 4, ../sass/modules/_about.scss */
+  .about h2 {
+    margin-bottom: 0;
+  }
 }
 @media only screen and (min-width: 768px) {
-  /* line 7, ../sass/modules/_about.scss */
-  .about .about-left {
+  /* line 10, ../sass/modules/_about.scss */
+  .about .left,
+  .about .right {
     float: left;
-    width: 60%;
-    padding: 0 1.5rem 0 0;
   }
 }
-/* line 17, ../sass/modules/_about.scss */
-.about .about-right {
-  max-width: 500px;
-  margin: 0 auto;
-  display: none;
+/* line 16, ../sass/modules/_about.scss */
+.about .left {
+  max-width: 200px;
+  margin: 1rem auto;
 }
 @media only screen and (min-width: 768px) {
-  /* line 17, ../sass/modules/_about.scss */
-  .about .about-right {
-    max-width: none;
-    margin: 0;
-    float: right;
-    width: 40%;
-    display: block;
+  /* line 16, ../sass/modules/_about.scss */
+  .about .left {
+    max-width: 235px;
+    padding: 0 1.25rem 0 0;
   }
+}
+@media only screen and (min-width: 768px) {
+  /* line 24, ../sass/modules/_about.scss */
+  .about .right {
+    width: calc(100% - 235px);
+  }
+}
+/* line 29, ../sass/modules/_about.scss */
+.about .image-container {
+  overflow: hidden;
+  background-color: #72beb9;
+  padding: 0.5rem;
+}
+/* line 33, ../sass/modules/_about.scss */
+.about .image-container,
+.about .image-container img {
+  border-radius: 100%;
 }
 
 /* line 1, ../sass/modules/_work.scss */

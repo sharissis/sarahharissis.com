@@ -3,27 +3,36 @@
 	// @extend %white-background;
 	h2 {
 		@extend %section-heading;
-	}
-	.about-left {
-		p:first-child {
-			margin-top: 0;
+		@include bp(m) {
+			margin-bottom: 0;
 		}
+	}
+	.left,
+	.right {
 		@include bp(m) {
 			float: left;
-			width: 60%;
-			padding: 0 $spacing 0 0;
 		}
 	}
-	.about-right {
-		max-width: 500px;
-		margin: 0 auto;
-		display: none;
+	.left {
+		max-width: 200px;
+		margin: 1rem auto;
 		@include bp(m) {
-			max-width: none;
-			margin: 0;
-			float: right;
-			width: 40%;
-			display: block;
+			max-width: 235px;
+			padding: 0 1.25rem 0 0;
+		}
+	}
+	.right {
+		@include bp(m) {
+			width: calc(100% - 235px);
+		}
+	}
+	.image-container {
+		overflow: hidden;
+		background-color: $primary;
+		padding: 0.5rem;
+		&,
+		img {
+			border-radius: 100%;
 		}
 	}
 }

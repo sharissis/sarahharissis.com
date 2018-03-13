@@ -124,6 +124,12 @@ ul, ol {
 	li {
 		margin: 0.25rem 0;
 	}
+	.access-nav & {
+		&,
+		li {
+			margin: 0;
+		}
+	}
 }
 img {
 	border: 0;
