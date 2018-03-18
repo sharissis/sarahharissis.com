@@ -1,0 +1,35 @@
+{
+	"title": "Callouts",
+	"skills": [
+		{
+			"title": "Front-End Development",
+			"icon": "code",
+			"desc": "Developing in HTML5, CSS3, and JavaScript using industry-standard and up-and-coming technologies, while writing clean, well-documented code and adhering to strict coding standards"
+		},
+		{
+			"title": "Responsive Design",
+			"icon": "tablet",
+			"desc": "Building interfaces with graceful degradation for all major browsers, devices, and operating systems"
+		},
+		{
+			"title": "QA Resolution",
+			"icon": "bug",
+			"desc": "Identifying, cataloging, and fixing bugs in all major environments"
+		},
+		{
+			"title": "Accessibility Compliance",
+			"icon": "checkmark",
+			"desc": "Following ADA and Section 508 compliance standards for markup, contrast, and interaction"
+		},
+		{
+			"title": "User Experience",
+			"icon": "emoji-happy",
+			"desc": "Creating ambitious new experiences while maintaining tried-and-true usability principles"
+		},
+		{
+			"title": "Teaching",
+			"icon": "users",
+			"desc": "Educating clients, peers, and students about best development practices"
+		}
+	]
+}

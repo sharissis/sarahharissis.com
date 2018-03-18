@@ -8,14 +8,12 @@ module: true
 {{#parseFixture 'panels.json'}}
 <div id="panels" class="panels clearfix">
 
-	{{> portrait }}
-
 	{{#each panels}}
 
 		{{> panel this }}
 
 	{{/each}}
-
+	
 </div>
 {{/parseFixture}}
 

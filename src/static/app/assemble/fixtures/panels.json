@@ -4,19 +4,28 @@
 		{
 			"modifiers": ["active"],
 			"id": "hello",
-			"title": "Hello!"
-		},
-		{
-			"id": "work",
-			"title": "Work"
+			"title": "Hello!",
+			"subtitle": "I'm Sarah Harissis."
 		},
 		{
 			"id": "about",
-			"title": "About"
+			"nav-title": "About",
+			"title": "A Bit About Myself"
+		},
+		{
+			"id": "work",
+			"nav-title": "Work",
+			"title": "Recent Projects"
+		},
+		{
+			"id": "skills",
+			"nav-title": "Skills",
+			"title": "Skills"
 		},
 		{
 			"id": "contact",
-			"title": "Contact"
+			"nav-title": "Contact",
+			"title": "Get in Touch"
 		}
 	]
 }

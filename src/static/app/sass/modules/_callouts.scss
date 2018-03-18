@@ -1,0 +1,25 @@
+.callouts {
+
+	// Variables
+	$this: &;
+	$color: $black;
+	$background-color: $white;
+
+	// Styles
+
+	ul {
+		@extend %list-reset;
+	}
+
+	&__icon {
+		width: rem-calc(50);
+		height: rem-calc(50);
+
+		@include breakpoint(medium) {
+			width: rem-calc(100);
+			height: rem-calc(100);
+		}
+
+	}
+
+}

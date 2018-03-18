@@ -1,0 +1,34 @@
+---
+title: "Callouts"
+layout: module.hbs
+module: true
+---
+
+<!-- module:callouts -->
+<div class="callouts{{#each modifiers}} callouts--{{this}}{{/each}}">
+	<ul class="clearfix">
+		{{#each this}}
+
+			<li>
+
+				{{#if icon}}
+					<div class="callouts__icon">
+						{{svg icon}}
+					</div>
+				{{/if}}
+
+				{{#if title}}
+					{{{title}}}
+				{{/if}}
+
+				{{#if desc}}
+					<p>{{{desc}}}</p>
+				{{/if}}
+
+			</li>
+
+		{{/each}}
+	</ul>
+</div>
+
+<!-- end module:callouts -->

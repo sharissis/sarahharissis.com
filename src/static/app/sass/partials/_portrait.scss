@@ -7,8 +7,9 @@
 	$transition-time: $panel-transition-time;
 
 	// Styles
-	width: rem-calc(300);
-	height: rem-calc(300);
+	width: rem-calc(250);
+	height: rem-calc(250);
+	margin: 0 auto;
 
 	&:hover,
 	&:focus {

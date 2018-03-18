@@ -70,11 +70,17 @@ $sail: #b3d4fc;
 $silver: #cccccc;
 $mineshaft: #333333;
 $deepmineshaft: #222222;
-$almost-black: #231E24;
+$almost-white: #f9f8f4;
+$almost-black: #1c1910;
+$purple: #4300b8;
+$fuschia: #c814c8;
+$red-violet: #b80072;
+$red: #e02c00;
+$gold: #f2a900;
 
-$body-background: $white;
+$body-background: $almost-white;
 $body-font-color: $almost-black;
-$body-font-family: 'Quicksand', sans-serif;
+$body-font-family: 'Rubik', sans-serif;
 // $body-antialiased: true;
 // $global-margin: 1rem;
 // $global-padding: 1rem;
@@ -122,13 +128,13 @@ $grid-column-gutter: (
 // 4. Base Typography
 // ------------------
 
-// $header-font-family: $body-font-family;
-// $header-font-weight: $global-weight-normal;
-// $header-font-style: normal;
-// $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
+$header-font-family: 'Rubik', sans-serif;
+$header-font-weight: 500;
+// $header-font-style: italic;
+$font-family-monospace: 'Lekton', Consolas, monospace;
 // $header-color: inherit;
-$header-lineheight: 1.125;
-// $header-margin-bottom: 0.5rem;
+$header-lineheight: 1;
+$header-margin-bottom: rem-calc(15);
 $header-styles: (
   small: (
     'h1': ('font-size': 24),
@@ -150,8 +156,8 @@ $header-styles: (
 // $header-text-rendering: optimizeLegibility;
 // $small-font-size: 80%;
 // $header-small-font-color: $medium-gray;
-// $paragraph-lineheight: 1.6;
-// $paragraph-margin-bottom: 1rem;
+$paragraph-lineheight: 1.5;
+$paragraph-margin-bottom: rem-calc(15);
 // $paragraph-text-rendering: optimizeLegibility;
 // $code-color: $black;
 // $code-font-family: $font-family-monospace;
@@ -159,14 +165,14 @@ $header-styles: (
 // $code-background: $light-gray;
 // $code-border: 1px solid $medium-gray;
 // $code-padding: rem-calc(2 5 1);
-$anchor-color: $almost-black;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
-// $anchor-text-decoration: none;
-// $anchor-text-decoration-hover: none;
+$anchor-color: $red-violet;
+$anchor-color-hover: $gold;
+$anchor-text-decoration: none;
+$anchor-text-decoration-hover: none;
 // $hr-width: $global-width;
 // $hr-border: 1px solid $medium-gray;
 // $hr-margin: rem-calc(20) auto;
-// $list-lineheight: $paragraph-lineheight;
+$list-lineheight: $paragraph-lineheight;
 // $list-margin-bottom: $paragraph-margin-bottom;
 // $list-style-type: disc;
 // $list-style-position: outside;

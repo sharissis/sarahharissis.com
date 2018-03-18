@@ -6,24 +6,21 @@
 
 // Breakpoints
 $header-breakpoint: large; // Used for consistent mobile to desktop header style switching
-$below-header-breakpoint: medium down;
 $layout-breakpoint: rem-calc(900);
+$below-header-breakpoint: ($layout-breakpoint - rem-calc(1)) down;
+$type-breakpoint: medium;
 
 // Timing
-$transition-time: 0.425s; // Common transition time for hover states, etc.
+$transition-time: 0.3s; // Common transition time for hover states, etc.
 $panel-transition-time: 1.5s;
 
 // Fonts
-$quicksand: 'Quicksand', sans-serif;
-$nanum: 'Nanum Gothic Coding', monospace;
-$vollkorn: 'Vollkorn', serif;
-$dosis: 'Dosis', sans-serif;
+$lekton: 'Lekton', monospace;
+$rubik: 'Rubik', sans-serif;
 
 // Colors
-$placeholder-color: $black;
-$geyser: #dae4e3;
-$fuschia: #c814c8;
-$red-violet: #b80072;
+$placeholder-color: $almost-black;
 
 // Misc
 $standard-padding: rem-calc(20);
+$cool-gradient: linear-gradient($purple 0%, $fuschia 25%, $red-violet 50%, $red 75%, $gold 100%) 1 100%;
