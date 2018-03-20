@@ -51,7 +51,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1280);
 $global-lineheight: 1;
 
 // $foundation-palette: (
@@ -98,11 +98,11 @@ $body-font-family: 'Rubik', sans-serif;
 
 $breakpoints: (
   small: 0,
-  phablet: 640px,
-  medium: 768px,
-  large: 1024px,
-  xlarge: 1200px,
-  xxlarge: 1440px,
+  phablet: rem-calc(640),
+  medium: rem-calc(768),
+  large: rem-calc(1024),
+  xlarge: $global-width,
+  xxlarge: rem-calc(1600),
 );
 
 $print-breakpoint: large;

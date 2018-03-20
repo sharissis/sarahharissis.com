@@ -5,8 +5,69 @@
 	$color: $black;
 	$background-color: $white;
 	$item-gutter: rem-calc(30);
+	$first-breakpoint: rem-calc(620);
 
 	// Styles
+
+	&--work {
+
+		$last-breakpoint: rem-calc(900);
+
+		#{$this}__item {
+
+			@include breakpoint($last-breakpoint) {
+				width: 33.33333%;
+			}
+
+			&:nth-child(2n+1) {
+
+				@include breakpoint($last-breakpoint) {
+					clear: none;
+				}
+
+			}
+
+			&:nth-child(3n+1) {
+
+				@include breakpoint($last-breakpoint) {
+					clear: left;
+				}
+
+			}
+
+		}
+
+	}
+
+	&--skills {
+
+		$last-breakpoint: $global-width;
+
+		#{$this}__item {
+
+			@include breakpoint($last-breakpoint) {
+				width: 25%;
+			}
+
+			&:nth-child(2n+1) {
+
+				@include breakpoint($last-breakpoint) {
+					clear: none;
+				}
+
+			}
+
+			&:nth-child(4n+1) {
+
+				@include breakpoint($last-breakpoint) {
+					clear: left;
+				}
+
+			}
+
+		}
+
+	}
 
 	ul {
 		@extend %list-reset;
@@ -29,30 +90,14 @@
 		padding-right: $item-gutter/2;
 		margin-bottom: $item-gutter;
 
-		@include breakpoint(rem-calc(600)) {
+		@include breakpoint($first-breakpoint) {
 			float: left;
 			width: 50%;
 		}
 
-		@include breakpoint(rem-calc(900)) {
-			width: 33.33333%;
-		}
-
 		&:nth-child(2n+1) {
 
-			@include breakpoint(rem-calc(600)) {
-				clear: left;
-			}
-
-			@include breakpoint(rem-calc(900)) {
-				clear: none;
-			}
-
-		}
-
-		&:nth-child(3n+1) {
-
-			@include breakpoint(rem-calc(900)) {
+			@include breakpoint($first-breakpoint) {
 				clear: left;
 			}
 

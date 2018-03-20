@@ -190,10 +190,6 @@
 						"icon": "design"
 					},
 					{
-						"title": "Web App Development",
-						"icon": "window"
-					},
-					{
 						"title": "Google Maps API",
 						"icon": "location-pin"
 					}
@@ -295,17 +291,22 @@
 			{
 				"title": "Front-End Coding",
 				"icon": "code2",
-				"desc": "I develop from the ground up using HTML5, CSS3, JavaScript, and other industry-standard technologies. All code written is well-documented, continually refactored, and adheres to strict coding standards. Each site starts with a blank canvas, making every one truly unique and catered to your needs."
+				"desc": "I develop from the ground up using HTML5, CSS3, JavaScript, and other industry-standard technologies. All code written is well-documented, continually refactored, and adheres to strict coding standards. Each website starts with a blank canvas, making every one truly unique and catered to your needs."
 			},
 			{
 				"title": "Responsive Design",
 				"icon": "phone",
-				"desc": "I have a breadth of experience developing adaptive interfaces and working within the nuances of various environments. I use graceful degradation to ensure the best possible results within the capabilities of all major browsers, devices, and operating systems."
+				"desc": "I have a breadth of experience developing adaptive interfaces and working within the nuances of various environments. I develop for the best case scneario while using graceful degradation to ensure the best possible results within the constraints of all major browsers, devices, and operating systems."
 			},
 			{
 				"title": "User Experience",
 				"icon": "emoji-happy",
-				"desc": "As a developer with a UX background, I am able to create ambitious new experiences while maintaining tried-and-true usability principles. I believe in and promote collaboration between design and development teams to bring the optimal web experience to end users."
+				"desc": "As a developer with a UX background, my range of knowledge brings a refreshing and insightful perspective to my role. I am able to create ambitious new experiences while maintaining tried-and-true usability principles. I believe in and promote collaboration between design and development teams to bring optimal web experiences to end users."
+			},
+			{
+				"title": "Precision &amp; Integrity",
+				"icon": "heart-outlined",
+				"desc": "My attention to detail, thoroughness, and care for the work that I do that is unparalleled. I stand behind every line of code I write, and believe that delivering the highest quality product to my clients is of utmost importance."
 			}
 		]
 	}
