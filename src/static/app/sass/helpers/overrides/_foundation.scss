@@ -133,7 +133,7 @@ $header-font-weight: 500;
 // $header-font-style: italic;
 $font-family-monospace: 'Lekton', Consolas, monospace;
 // $header-color: inherit;
-$header-lineheight: 1;
+$header-lineheight: 1.125;
 $header-margin-bottom: rem-calc(15);
 $header-styles: (
   small: (
@@ -165,8 +165,8 @@ $paragraph-margin-bottom: rem-calc(15);
 // $code-background: $light-gray;
 // $code-border: 1px solid $medium-gray;
 // $code-padding: rem-calc(2 5 1);
-$anchor-color: $red-violet;
-$anchor-color-hover: $gold;
+$anchor-color: $body-font-color;
+$anchor-color-hover: $red-violet;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 // $hr-width: $global-width;

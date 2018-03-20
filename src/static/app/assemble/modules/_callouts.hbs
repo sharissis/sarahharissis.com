@@ -6,24 +6,12 @@ module: true
 
 <!-- module:callouts -->
 <div class="callouts{{#each modifiers}} callouts--{{this}}{{/each}}">
-	<ul class="clearfix">
-		{{#each this}}
+	<ul class="callouts__list clearfix">
+		{{#each items}}
 
-			<li>
+			<li class="callouts__item">
 
-				{{#if icon}}
-					<div class="callouts__icon">
-						{{svg icon}}
-					</div>
-				{{/if}}
-
-				{{#if title}}
-					{{{title}}}
-				{{/if}}
-
-				{{#if desc}}
-					<p>{{{desc}}}</p>
-				{{/if}}
+				{{> callout this}}
 
 			</li>
 

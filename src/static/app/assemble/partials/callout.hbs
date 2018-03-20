@@ -1,0 +1,68 @@
+<!-- partial:callout -->
+<article class="callout">
+
+    {{#if img}}
+
+        <div class="image" role="img" aria-label="Image of {{{title}}}" style="background-image: url('{{img}}');{{#if style}} {{style}}{{/if}}"></div>
+
+    {{/if}}
+
+    {{#if icon}}
+
+        <div class="callout__icon">
+            {{svg icon}}
+        </div>
+
+    {{/if}}
+
+    <div class="callout__content">
+
+        {{#if link}}
+            <a class="callout__link" href="{{link.url}}" title="{{{link.title}}}">
+        {{/if}}
+
+        <div class="callout__content-inner">
+
+            {{#if title}}
+                <h3 class="callout__heading">{{{title}}}</h3>
+            {{/if}}
+
+            {{#if subtitle}}
+                <h4 class="callout__subheading">{{{subtitle}}}</h4>
+            {{/if}}
+
+            {{#if roles}}
+                <ul class="callout__roles clearfix">
+
+                    {{#each roles}}
+
+                        <li class="callout__role">
+                            {{svg icon}}
+                            <span class="callout__role__text">{{{title}}}</span>
+                        </li>
+
+                    {{/each}}
+
+                </ul>
+            {{/if}}
+
+            {{#if desc}}
+                <p class="callout__desc">{{{desc}}}</p>
+            {{/if}}
+
+            {{#if link}}
+
+                <span class="callout__cta">{{{link.title}}} {{svg "arrow-right2"}}</span>
+
+            {{/if}}
+
+        </div>
+
+        {{#if link}}
+            </a>
+        {{/if}}
+
+    </div>
+
+</article>
+<!-- end partial:callout -->

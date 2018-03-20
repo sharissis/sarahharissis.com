@@ -28,5 +28,16 @@ p {
 	@include breakpoint($type-breakpoint) {
 		font-size: rem-calc(16);
 	}
-	
+
+}
+
+p {
+
+	.icon {
+		vertical-align: middle;
+		line-height: inherit;
+		width: 1.2em;
+		height: 1.2em;
+	}
+
 }

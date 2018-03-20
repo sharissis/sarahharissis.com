@@ -1,35 +1,312 @@
 {
 	"title": "Callouts",
-	"skills": [
-		{
-			"title": "Front-End Development",
-			"icon": "code",
-			"desc": "Developing in HTML5, CSS3, and JavaScript using industry-standard and up-and-coming technologies, while writing clean, well-documented code and adhering to strict coding standards"
-		},
-		{
-			"title": "Responsive Design",
-			"icon": "tablet",
-			"desc": "Building interfaces with graceful degradation for all major browsers, devices, and operating systems"
-		},
-		{
-			"title": "QA Resolution",
-			"icon": "bug",
-			"desc": "Identifying, cataloging, and fixing bugs in all major environments"
-		},
-		{
-			"title": "Accessibility Compliance",
-			"icon": "checkmark",
-			"desc": "Following ADA and Section 508 compliance standards for markup, contrast, and interaction"
-		},
-		{
-			"title": "User Experience",
-			"icon": "emoji-happy",
-			"desc": "Creating ambitious new experiences while maintaining tried-and-true usability principles"
-		},
-		{
-			"title": "Teaching",
-			"icon": "users",
-			"desc": "Educating clients, peers, and students about best development practices"
-		}
-	]
+	"work": {
+		"modifiers": ["work"],
+		"items": [
+			{
+				"title": "William Jewell College",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/wj.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://jewell.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Bug Resolution",
+						"icon": "bug"
+					},
+					{
+						"title": "Web App Development",
+						"icon": "window"
+					}
+				]
+			},
+			{
+				"title": "Chapman University",
+				"subtitle": "Degrees &amp; Programs Finder",
+				"img": "img/site-screenshots/chapman-dp.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://www.chapman.edu/academics/degrees-and-programs.aspx"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "CMS Integration",
+						"icon": "gears"
+					},
+					{
+						"title": "QA Bug Resolution",
+						"icon": "bug"
+					},
+					{
+						"title": "UI/UX Design",
+						"icon": "design"
+					},
+					{
+						"title": "Web App Development",
+						"icon": "window"
+					}
+				]
+			},
+			{
+				"title": "Wonders of Wildlife",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/wow.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "http://www.wondersofwildlife.org/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Bug Resolution",
+						"icon": "bug"
+					},
+					{
+						"title": "UI/UX Design",
+						"icon": "design"
+					}
+				]
+			},
+			{
+				"title": "Joliet Junior College",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/jjc.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "http://www.jjc.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Bug Resolution",
+						"icon": "bug"
+					}
+				]
+			},
+			{
+				"title": "University of Virginia Curry School of Education",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/uva-curry.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://curry.virginia.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Bug Resolution",
+						"icon": "bug"
+					},
+					{
+						"title": "Web App Development",
+						"icon": "window"
+					}
+				]
+			},
+			{
+				"title": "University of Virginia School of Engineering",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/uva-engineering.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://engineering.virginia.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Bug Resolution",
+						"icon": "bug"
+					}
+				]
+			},
+			{
+				"title": "Texas State Aquarium",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/tsa.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://www.texasstateaquarium.org/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "CMS Integration",
+						"icon": "gears"
+					},
+					{
+						"title": "QA Bug Resolution",
+						"icon": "bug"
+					}
+				]
+			},
+			{
+				"title": "Explore Minnesota",
+				"subtitle": "Home Page Redesign &amp; Website Refresh",
+				"img": "img/site-screenshots/mn.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "http://www.exploreminnesota.com/index.aspx"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "CMS Integration",
+						"icon": "gears"
+					},
+					{
+						"title": "QA Bug Resolution",
+						"icon": "bug"
+					},
+					{
+						"title": "UI/UX Design",
+						"icon": "design"
+					},
+					{
+						"title": "Web App Development",
+						"icon": "window"
+					},
+					{
+						"title": "Google Maps API",
+						"icon": "location-pin"
+					}
+				]
+			},
+			{
+				"title": "Chemeketa Community College",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/ccc.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://www.chemeketa.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Bug Resolution",
+						"icon": "bug"
+					}
+				]
+			},
+			{
+				"title": "Goucher College",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/goucher.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "http://www.goucher.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Bug Resolution",
+						"icon": "bug"
+					}
+				]
+			},
+			{
+				"title": "Davidson College",
+				"subtitle": "Interactive Campus Map",
+				"img": "img/site-screenshots/davidson-map.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "http://map.davidson.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Bug Resolution",
+						"icon": "bug"
+					},
+					{
+						"title": "Web App Development",
+						"icon": "window"
+					},
+					{
+						"title": "Google Maps API",
+						"icon": "location-pin"
+					}
+				]
+			},
+			{
+				"title": "Ross University School of Veterinary Medicine",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/ross-vet.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://veterinary.rossu.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "CMS Integration",
+						"icon": "gears"
+					},
+					{
+						"title": "QA Bug Resolution",
+						"icon": "bug"
+					}
+				]
+			}
+		]
+	},
+	"skills": {
+		"modifiers": ["skills"],
+		"items": [
+			{
+				"title": "Front-End Coding",
+				"icon": "code2",
+				"desc": "I develop from the ground up using HTML5, CSS3, JavaScript, and other industry-standard technologies. All code written is well-documented, continually refactored, and adheres to strict coding standards. Each site starts with a blank canvas, making every one truly unique and catered to your needs."
+			},
+			{
+				"title": "Responsive Design",
+				"icon": "phone",
+				"desc": "I have a breadth of experience developing adaptive interfaces and working within the nuances of various environments. I use graceful degradation to ensure the best possible results within the capabilities of all major browsers, devices, and operating systems."
+			},
+			{
+				"title": "User Experience",
+				"icon": "emoji-happy",
+				"desc": "As a developer with a UX background, I am able to create ambitious new experiences while maintaining tried-and-true usability principles. I believe in and promote collaboration between design and development teams to bring the optimal web experience to end users."
+			}
+		]
+	}
 }

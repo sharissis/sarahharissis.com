@@ -24,3 +24,4 @@ $placeholder-color: $almost-black;
 // Misc
 $standard-padding: rem-calc(20);
 $cool-gradient: linear-gradient($purple 0%, $fuschia 25%, $red-violet 50%, $red 75%, $gold 100%) 1 100%;
+$hover-classes: '.md-no-touchevents &';

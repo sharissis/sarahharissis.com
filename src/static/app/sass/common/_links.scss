@@ -1,15 +1,32 @@
 // Opinion: No underlines on links, but always underlines on hover (ian)
 a {
 
-	$link-border-width: 2px;
+	.user-markup & {
 
-	border-bottom: $link-border-width solid currentColor;
-	border-radius: $link-border-width;
-	transition: color $transition-time, border-bottom $transition-time;
+		$link-border-width: 2px;
 
-	&:hover,
-	&:focus {
-		// border-bottom: $link-border-width solid $gold;
+		border-bottom: $link-border-width solid currentColor;
+		border-radius: $link-border-width;
+		transition: color $transition-time, border-bottom $transition-time;
+
+		&:hover,
+		&:focus {
+
+			#{$hover-classes} {
+				// border-bottom: $link-border-width solid $gold;
+			}
+
+		}
+
+	}
+
+	h1 &,
+	h2 &,
+	h3 &,
+	h4 &,
+	h5 &,
+	h6 & {
+		border-bottom: 0;
 	}
 
 }

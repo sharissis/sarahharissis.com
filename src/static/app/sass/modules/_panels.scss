@@ -11,9 +11,4 @@
 	max-width: $global-width;
 	position: relative;
 	margin: 0 auto;
-
-	@include breakpoint($below-header-breakpoint) {
-		text-align: center;
-	}
-
 }
