@@ -6,9 +6,23 @@
 	$background-color: $white;
 
 	// Styles
+	overflow: hidden;
 	position: relative;
 
 	.callouts--work & {
+
+		&:hover,
+		&:focus {
+
+			#{$this}__content {
+				opacity: 1;
+			}
+
+			.image {
+				filter: blur($standard-blur);
+			}
+
+		}
 
 		#{$this}__content,
 		#{$this}__link {
@@ -16,6 +30,8 @@
 		}
 
 		#{$this}__content {
+			opacity: 0;
+			transition: opacity $transition-time;
 
 			&,
 			&:before {
@@ -46,7 +62,6 @@
 
 		#{$this}__subheading {
 			font-size: rem-calc(16);
-			font-weight: 400;
 			margin-top: rem-calc(-10);
 
 			@include breakpoint($type-breakpoint) {
@@ -64,6 +79,7 @@
 			border: 2px solid $almost-black;
 			background-color: $almost-black;
 			background-position: top center;
+			filter: blur(0);
 			padding-top: 100%;
 		}
 
@@ -93,7 +109,7 @@
 	}
 
 	&__roles {
-		font-size: rem-calc(12);
+		font-size: rem-calc(13);
 	}
 
 	&__role {
