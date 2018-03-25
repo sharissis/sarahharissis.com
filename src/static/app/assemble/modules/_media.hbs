@@ -1,0 +1,59 @@
+---
+title: "Media"
+layout: module.hbs
+module: true
+---
+
+<!-- module:media -->
+<div class="media{{#each modifiers}} media--{{this}}{{/each}}">
+	{{#each items}}
+
+		<div class="row expanded">
+
+			<div class="columns medium-6">
+				<div class="inner">
+
+					<div class="media__image">
+						<img src="{{img}}" alt="Image associated with {{{title}}}">
+					</div>
+
+				</div>
+			</div>
+
+			<div class="columns medium-6">
+				<div class="inner">
+
+					<div class="media__content">
+						<div class="media__content-inner">
+
+							<div class="user-markup">
+
+								<h3>{{{title}}}</h3>
+
+								{{#if subtitle}}
+									<h4 class="subheading">{{{subtitle}}}</h4>
+								{{/if}}
+
+								{{#if desc}}
+									<p>{{{desc}}}</p>
+								{{/if}}
+
+							</div>
+
+							<hr class="small">
+
+							{{#if roles}}
+								{{> roles roles}}
+				            {{/if}}
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	{{/each}}
+</div>
+<!-- end module:media -->

@@ -6,7 +6,7 @@
 
 // Breakpoints
 $header-breakpoint: large; // Used for consistent mobile to desktop header style switching
-$layout-breakpoint: rem-calc(900);
+$layout-breakpoint: medium;
 $below-header-breakpoint: ($layout-breakpoint - rem-calc(1)) down;
 $type-breakpoint: medium;
 

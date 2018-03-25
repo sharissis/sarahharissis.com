@@ -1,0 +1,45 @@
+.roles {
+
+	// Variables
+	$this: &;
+	$color: $black;
+	$background-color: $white;
+
+	// Styles
+
+	&__list {
+		@extend %list-reset;
+		font-size: rem-calc(13);
+	}
+
+	.role {
+		font-size: inherit;
+		position: relative;
+		margin: 0.5em 0;
+
+		.icon,
+		#{$this}__text {
+			vertical-align: middle;
+			display: inline-block;
+		}
+
+		.icon {
+			width: 1.5em;
+			height: 1.5em;
+			margin-right: 0.5em;
+
+			@include breakpoint($type-breakpoint) {
+				width: 2em;
+				height: 2em;
+			}
+
+		}
+
+		#{$this}__text {
+			line-height: 1.25;
+			padding: 0.5em;
+		}
+
+	}
+
+}

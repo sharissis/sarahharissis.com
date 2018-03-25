@@ -43,3 +43,12 @@
 	}
 
 }
+
+%standard-section-padding {
+	padding: rem-calc(20 0);
+
+	@include breakpoint($layout-breakpoint) {
+		padding: rem-calc(40 20);
+	}
+
+}

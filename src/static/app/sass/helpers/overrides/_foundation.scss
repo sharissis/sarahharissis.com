@@ -71,12 +71,16 @@ $silver: #cccccc;
 $mineshaft: #333333;
 $deepmineshaft: #222222;
 $almost-white: #f9f8f4;
+$almost-white-2: rgba($white, 0.95);
 $almost-black: #1c1910;
+$almost-black-2: #2b2b2b;
 $purple: #4300b8;
 $fuschia: #c814c8;
 $red-violet: #b80072;
 $red: #e02c00;
 $gold: #f2a900;
+$burnt-orange: #a54300;
+$purple2: #6400a8;
 
 $body-background: $almost-white;
 $body-font-color: $almost-black;
@@ -129,27 +133,27 @@ $grid-column-gutter: (
 // ------------------
 
 $header-font-family: 'Rubik', sans-serif;
-$header-font-weight: 700;
+$header-font-weight: 500;
 // $header-font-style: italic;
 $font-family-monospace: 'Lekton', Consolas, monospace;
 // $header-color: inherit;
-$header-lineheight: 1.125;
+$header-lineheight: 1;
 $header-margin-bottom: rem-calc(15);
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
+    'h1': ('font-size': 28),
+    'h2': ('font-size': 24),
+    'h3': ('font-size': 22),
+    'h4': ('font-size': 20),
+    'h5': ('font-size': 18),
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
+    'h1': ('font-size': 36),
+    'h2': ('font-size': 30),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 20),
+    'h5': ('font-size': 18),
     'h6': ('font-size': 16),
   ),
 );
@@ -165,8 +169,8 @@ $paragraph-margin-bottom: rem-calc(15);
 // $code-background: $light-gray;
 // $code-border: 1px solid $medium-gray;
 // $code-padding: rem-calc(2 5 1);
-$anchor-color: $body-font-color;
-$anchor-color-hover: $red-violet;
+$anchor-color: inherit;
+$anchor-color-hover: inherit;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 // $hr-width: $global-width;
