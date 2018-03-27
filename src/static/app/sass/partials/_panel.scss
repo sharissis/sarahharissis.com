@@ -7,18 +7,27 @@
 	$transition-time: $panel-transition-time;
 
 	// Styles
+	@extend %standard-section-padding;
 	// opacity: 0;
-	overflow-y: scroll;
-	transition: opacity $panel-transition-time;
-	width: 100%;
+	// overflow-y: scroll;
+	// transition: opacity $panel-transition-time;
+	// width: 100%;
 	// height: 100vh;
-	padding: rem-calc(40);
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
 
-	&--active {
-		opacity: 1;
+	// &--active {
+	// 	opacity: 1;
+	// }
+
+	&--work {
+		// padding: rem-calc(0);
+		//
+		// > .intro {
+		// 	@extend %standard-section-padding;
+		// }
+
 	}
 
 }

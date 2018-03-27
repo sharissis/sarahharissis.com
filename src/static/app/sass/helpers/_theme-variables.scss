@@ -6,9 +6,9 @@
 
 // Breakpoints
 $header-breakpoint: large; // Used for consistent mobile to desktop header style switching
-$layout-breakpoint: rem-calc(900);
+$layout-breakpoint: medium;
 $below-header-breakpoint: ($layout-breakpoint - rem-calc(1)) down;
-$type-breakpoint: medium;
+$type-breakpoint: xlarge;
 
 // Timing
 $transition-time: 0.3s; // Common transition time for hover states, etc.
@@ -25,3 +25,6 @@ $placeholder-color: $almost-black;
 $standard-padding: rem-calc(20);
 $cool-gradient: linear-gradient($purple 0%, $fuschia 25%, $red-violet 50%, $red 75%, $gold 100%) 1 100%;
 $hover-classes: '.md-no-touchevents &';
+$standard-blur: 2px;
+$standard-border: 4px;
+$standard-padding: rem-calc(30);

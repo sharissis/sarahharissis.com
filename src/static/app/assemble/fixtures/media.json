@@ -1,0 +1,288 @@
+{
+	"title": "Media",
+	"work": {
+		"modifiers": ["work"],
+		"items": [
+			{
+				"title": "William Jewell College",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/wj.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://jewell.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug"
+					},
+					{
+						"title": "App Development",
+						"icon": "window"
+					}
+				]
+			},
+			{
+				"title": "Chapman University",
+				"subtitle": "Degrees &amp; Programs Finder",
+				"img": "img/site-screenshots/chapman-dp.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://www.chapman.edu/academics/degrees-and-programs.aspx"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "CMS Integration",
+						"icon": "gears"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug"
+					},
+					{
+						"title": "UI/UX Design",
+						"icon": "design"
+					},
+					{
+						"title": "App Development",
+						"icon": "window"
+					}
+				]
+			},
+			{
+				"title": "Wonders of Wildlife",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/wow.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "http://www.wondersofwildlife.org/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug"
+					},
+					{
+						"title": "UI/UX Design",
+						"icon": "design"
+					}
+				]
+			},
+			{
+				"title": "Joliet Junior College",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/jjc.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "http://www.jjc.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug"
+					}
+				]
+			},
+			{
+				"title": "University of Virginia Curry School of Education",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/uva-curry.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://curry.virginia.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug"
+					},
+					{
+						"title": "App Development",
+						"icon": "window"
+					}
+				]
+			},
+			{
+				"title": "University of Virginia School of Engineering",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/uva-engineering.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://engineering.virginia.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug"
+					}
+				]
+			},
+			{
+				"title": "Texas State Aquarium",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/tsa.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://www.texasstateaquarium.org/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "CMS Integration",
+						"icon": "gears"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug"
+					}
+				]
+			},
+			{
+				"title": "Explore Minnesota",
+				"subtitle": "Home Page Redesign &amp; Website Refresh",
+				"img": "img/site-screenshots/mn.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "http://www.exploreminnesota.com/index.aspx"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "CMS Integration",
+						"icon": "gears"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug"
+					},
+					{
+						"title": "UI/UX Design",
+						"icon": "design"
+					},
+					{
+						"title": "Google Maps API",
+						"icon": "location-pin"
+					}
+				]
+			},
+			{
+				"title": "Chemeketa Community College",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/ccc.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://www.chemeketa.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug"
+					}
+				]
+			},
+			{
+				"title": "Goucher College",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/goucher.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "http://www.goucher.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug"
+					}
+				]
+			},
+			{
+				"title": "Davidson College",
+				"subtitle": "Interactive Campus Map",
+				"img": "img/site-screenshots/davidson-map.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "http://map.davidson.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug"
+					},
+					{
+						"title": "App Development",
+						"icon": "window"
+					},
+					{
+						"title": "Google Maps API",
+						"icon": "location-pin"
+					}
+				]
+			},
+			{
+				"title": "Ross University School of Veterinary Medicine",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/ross-vet.jpg",
+				"link": {
+					"title": "View Site",
+					"url": "https://veterinary.rossu.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2"
+					},
+					{
+						"title": "CMS Integration",
+						"icon": "gears"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug"
+					}
+				]
+			}
+		]
+	}
+}

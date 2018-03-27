@@ -1,4 +1,7 @@
 body {
+	background: linear-gradient(150deg, $burnt-orange, $purple);
+	background-size: 400% 400%;
+	animation: background-color-fade 15s ease infinite;
 	overflow-x: hidden; // Prevents horizontal scroll bug that occurs a lot in IE
 	position: relative;
 
@@ -15,4 +18,5 @@ body {
 		// Box Sixing
 		box-sizing: border-box;
 	}
+
 }

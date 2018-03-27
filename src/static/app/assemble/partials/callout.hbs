@@ -28,22 +28,7 @@
             {{/if}}
 
             {{#if subtitle}}
-                <h4 class="callout__subheading">{{{subtitle}}}</h4>
-            {{/if}}
-
-            {{#if roles}}
-                <ul class="callout__roles clearfix">
-
-                    {{#each roles}}
-
-                        <li class="callout__role">
-                            {{svg icon}}
-                            <span class="callout__role__text">{{{title}}}</span>
-                        </li>
-
-                    {{/each}}
-
-                </ul>
+                <h4 class="callout__subheading subheading">{{{subtitle}}}</h4>
             {{/if}}
 
             {{#if desc}}

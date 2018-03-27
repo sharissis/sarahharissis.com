@@ -1,26 +1,31 @@
 <!-- partial:panel -->
 <section id="js-panel--{{id}}" class="panel panel--{{id}}{{#each modifiers}} panel--{{this}}{{/each}}">
-	<div class="panel__inner">
 
-		<div class="panel__content">
+	{{#stringCompare id "hello"}}
 
-			{{#if title}}
-				<h2>{{{title}}}</h2>
-			{{/if}}
+		<div class="row">
+			<div class="columns">
 
-			{{#if subtitle}}
-				<h3>{{{subtitle}}}</h3>
-			{{/if}}
-
-			{{#stringCompare id "hello"}}
+				<div class="user-markup">
+					<h2>{{{title}}}</h2>
+					<h3 class="subheading">{{{subtitle}}}</h3>
+				</div>
 
 				{{> portrait }}
 
-			{{/stringCompare}}
+			</div>
+		</div>
 
-			{{#stringCompare id "about"}}
+	{{/stringCompare}}
+
+	{{#stringCompare id "about"}}
+
+		<div class="row">
+			<div class="columns">
 
 				<div class="user-markup">
+
+					<h2>{{{title}}}</h2>
 
 					<p>I'm a Front-End developer with strong background in graphic design and user experience. I currently work for <a href="http://barkleyrei.com/" title="BarkleyREI Website" target="_blank">BarkleyREI</a>, a full-service digital agency with clientele primarily in the tourism and higher education industries. My specialty is developing design compositions into beautiful, fully-functional and captivating web experiences. I'm particularly skilled with making ambitious visual concepts come to life with CSS.</p>
 
@@ -38,46 +43,69 @@
 
 				</div>
 
-			{{/stringCompare}}
-
-			{{#stringCompare id "work"}}
-
-				<div class="user-markup">
-
-					<p>As a developer at an ever-changing, fast-paced agency, I'm usually working on multiple projects simultaneously. These are a few recent projects I've taken a prominent role in developing, each with a list of tasks I was responsible for.</p>
-
-				</div>
-
-				{{#parseFixture 'callouts.json'}}
-
-					{{> _callouts work}}
-
-				{{/parseFixture}}
-
-			{{/stringCompare}}
-
-			{{#stringCompare id "skills"}}
-
-				{{#parseFixture 'callouts.json'}}
-
-					{{> _callouts skills}}
-
-				{{/parseFixture}}
-
-			{{/stringCompare}}
-
-			{{#stringCompare id "contact"}}
-
-				<div class="user-markup">
-
-					<p>Interested in working together? I'd love to hear from you!</p>
-
-				</div>
-
-			{{/stringCompare}}
-
+			</div>
 		</div>
 
-	</div>
+	{{/stringCompare}}
+
+	{{#stringCompare id "work"}}
+
+		<div class="intro">
+			<div class="row">
+				<div class="columns">
+
+					<div class="user-markup">
+
+						<h2>{{{title}}}</h2>
+
+						<p>As a developer at an ever-changing, fast-paced agency, I'm usually working on multiple projects simultaneously. These are a few recent projects I've taken a prominent role in developing, each with a list of tasks I was responsible for.</p>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		{{!-- {{#parseFixture 'media.json'}}
+			{{> _media work }}
+		{{/parseFixture}} --}}
+
+		{{> _projects }}
+
+	{{/stringCompare}}
+
+	{{#stringCompare id "skills"}}
+
+		<div class="row">
+			<div class="columns">
+
+				<div class="user-markup">
+					<h2>{{{title}}}</h2>
+				</div>
+
+				{{#parseFixture 'callouts.json'}}
+					{{> _callouts skills }}
+				{{/parseFixture}}
+
+			</div>
+		</div>
+
+	{{/stringCompare}}
+
+	{{#stringCompare id "contact"}}
+
+		<div class="row">
+			<div class="columns">
+
+				<div class="user-markup">
+					<h2>{{{title}}}</h2>
+					<p>Interested in working together? I'd love to hear from you!</p>
+				</div>
+
+			</div>
+		</div>
+
+	{{/stringCompare}}
+
 </section>
 <!-- end partial:panel -->

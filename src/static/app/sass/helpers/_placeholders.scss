@@ -43,3 +43,13 @@
 	}
 
 }
+
+%standard-section-padding {
+	padding: $standard-padding 0;
+}
+
+%animated-background-gradient {
+	background: linear-gradient(150deg, $burnt-orange, $purple);
+	background-size: 400% 400%;
+	animation: background-color-fade 15s ease infinite;
+}
