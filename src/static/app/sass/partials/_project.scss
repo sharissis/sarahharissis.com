@@ -7,45 +7,48 @@
 	$layout-breakpoint: phablet;
 
 	// Styles
+	overflow: hidden;
 	width: 100%;
 	position: relative;
-	margin-bottom: $standard-padding;
+	// margin-bottom: $standard-padding;
 
 	@include breakpoint($layout-breakpoint) {
-		padding-bottom: rem-calc(150);
+		// padding-bottom: rem-calc(150);
 	}
 
 	&__image {
 		position: relative;
 
-		// &:after {
-		// 	@extend %overlay;
-		// 	content: '';
-		// 	box-shadow: inset 0 0 20px rgba($almost-black, 0.5);
-		// 	display: block;
-		// }
+		&:before,
+		&:after {
+			@extend %overlay;
+			content: '';
+			display: block;
+		}
+
+		&:before {
+			box-shadow: inset 0 5px 15px 0 rgba($almost-black, 0.15);
+		}
+
+		&:after {
+			background-color: rgba($almost-black, 0.1);
+		}
 
 	}
 
 	&__content {
-		border-top: 1px solid $medium-gray;
-		padding: $standard-padding/2;
-		width: 100%;
+		z-index: 1;
+		width: calc(100% - #{rem-calc(40)});
+		position: absolute;
+		bottom: rem-calc(20);
+		left: rem-calc(20);
 
-		@include breakpoint($layout-breakpoint) {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			min-height: rem-calc(150);
-		}
-
-		@include breakpoint(xlarge) {
+		&-inner {
 			padding: rem-calc(20);
 		}
 
 		&.white-background {
-			background: $white;
+			// background: $white;
 		}
 
 		h3,

@@ -105,6 +105,7 @@ $breakpoints: (
   large: rem-calc(1024),
   xlarge: $global-width,
   xxlarge: rem-calc(1600),
+  xxxlarge: rem-calc(2000),
 );
 
 $print-breakpoint: large;
