@@ -9,37 +9,49 @@
 
 	&__list {
 		@extend %list-reset;
-		font-size: rem-calc(13);
+		font-size: rem-calc(12);
+
+		@include breakpoint($type-breakpoint) {
+			font-size: rem-calc(14);
+		}
+
 	}
 
-	.role {
-		font-size: inherit;
-		position: relative;
-		margin: 0.5em 0;
+}
 
-		.icon,
-		#{$this}__text {
-			vertical-align: middle;
-			display: inline-block;
-		}
+.role {
 
-		.icon {
+	$this: &;
+
+	font-size: inherit;
+	border: 1px solid $medium-gray;
+	border-radius: 0.5em;
+	position: relative;
+	margin: 0.5em 0.5em 0 0;
+	padding: 0.3em 0.5em;
+	float: left;
+
+	&,
+	.icon,
+	&__text {
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+	.icon {
+		width: 1.25em;
+		height: 1.25em;
+		margin-right: 0.2em;
+
+		@include breakpoint($type-breakpoint) {
 			width: 1.5em;
 			height: 1.5em;
-			margin-right: 0.5em;
-
-			@include breakpoint($type-breakpoint) {
-				width: 2em;
-				height: 2em;
-			}
-
 		}
 
-		#{$this}__text {
-			line-height: 1.25;
-			padding: 0.5em;
-		}
+	}
 
+	&__text {
+		line-height: 1.25;
 	}
 
 }

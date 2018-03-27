@@ -1,0 +1,20 @@
+---
+title: "Projects"
+layout: module.hbs
+module: true
+---
+
+<!-- module:projects -->
+{{#parseFixture 'projects.json'}}
+<div class="projects clearfix">
+	<div class="row">
+		{{#each projects}}
+
+			{{> project this}}
+
+		{{/each}}
+	</div>
+</div>
+{{/parseFixture}}
+
+<!-- end module:projects -->

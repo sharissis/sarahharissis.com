@@ -4,6 +4,7 @@
 	$this: &;
 	$color: $black;
 	$background-color: $white;
+	$layout-breakpoint: phablet;
 
 	// Styles
 
@@ -87,7 +88,7 @@
 
 	&__content {
 		width: 100%;
-		padding: rem-calc(20);
+		padding: $standard-padding/2;
 
 		@include breakpoint($layout-breakpoint) {
 			@include absolute-center;

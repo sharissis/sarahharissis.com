@@ -22,13 +22,11 @@
 	// }
 
 	&--work {
-		color: $almost-black;
-		background-color: $almost-white-2;
-		padding: rem-calc(0);
-
-		> .intro {
-			@extend %standard-section-padding;
-		}
+		// padding: rem-calc(0);
+		//
+		// > .intro {
+		// 	@extend %standard-section-padding;
+		// }
 
 	}
 

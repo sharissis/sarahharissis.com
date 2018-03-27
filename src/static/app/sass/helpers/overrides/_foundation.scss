@@ -51,7 +51,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1280);
+$global-width: rem-calc(1400);
 $global-lineheight: 1;
 
 // $foundation-palette: (
@@ -70,10 +70,8 @@ $sail: #b3d4fc;
 $silver: #cccccc;
 $mineshaft: #333333;
 $deepmineshaft: #222222;
-$almost-white: #f9f8f4;
-$almost-white-2: rgba($white, 0.95);
+$almost-white: rgba($white, 0.95);
 $almost-black: #1c1910;
-$almost-black-2: #2b2b2b;
 $purple: #4300b8;
 $fuschia: #c814c8;
 $red-violet: #b80072;
@@ -82,8 +80,8 @@ $gold: #f2a900;
 $burnt-orange: #a54300;
 $purple2: #6400a8;
 
-$body-background: $almost-white;
-$body-font-color: $almost-black;
+$body-background: $almost-black;
+$body-font-color: $almost-white;
 $body-font-family: 'Rubik', sans-serif;
 // $body-antialiased: true;
 // $global-margin: 1rem;
@@ -119,12 +117,12 @@ $grid-row-width: $global-width;
 
 // $grid-column-count: 12;
 $grid-column-gutter: (
-    small: 40px,
-    phablet: 40px,
-    medium: 40px,
-    large: 40px,
-    xlarge: 40px,
-    xxlarge: 40px,
+    small: 30px,
+    phablet: 30px,
+    medium: 30px,
+    large: 30px,
+    xlarge: 30px,
+    xxlarge: 30px,
 );
 // $grid-column-align-edge: true;
 // $block-grid-max: 8;
@@ -137,24 +135,24 @@ $header-font-weight: 500;
 // $header-font-style: italic;
 $font-family-monospace: 'Lekton', Consolas, monospace;
 // $header-color: inherit;
-$header-lineheight: 1;
+$header-lineheight: 1.1;
 $header-margin-bottom: rem-calc(15);
 $header-styles: (
   small: (
-    'h1': ('font-size': 28),
-    'h2': ('font-size': 24),
-    'h3': ('font-size': 22),
+    'h1': ('font-size': 30),
+    'h2': ('font-size': 27),
+    'h3': ('font-size': 24),
     'h4': ('font-size': 20),
     'h5': ('font-size': 18),
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 36),
-    'h2': ('font-size': 30),
-    'h3': ('font-size': 24),
-    'h4': ('font-size': 20),
-    'h5': ('font-size': 18),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 40),
+    'h2': ('font-size': 36),
+    'h3': ('font-size': 30),
+    'h4': ('font-size': 24),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 18),
   ),
 );
 // $header-text-rendering: optimizeLegibility;

@@ -12,7 +12,7 @@
 	&__icon {
 		width: rem-calc(50);
 		height: rem-calc(50);
-		margin: 0 auto rem-calc(20);
+		margin: 0 auto $standard-padding;
 
 		@include breakpoint(medium) {
 			width: rem-calc(100);

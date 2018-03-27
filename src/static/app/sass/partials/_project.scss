@@ -1,0 +1,80 @@
+.project {
+
+	// Variables
+	$this: &;
+	$color: $black;
+	$background-color: $white;
+	$layout-breakpoint: phablet;
+
+	// Styles
+	width: 100%;
+	position: relative;
+	margin-bottom: $standard-padding;
+
+	@include breakpoint($layout-breakpoint) {
+		padding-bottom: rem-calc(150);
+	}
+
+	&__image {
+		position: relative;
+
+		// &:after {
+		// 	@extend %overlay;
+		// 	content: '';
+		// 	box-shadow: inset 0 0 20px rgba($almost-black, 0.5);
+		// 	display: block;
+		// }
+
+	}
+
+	&__content {
+		border-top: 1px solid $medium-gray;
+		padding: $standard-padding/2;
+		width: 100%;
+
+		@include breakpoint($layout-breakpoint) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			min-height: rem-calc(150);
+		}
+
+		@include breakpoint(xlarge) {
+			padding: rem-calc(20);
+		}
+
+		&.white-background {
+			background: $white;
+		}
+
+		h3,
+		h4 {
+			margin-bottom: 0.25em;
+		}
+
+		h3 {
+			font-size: rem-calc(18);
+
+			@include breakpoint($type-breakpoint) {
+				font-size: rem-calc(20);
+			}
+
+		}
+
+		h4 {
+			font-size: rem-calc(16);
+
+			@include breakpoint($type-breakpoint) {
+				font-size: rem-calc(18);
+			}
+
+		}
+
+	}
+
+	.roles {
+		margin-top: rem-calc(10);
+	}
+
+}

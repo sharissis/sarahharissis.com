@@ -6,3 +6,13 @@
 	// overflow: hidden;
 	// overflow-x: hidden;
 }
+
+.white-background {
+	color: $almost-black;
+	background-color: $almost-white;
+}
+
+.row {
+	padding-left: $standard-padding/2;
+	padding-right: $standard-padding/2;
+}
