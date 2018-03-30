@@ -21,12 +21,26 @@
 	// 	opacity: 1;
 	// }
 
+	&--hello {
+
+		h2 {
+			// @extend %display-font;
+			font-size: rem-calc(48);
+		}
+
+	}
+
 	&--work {
-		// padding: rem-calc(0);
-		//
-		// > .intro {
-		// 	@extend %standard-section-padding;
-		// }
+		padding: rem-calc(0);
+
+		> .intro {
+			padding: $standard-padding 0 0;
+
+			@include breakpoint(large) {
+				padding: $standard-padding*2 0 0;
+			}
+
+		}
 
 	}
 

@@ -53,3 +53,9 @@
 	background-size: 400% 400%;
 	animation: background-color-fade 15s ease infinite;
 }
+
+%display-font {
+	font-family: $display-font;
+	font-weight: 400;
+	letter-spacing: 0;
+}

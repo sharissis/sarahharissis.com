@@ -8,50 +8,62 @@ module: true
 <div class="media{{#each modifiers}} media--{{this}}{{/each}}">
 	{{#each items}}
 
-		<div class="row expanded">
+		<div class="media__row">
+			<div class="row">
 
-			<div class="columns phablet-6">
-				<div class="inner">
+				<div class="media__column media__column--image columns phablet-6 medium-5">
+					<div class="inner">
 
-					<div class="media__image">
-						<img src="{{img}}" alt="Image associated with {{{title}}}">
+						<div class="media__image">
+
+							{{#if link}}
+								<a href="{{link.url}}" title="{{link.title}}" target="_blank">
+							{{/if}}
+
+								<img src="{{img}}" alt="Image associated with {{{title}}}">
+
+							{{#if link}}
+								</a>
+							{{/if}}
+							
+						</div>
+
 					</div>
-
 				</div>
-			</div>
 
-			<div class="columns phablet-6">
-				<div class="inner">
+				<div class="media__column media__column--content columns phablet-6 medium-7">
+					<div class="inner">
 
-					<div class="media__content">
-						<div class="media__content-inner">
+						<div class="media__content">
+							<div class="media__content-inner">
 
-							<div class="user-markup">
+								<div class="user-markup">
 
-								<h3>{{{title}}}</h3>
+									<h3>{{{title}}}</h3>
 
-								{{#if subtitle}}
-									<h4 class="subheading">{{{subtitle}}}</h4>
-								{{/if}}
+									{{#if subtitle}}
+										<h4 class="subheading">{{{subtitle}}}</h4>
+									{{/if}}
 
-								{{#if desc}}
-									<p>{{{desc}}}</p>
-								{{/if}}
+									{{#if desc}}
+										<p>{{{desc}}}</p>
+									{{/if}}
+
+								</div>
+
+								<hr class="small">
+
+								{{#if roles}}
+									{{> roles roles}}
+					            {{/if}}
 
 							</div>
-
-							<hr class="small">
-
-							{{#if roles}}
-								{{> roles roles}}
-				            {{/if}}
-
 						</div>
+
 					</div>
-
 				</div>
-			</div>
 
+			</div>
 		</div>
 
 	{{/each}}
