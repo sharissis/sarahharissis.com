@@ -19,18 +19,6 @@ iframe {
 	max-width: 100%;
 }
 
-ul,
-ol,
-li,
-p {
-	font-size: rem-calc(14);
-
-	@include breakpoint($type-breakpoint) {
-		font-size: rem-calc(16);
-	}
-
-}
-
 p {
 
 	.icon {

@@ -1,6 +1,11 @@
 // For all WYSIWYG powered text
 
 .user-markup {
+	font-size: rem-calc(14);
+
+	@include breakpoint($type-breakpoint) {
+		font-size: rem-calc(16);
+	}
 
 	> :last-child {
 		margin-bottom: 0;

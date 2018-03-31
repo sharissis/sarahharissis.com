@@ -8,11 +8,6 @@
 			"subtitle": "I'm Sarah Harissis."
 		},
 		{
-			"id": "about",
-			"nav-title": "About",
-			"title": "A Bit About Myself"
-		},
-		{
 			"id": "work",
 			"nav-title": "Work",
 			"title": "Recent Projects"
@@ -21,6 +16,11 @@
 			"id": "skills",
 			"nav-title": "Skills",
 			"title": "Skills"
+		},
+		{
+			"id": "about",
+			"nav-title": "About",
+			"title": "A Bit About Myself"
 		},
 		{
 			"id": "contact",

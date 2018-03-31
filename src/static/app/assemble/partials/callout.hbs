@@ -23,19 +23,23 @@
 
         <div class="callout__content-inner">
 
-            {{#if title}}
-                <h3 class="callout__heading">{{{title}}}</h3>
-            {{/if}}
+            <div class="user-markup">
 
-            {{#if subtitle}}
-                <h4 class="callout__subheading subheading">{{{subtitle}}}</h4>
-            {{/if}}
+                {{#if title}}
+                    <h3 class="callout__heading">{{{title}}}</h3>
+                {{/if}}
 
-            {{#if desc}}
-                <p class="callout__desc">{{{desc}}}</p>
-            {{/if}}
+                {{#if subtitle}}
+                    <h4 class="callout__subheading subheading">{{{subtitle}}}</h4>
+                {{/if}}
 
-            {{#if link}}
+                {{#if desc}}
+                    <p class="callout__desc">{{{desc}}}</p>
+                {{/if}}
+
+                {{#if link}}
+                
+            </div>
 
                 <span class="callout__cta">{{{link.title}}} {{svg "arrow-right2"}}</span>
 

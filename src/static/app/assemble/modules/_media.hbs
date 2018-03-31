@@ -25,7 +25,7 @@ module: true
 							{{#if link}}
 								</a>
 							{{/if}}
-							
+
 						</div>
 
 					</div>
@@ -45,17 +45,25 @@ module: true
 										<h4 class="subheading">{{{subtitle}}}</h4>
 									{{/if}}
 
-									{{#if desc}}
-										<p>{{{desc}}}</p>
-									{{/if}}
-
 								</div>
-
-								<hr class="small">
 
 								{{#if roles}}
 									{{> roles roles}}
-					            {{/if}}
+								{{/if}}
+
+								<div class="user-markup">
+
+									{{#if intro}}
+										<p class="media__intro">{{{intro}}}</p>
+									{{/if}}
+
+									{{#if desc}}
+										<div class="media__desc">{{{desc}}}</div>
+									{{/if}}
+
+									<a href="{{link.url}}" title="{{link.title}}">{{link.title}}</a>
+
+								</div>
 
 							</div>
 						</div>
