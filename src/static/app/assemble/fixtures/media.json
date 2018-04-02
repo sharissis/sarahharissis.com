@@ -8,7 +8,7 @@
 				"subtitle": "Degrees &amp; Programs Finder",
 				"img": "img/site-screenshots/chapman-dp.jpg",
 				"intro": "This powerful program finder is a multi-faceted, interest-oriented search to help prospective students find the perfect academic program to match their passions and strengths.",
-				"desc": "<p>I developed all of the filtering logic for this search myself, from scratch – no JavaScript libraries or frameworks were used except for jQuery. The programming was complex and had many nuances, but the experience gained along the way made it well worth it. I'm proud to say that this is one of the best examples of my independant, challenge-driven coding style.</p>",
+				"desc": "<p>I developed all of the filtering logic for this search myself – no JavaScript libraries or frameworks were used except for jQuery. The programming was complex and had many nuances, but the experience gained along the way made it well worth it. This is one of the best examples of my independant, challenge-driven coding style.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "https://www.chapman.edu/academics/degrees-and-programs.aspx"
@@ -40,7 +40,7 @@
 				"title": "William Jewell College",
 				"subtitle": "Website Redesign",
 				"img": "img/site-screenshots/wj.jpg",
-				"desc": "<p>This project required development of four faceted searches, of which I coded the logic myself using only JavaScript and jQuery. I created a set of two controllers to power these searches, and wrote them in a way that has made them scalable and reusable for future projects. In addition, the design of the site provided an opportunity for me to explore and code designs that are bold and new to higher education.</p>",
+				"desc": "<p>This project required development of four faceted searches, of which I coded the logic using only JavaScript and jQuery. I created a set of two controllers to power these searches, and wrote them in a way that made them scalable and reusable for future projects. In addition, the design of the site offered me an opportunity to learn bold new approaches to building sites for Higher Education clients. This was one of our first clients that stressed an importance on ADA Compliance, causing me to rethink approaches to many different components we have built for clients in the past.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "https://jewell.edu/"
@@ -64,7 +64,7 @@
 				"title": "Wonders of Wildlife",
 				"subtitle": "Website Redesign",
 				"img": "img/site-screenshots/wow.jpg",
-				"desc": "<p>Wonders of Wildlife was developed by our team under an incredibly tight timeline. I worked in tandem with my two fellow front-end developers at BarkleyREI to launch this as quickly as possible while developing the engaging ...</p>",
+				"desc": "<p>Wonders of Wildlife was developed by our team under an incredibly tight timeline. I worked in tandem with my two fellow Front-End developers at BarkleyREI to launch this as quickly as possible while developing the engaging design into a working, flexible WordPress template. This was also a great learning experience being a headfirst dive into PHP and WordPress development.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "http://www.wondersofwildlife.org/"
@@ -153,7 +153,7 @@
 				"title": "Explore Minnesota",
 				"subtitle": "Home Page Redesign &amp; Website Refresh",
 				"img": "img/site-screenshots/mn.jpg",
-				"desc": "<p>Explore Minnesota is a long-standing client of BarkleyREI. They recently came to us looking for a full website refresh. We usually start all new projects with a fresh code base, however, Explore Minnesota asked us to work based off of the current site.</p><p>Revamping the site within the constraints of the existing markup and functionality was a challenge, but I was pleased to find this meant I was able to use my design background to a significant degree. Time constraints only allowed us to produce designs for a handful of the dozens existing templates, allowing me the creative freedom to fill in the gaps and design as I coded.</p>",
+				"desc": "<p>Explore Minnesota is a long-standing client of BarkleyREI. In 2013, they came to us looking to refresh their website. We usually start all new projects with a fresh codebase, however, Explore Minnesota asked us to work within the existing codebase we had already built for them.</p><p>Revamping the site within the constraints of the existing markup and functionality was a challenge, but I was pleased to find this meant I was able to use my design background: time constraints only allowed us to produce designs for a handful of the dozens existing templates, allowing me the creative freedom to fill in the gaps and design as I coded.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "http://www.exploreminnesota.com/index.aspx"
@@ -242,7 +242,7 @@
 				"title": "Davidson College",
 				"subtitle": "Interactive Campus Map",
 				"img": "img/site-screenshots/davidson-map.jpg",
-				"desc": "<p>Developing this interactive map was my first dive into both the Google Maps API and forward/back browser navigation support.</p>",
+				"desc": "<p>Developing this interactive map was my first dive into both the Google Maps API and forward/back browser history navigation support.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "http://map.davidson.edu/"
@@ -270,7 +270,7 @@
 				"title": "Ross University School of Veterinary Medicine",
 				"subtitle": "Website Redesign",
 				"img": "img/site-screenshots/ross-vet.jpg",
-				"desc": "<p>Ross University uses Adobe Experience Manager as their content management system. I developed the static templates for this site and learned this new CMS....</p>",
+				"desc": "<p>Ross University uses Adobe Experience Manager as their content management system. I developed the static templates for this site and learned this new CMS while integrating the static templates. I had to pick up new skills very quickly on this project on unfamiliar platforms and languages. It was a great test of my ability to adapt as a versitile developer on the quickly-changing web.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "https://veterinary.rossu.edu/"
