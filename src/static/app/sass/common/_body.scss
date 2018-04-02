@@ -1,9 +1,23 @@
 body {
-	background: linear-gradient(150deg, $burnt-orange, $purple);
-	background-size: 400% 400%;
-	animation: background-color-fade 15s ease infinite;
 	overflow-x: hidden; // Prevents horizontal scroll bug that occurs a lot in IE
 	position: relative;
+
+	&:before {
+		content: '';
+		z-index: -1;
+		background: linear-gradient(150deg, $burnt-orange, $purple);
+		background-size: 400% 400%;
+		animation: background-color-fade 15s ease infinite;
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		transform: scale(1.05); // To prevent seeing edges
+	}
 
 	* {
 		// Better defaults for `background` so we can just do background: url(image) and not have to set anything else.

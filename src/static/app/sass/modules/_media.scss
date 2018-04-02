@@ -8,29 +8,57 @@
 
 	// Styles
 
-	.row {
-		max-width: none;
+	&__row {
+		// border-top: 1px solid darken($really-light-gray, 2%);
+		color: $almost-black;
+		background-color: $alt-almost-white;
+		padding-top: $standard-padding;
+		padding-bottom: $standard-padding;
 
 		@include breakpoint($layout-breakpoint) {
-			display: flex;
-			align-items: stretch;
 
 			&:nth-child(2n) {
 
-				.columns {
-					position: relative;
-				}
-
-				> .columns:nth-child(1) {
+				.columns:nth-child(1) {
 					left: 50%;
 				}
 
-				> .columns:nth-child(2) {
+				.columns:nth-child(2) {
 					left: -50%;
 				}
 
 			}
 
+		}
+
+		@include breakpoint(medium) {
+
+			&:nth-child(2n) {
+
+				.columns:nth-child(1) {
+					left: 58.33333%;
+				}
+
+				.columns:nth-child(2) {
+					left: -41.66666%;
+				}
+
+			}
+
+		}
+
+		@include breakpoint(large) {
+			padding-top: $standard-padding*2;
+			padding-bottom: $standard-padding*2;
+		}
+
+		@include breakpoint(xlarge) {
+			padding-top: $standard-padding*3;
+			padding-bottom: $standard-padding*3;
+		}
+
+		&:nth-child(2n) {
+			background-color: rgba($really-light-gray, 0.98);
 		}
 
 		&:last-child {
@@ -39,24 +67,47 @@
 
 	}
 
+	.row {
+
+		@include breakpoint($layout-breakpoint) {
+			display: flex;
+			align-items: stretch;
+		}
+
+	}
+
 	.columns {
-		padding: 0;
+		position: relative;
 	}
 
 	.inner {
 		position: relative;
+		height: 100%;
 
 		@include breakpoint($layout-breakpoint) {
 			overflow: hidden;
 			// max-height: rem-calc(600);
 		}
 
-		&:before {
+	}
+
+	&__column {
+
+		&--image {
+			margin-bottom: $standard-padding;
 
 			@include breakpoint($layout-breakpoint) {
-				content: '';
-				padding-top: 100%;
-				display: block;
+				margin-bottom: 0;
+			}
+
+			.inner:before {
+
+				@include breakpoint($layout-breakpoint) {
+					content: '';
+					padding-top: 100%;
+					display: block;
+				}
+
 			}
 
 		}
@@ -73,10 +124,23 @@
 			bottom: 0;
 		}
 
+		&:before {
+			@extend %overlay;
+			content: '';
+			z-index: 1;
+			box-shadow: $standard-inset-shadow;
+			pointer-events: none;
+			display: block;
+		}
+
+		a,
 		img {
 			max-width: 100%;
 			max-height: 100%;
 			display: block;
+		}
+
+		img {
 
 			@include breakpoint($layout-breakpoint) {
 				@include absolute-center;
@@ -88,15 +152,15 @@
 
 	&__content {
 		width: 100%;
-		padding: $standard-padding/2;
 
 		@include breakpoint($layout-breakpoint) {
 			@include absolute-center;
-			padding: rem-calc(40 20);
+			padding: $standard-padding;
 		}
 
-		@include breakpoint(xlarge) {
-			width: 80%;
+		@include breakpoint(large) {
+			width: auto;
+			min-width: 80%;
 		}
 
 	}

@@ -1,0 +1,46 @@
+.about {
+
+	// Variables
+	$this: &;
+	$color: $black;
+	$background-color: $white;
+
+	// Styles
+	padding-top: $standard-padding*2;
+	padding-bottom: $standard-padding*2;
+	position: relative;
+
+	@include breakpoint(medium) {
+		padding-top: $standard-padding*3;
+		padding-bottom: $standard-padding*3;
+	}
+
+	@include breakpoint(xlarge) {
+		padding-top: $standard-padding*4;
+		padding-bottom: $standard-padding*4;
+	}
+
+	.row {
+		z-index: 1;
+		position: relative;
+	}
+
+	&__background-image {
+		@extend %overlay;
+		filter: blur(1px);
+
+		&:after {
+			@extend %overlay;
+			content: '';
+			background-color: rgba(darken($burnt-orange, 20%), 0.6);
+		}
+
+	}
+
+	&__content {
+
+
+
+	}
+
+}

@@ -119,6 +119,24 @@
 // Fonts
 @import 'icons/_style';
 
+// @font-face {
+//     font-family: 'Besley Medium';
+// 	font-weight: normal;
+//     src: url('../fonts/Besley/Besley-Medium.otf') format('opentype');
+// }
+//
+// @font-face {
+//     font-family: 'Besley Bold';
+// 	font-weight: normal;
+//     src: url('../fonts/Besley/Besley-Bold.otf') format('opentype');
+// }
+//
+// @font-face {
+//     font-family: 'Miso';
+// 	font-weight: normal;
+//     src: url('../fonts/Miso/miso-bold.otf') format('opentype');
+// }
+
 // Common content styles
 @import 'common/_animations';
 @import 'common/_body';
@@ -140,5 +158,6 @@
 @import 'modules/_assemble-modules';
 @import 'partials/_assemble-partials';
 
-// Accessibility Helper Classes
+// Helpers
 @import 'helpers/_access';
+@import 'helpers/_user-markup';

@@ -8,50 +8,70 @@ module: true
 <div class="media{{#each modifiers}} media--{{this}}{{/each}}">
 	{{#each items}}
 
-		<div class="row expanded">
+		<div class="media__row">
+			<div class="row">
 
-			<div class="columns phablet-6">
-				<div class="inner">
+				<div class="media__column media__column--image columns phablet-6 medium-5">
+					<div class="inner">
 
-					<div class="media__image">
-						<img src="{{img}}" alt="Image associated with {{{title}}}">
-					</div>
+						<div class="media__image">
 
-				</div>
-			</div>
+							{{#if link}}
+								<a href="{{link.url}}" title="{{link.title}}" target="_blank">
+							{{/if}}
 
-			<div class="columns phablet-6">
-				<div class="inner">
+								<img src="{{img}}" alt="Image associated with {{{title}}}">
 
-					<div class="media__content">
-						<div class="media__content-inner">
-
-							<div class="user-markup">
-
-								<h3>{{{title}}}</h3>
-
-								{{#if subtitle}}
-									<h4 class="subheading">{{{subtitle}}}</h4>
-								{{/if}}
-
-								{{#if desc}}
-									<p>{{{desc}}}</p>
-								{{/if}}
-
-							</div>
-
-							<hr class="small">
-
-							{{#if roles}}
-								{{> roles roles}}
-				            {{/if}}
+							{{#if link}}
+								</a>
+							{{/if}}
 
 						</div>
+
 					</div>
-
 				</div>
-			</div>
 
+				<div class="media__column media__column--content columns phablet-6 medium-7">
+					<div class="inner">
+
+						<div class="media__content">
+							<div class="media__content-inner">
+
+								<div class="user-markup">
+
+									<h3>{{{title}}}</h3>
+
+									{{#if subtitle}}
+										<h4 class="subheading">{{{subtitle}}}</h4>
+									{{/if}}
+
+								</div>
+
+								{{#if roles}}
+									{{> roles roles}}
+								{{/if}}
+
+								<div class="user-markup">
+
+									{{#if intro}}
+										<p class="media__intro">{{{intro}}}</p>
+									{{/if}}
+
+									{{#if desc}}
+										<div class="media__desc">{{{desc}}}</div>
+									{{/if}}
+
+									<a href="{{link.url}}" title="{{link.title}}">{{link.title}}</a>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
 		</div>
 
 	{{/each}}
