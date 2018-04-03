@@ -22,14 +22,47 @@
 .role {
 
 	$this: &;
+	$padding: 0.45em;
 
+	border-radius: $standard-border;
 	font-size: inherit;
+	line-height: 1;
 	position: relative;
-	margin: 0 0 0.5em;
+	margin: 0 0.125em 0.5em;
+	padding: $padding $padding*1.5 $padding $padding*1.25;
+
+	&--code {
+		background-color: $purple;
+	}
+
+	&--cms {
+		background-color: $fuschia;
+	}
+
+	&--bug {
+		background-color: $red-violet;
+	}
+
+	&--design {
+		background-color: $red;
+	}
+
+	&--app {
+		background-color: $orange;
+	}
+
+	&--maps {
+		background-color: $gold;
+	}
+
+	&--teaching { // Maybe
+
+	}
 
 	&,
 	.icon,
 	&__text {
+		color: $white;
 		vertical-align: middle;
 		display: inline-block;
 	}
@@ -37,7 +70,7 @@
 	.icon {
 		width: 1.25em;
 		height: 1.25em;
-		margin-right: 0.2em;
+		margin-right: 0.35em;
 
 		@include breakpoint($type-breakpoint) {
 			width: 1.5em;
@@ -48,6 +81,8 @@
 
 	&__text {
 		line-height: 1.25;
+		font-weight: 500;
+		padding-bottom: 0.125em;
 	}
 
 }

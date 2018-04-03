@@ -37,19 +37,19 @@ module: true
 						<div class="media__content">
 							<div class="media__content-inner">
 
-								<div class="user-markup">
+								<header class="media__header user-markup">
 
-									<h3>{{{title}}}</h3>
+									<h3 class="media__title">{{{title}}}</h3>
 
 									{{#if subtitle}}
-										<h4 class="subheading">{{{subtitle}}}</h4>
+										<h4 class="media__subtitle subheading">{{{subtitle}}}</h4>
 									{{/if}}
 
-								</div>
+									{{#if roles}}
+										{{> roles roles}}
+									{{/if}}
 
-								{{#if roles}}
-									{{> roles roles}}
-								{{/if}}
+								</header>
 
 								<div class="user-markup">
 

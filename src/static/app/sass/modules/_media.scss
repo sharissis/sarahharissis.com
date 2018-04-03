@@ -87,6 +87,9 @@
 		@include breakpoint($layout-breakpoint) {
 			overflow: hidden;
 			// max-height: rem-calc(600);
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 
 	}
@@ -100,29 +103,12 @@
 				margin-bottom: 0;
 			}
 
-			.inner:before {
-
-				@include breakpoint($layout-breakpoint) {
-					content: '';
-					padding-top: 100%;
-					display: block;
-				}
-
-			}
-
 		}
 
 	}
 
 	&__image {
-
-		@include breakpoint($layout-breakpoint) {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-		}
+		position: relative;
 
 		&:before {
 			@extend %overlay;
@@ -140,29 +126,34 @@
 			display: block;
 		}
 
-		img {
-
-			@include breakpoint($layout-breakpoint) {
-				@include absolute-center;
-			}
-
-		}
-
 	}
 
 	&__content {
 		width: 100%;
 
-		@include breakpoint($layout-breakpoint) {
-			@include absolute-center;
-			padding: $standard-padding;
-		}
-
 		@include breakpoint(large) {
 			width: auto;
-			min-width: 80%;
+			width: 100%;
 		}
 
+	}
+
+	&__header {
+		margin-bottom: $standard-padding;
+
+		@include breakpoint(large) {
+			margin-bottom: $standard-padding*2;
+		}
+
+		#{$this}__title,
+		#{$this}__subtitle {
+			margin-bottom: 0.25em;
+		}
+
+	}
+
+	.roles {
+		margin-top: $standard-padding/2;
 	}
 
 }

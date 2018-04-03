@@ -16,23 +16,28 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2"
+						"icon": "code2",
+						"type": "code"
 					},
 					{
 						"title": "CMS Integration",
-						"icon": "wrench"
+						"icon": "wrench",
+						"type": "cms"
 					},
 					{
 						"title": "QA Resolution",
-						"icon": "bug"
+						"icon": "bug",
+						"type": "bug"
 					},
 					{
 						"title": "UI/UX Design",
-						"icon": "design"
+						"icon": "design",
+						"type": "design"
 					},
 					{
-						"title": "Web App Development",
-						"icon": "window"
+						"title": "App Development",
+						"icon": "window",
+						"type": "app"
 					}
 				]
 			},
@@ -48,15 +53,18 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2"
+						"icon": "code2",
+						"type": "code"
 					},
 					{
 						"title": "QA Resolution",
-						"icon": "bug"
+						"icon": "bug",
+						"type": "bug"
 					},
 					{
-						"title": "Web App Development",
-						"icon": "window"
+						"title": "App Development",
+						"icon": "window",
+						"type": "app"
 					}
 				]
 			},
@@ -64,7 +72,7 @@
 				"title": "Wonders of Wildlife",
 				"subtitle": "Website Redesign",
 				"img": "img/site-screenshots/wow.jpg",
-				"desc": "<p>Wonders of Wildlife was developed by our team under an incredibly tight timeline. I worked in tandem with my two fellow Front-End developers at BarkleyREI to launch this as quickly as possible while developing the engaging design into a working, flexible WordPress template. This was also a great learning experience being a headfirst dive into PHP and WordPress development.</p>",
+				"desc": "<p>Wonders of Wildlife was developed by our team under an incredibly tight timeline. I worked in tandem with my two fellow Front-End developers at BarkleyREI to launch this as quickly as possible while developing the ambitious designs promised to the client. This project is a reflection of my ability to work with other developers effectively and efficiently to achieve a common goal.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "http://www.wondersofwildlife.org/"
@@ -72,15 +80,18 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2"
+						"icon": "code2",
+						"type": "code"
 					},
 					{
 						"title": "QA Resolution",
-						"icon": "bug"
+						"icon": "bug",
+						"type": "bug"
 					},
 					{
 						"title": "UI/UX Design",
-						"icon": "design"
+						"icon": "design",
+						"type": "design"
 					}
 				]
 			},
@@ -88,6 +99,7 @@
 				"title": "University of Virginia Curry School of Education",
 				"subtitle": "Website Redesign",
 				"img": "img/site-screenshots/uva-curry.jpg",
+				"desc": "<p>The designs for UVA Curry had a number of intricacies that posed styling challenges, which I've always enjoyed solving. In particular, these designs involved coding complex responsive grids and learning how to create and work with animated SVGs. The skills I learned from this have carried over to the implementation of many other projects since.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "https://curry.virginia.edu/"
@@ -95,15 +107,18 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2"
+						"icon": "code2",
+						"type": "code"
 					},
 					{
 						"title": "QA Resolution",
-						"icon": "bug"
+						"icon": "bug",
+						"type": "bug"
 					},
 					{
-						"title": "Web App Development",
-						"icon": "window"
+						"title": "App Development",
+						"icon": "window",
+						"type": "app"
 					}
 				]
 			},
@@ -111,6 +126,7 @@
 				"title": "University of Virginia School of Engineering",
 				"subtitle": "Website Redesign",
 				"img": "img/site-screenshots/uva-engineering.jpg",
+				"desc": "<p>My responsibiltiy for this project was the static development of the redesigned home page. Much like UVA Engineering's sister site mentioned above, UVA Curry, the designs included some design challenges pertaining to the grid. For example, the mosaic-like news section on the home page required meticulous alignment while preserving the allowance of varying amounts of content. This was difficult to get just right, but was a welcomed challenge and taught me many new tricks with CSS flexbox.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "https://engineering.virginia.edu/"
@@ -118,11 +134,13 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2"
+						"icon": "code2",
+						"type": "code"
 					},
 					{
 						"title": "QA Resolution",
-						"icon": "bug"
+						"icon": "bug",
+						"type": "bug"
 					}
 				]
 			},
@@ -130,6 +148,7 @@
 				"title": "Texas State Aquarium",
 				"subtitle": "Website Redesign",
 				"img": "img/site-screenshots/tsa.jpg",
+				"desc": "<p>Texas State Aquarium was my first real hands-on experience with WordPress. Although I was somewhat familiar with WordPress from past projects, I was able to delve deeper into the inner workings of this CMS and truly begin to understand how it operates. I learned a great deal about custom theme development and expanded my knowledge of PHP templating.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "https://www.texasstateaquarium.org/"
@@ -137,15 +156,18 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2"
+						"icon": "code2",
+						"type": "code"
 					},
 					{
 						"title": "CMS Integration",
-						"icon": "wrench"
+						"icon": "wrench",
+						"type": "cms"
 					},
 					{
 						"title": "QA Resolution",
-						"icon": "bug"
+						"icon": "bug",
+						"type": "bug"
 					}
 				]
 			},
@@ -161,108 +183,28 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2"
+						"icon": "code2",
+						"type": "code"
 					},
 					{
 						"title": "CMS Integration",
-						"icon": "wrench"
+						"icon": "wrench",
+						"type": "cms"
 					},
 					{
 						"title": "QA Resolution",
-						"icon": "bug"
+						"icon": "bug",
+						"type": "bug"
 					},
 					{
 						"title": "UI/UX Design",
-						"icon": "design"
+						"icon": "design",
+						"type": "design"
 					},
 					{
 						"title": "Google Maps API",
-						"icon": "location-pin"
-					}
-				]
-			},
-			{
-				"title": "Joliet Junior College",
-				"subtitle": "Website Redesign",
-				"img": "img/site-screenshots/jjc.jpg",
-				"link": {
-					"title": "View Site",
-					"url": "http://www.jjc.edu/"
-				},
-				"roles": [
-					{
-						"title": "Coding",
-						"icon": "code2"
-					},
-					{
-						"title": "QA Resolution",
-						"icon": "bug"
-					}
-				]
-			},
-			{
-				"title": "Chemeketa Community College",
-				"subtitle": "Website Redesign",
-				"img": "img/site-screenshots/ccc.jpg",
-				"link": {
-					"title": "View Site",
-					"url": "https://www.chemeketa.edu/"
-				},
-				"roles": [
-					{
-						"title": "Coding",
-						"icon": "code2"
-					},
-					{
-						"title": "QA Resolution",
-						"icon": "bug"
-					}
-				]
-			},
-			{
-				"title": "Goucher College",
-				"subtitle": "Website Redesign",
-				"img": "img/site-screenshots/goucher.jpg",
-				"link": {
-					"title": "View Site",
-					"url": "http://www.goucher.edu/"
-				},
-				"roles": [
-					{
-						"title": "Coding",
-						"icon": "code2"
-					},
-					{
-						"title": "QA Resolution",
-						"icon": "bug"
-					}
-				]
-			},
-			{
-				"title": "Davidson College",
-				"subtitle": "Interactive Campus Map",
-				"img": "img/site-screenshots/davidson-map.jpg",
-				"desc": "<p>Developing this interactive map was my first dive into both the Google Maps API and forward/back browser history navigation support.</p>",
-				"link": {
-					"title": "View Site",
-					"url": "http://map.davidson.edu/"
-				},
-				"roles": [
-					{
-						"title": "Coding",
-						"icon": "code2"
-					},
-					{
-						"title": "QA Resolution",
-						"icon": "bug"
-					},
-					{
-						"title": "Web App Development",
-						"icon": "window"
-					},
-					{
-						"title": "Google Maps API",
-						"icon": "location-pin"
+						"icon": "location-pin",
+						"type": "maps"
 					}
 				]
 			},
@@ -270,7 +212,7 @@
 				"title": "Ross University School of Veterinary Medicine",
 				"subtitle": "Website Redesign",
 				"img": "img/site-screenshots/ross-vet.jpg",
-				"desc": "<p>Ross University uses Adobe Experience Manager as their content management system. I developed the static templates for this site and learned this new CMS while integrating the static templates. I had to pick up new skills very quickly on this project on unfamiliar platforms and languages. It was a great test of my ability to adapt as a versitile developer on the quickly-changing web.</p>",
+				"desc": "<p>Ross University uses Adobe Experience Manager as their content management system, which was brand new to our development team. I developed the static templates while concurrently learning how to integrate them into this new CMS. I had to pick up new skills in a very short amount of time while using unfamiliar platforms and languages, including Java and Sightly. It was a test of my ability to adapt quickly and prime example of my prowess as a versatile developer.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "https://veterinary.rossu.edu/"
@@ -278,15 +220,72 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2"
+						"icon": "code2",
+						"type": "code"
 					},
 					{
 						"title": "CMS Integration",
-						"icon": "wrench"
+						"icon": "wrench",
+						"type": "cms"
 					},
 					{
 						"title": "QA Resolution",
-						"icon": "bug"
+						"icon": "bug",
+						"type": "bug"
+					}
+				]
+			},
+			{
+				"title": "Davidson College",
+				"subtitle": "Interactive Campus Map",
+				"img": "img/site-screenshots/davidson-map.jpg",
+				"desc": "<p>Developing this interactive map was my first dive into both the Google Maps API and browser history navigation support. This inherently made the map quite JavaScript heavy and complex, but challenged me to author clean, organized code while managing functionality between multiple controllers.</p>",
+				"link": {
+					"title": "View Site",
+					"url": "http://map.davidson.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2",
+						"type": "code"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug",
+						"type": "bug"
+					},
+					{
+						"title": "App Development",
+						"icon": "window",
+						"type": "app"
+					},
+					{
+						"title": "Google Maps API",
+						"icon": "location-pin",
+						"type": "maps"
+					}
+				]
+			},
+			{
+				"title": "Chemeketa Community College",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/ccc.jpg",
+				"desc": "<p>For Chemeketa, I was in charge of educating a junior developer who worked side by side with me on static coding. This began with teaching him how to use <a href='https://github.com/BarkleyREI/generator-brei-app' title='See the BarkleyREI app generator repo on Github' target='blank'>BarkleyREI's app generator</a>, which is our boilerplate for projects. Using a combination of code reviews and providing direction and advice along the way, I was able to teach him coding standards and practices that were new to him, while working together to complete a full set of static templates.</p>",
+				"link": {
+					"title": "View Site",
+					"url": "https://www.chemeketa.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code2",
+						"type": "code"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug",
+						"type": "bug"
 					}
 				]
 			}

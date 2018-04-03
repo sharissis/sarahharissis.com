@@ -3,6 +3,11 @@ a {
 
 	.user-markup & {
 
+		border-bottom: 0.1em solid currentColor;
+		transition: color $transition-time;
+		line-height: 1.25;
+		display: inline-block;
+
 		// $border-width: 10%;
 		// $bottom-line-offset: $border-width*1.625;
 		// $border-radius: 0.15em;
