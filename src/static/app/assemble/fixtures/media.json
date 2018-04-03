@@ -99,7 +99,7 @@
 				"title": "University of Virginia Curry School of Education",
 				"subtitle": "Website Redesign",
 				"img": "img/site-screenshots/uva-curry.jpg",
-				"desc": "<p>The designs for UVA Curry had a number of intricacies that posed styling challenges, which I've always enjoyed solving. In particular, these designs involved coding complex responsive grids and learning how to create and work with animated SVGs. The skills I learned from this have carried over to the implementation of many other projects since.</p>",
+				"desc": "<p>The designs for UVA Curry had a number of intricacies that posed styling challenges, which I've always enjoyed solving. In particular, these designs involved coding complex responsive grids and learning how to create and work with animated SVGs. The skills I learned from this have since carried over to the implementation of many other projects.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "https://curry.virginia.edu/"
@@ -175,7 +175,7 @@
 				"title": "Explore Minnesota",
 				"subtitle": "Home Page Redesign &amp; Website Refresh",
 				"img": "img/site-screenshots/mn.jpg",
-				"desc": "<p>Explore Minnesota is a long-standing client of BarkleyREI. In 2013, they came to us looking to refresh their website. We usually start all new projects with a fresh codebase, however, Explore Minnesota asked us to work within the existing codebase we had already built for them.</p><p>Revamping the site within the constraints of the existing markup and functionality was a challenge, but I was pleased to find this meant I was able to use my design background: time constraints only allowed us to produce designs for a handful of the dozens existing templates, allowing me the creative freedom to fill in the gaps and design as I coded.</p>",
+				"desc": "<p>Explore Minnesota is a long-standing client of BarkleyREI. In 2017, they came to us looking to refresh their website. We usually start all new projects with a fresh codebase, however, Explore Minnesota asked us to work within the existing codebase we had already built for them.</p><p>Revamping the site within the constraints of the existing markup and functionality was a challenge, but I was pleased to find this meant I was able to use my design background: time constraints only allowed us to produce designs for a handful of the dozens existing templates, allowing me the creative freedom to fill in the gaps and design as I coded.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "http://www.exploreminnesota.com/index.aspx"
