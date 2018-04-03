@@ -32,7 +32,7 @@
 		&:after {
 			@extend %overlay;
 			content: '';
-			background-color: rgba(darken($burnt-orange, 20%), 0.6);
+			background-color: rgba(darken($burnt-orange, 20%), 0.5);
 		}
 
 	}

@@ -19,4 +19,14 @@ hr {
 		width: rem-calc(180);
 	}
 
+	&.tall {
+		height: $standard-border*1.5;
+		margin: $standard-padding 0;
+	}
+
+	&.centered {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 }
