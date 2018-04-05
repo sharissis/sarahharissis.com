@@ -1,0 +1,25 @@
+.social {
+
+	// Variables
+	$this: &;
+	$color: $black;
+	$background-color: $white;
+
+	// Styles
+
+	li {
+		float: left;
+		margin-right: rem-calc(12);
+	}
+
+	a {
+		display: block;
+		width: rem-calc(36);
+		height: rem-calc(36);
+	}
+
+	.icon {
+
+	}
+
+}
