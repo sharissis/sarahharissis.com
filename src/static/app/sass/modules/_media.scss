@@ -15,9 +15,32 @@
 		padding-top: $standard-padding;
 		padding-bottom: $standard-padding;
 
-		@include breakpoint($layout-breakpoint) {
+		@include breakpoint(large) {
+			padding-top: $standard-padding*2;
+			padding-bottom: $standard-padding*2;
+		}
 
-			&:nth-child(2n) {
+		@include breakpoint(xlarge) {
+			padding-top: $standard-padding*3;
+			padding-bottom: $standard-padding*3;
+		}
+
+		&:nth-child(odd) {
+
+			@include breakpoint(xlarge) {
+
+				.media__content {
+					padding-left: $standard-padding;
+				}
+
+			}
+
+		}
+
+		&:nth-child(even) {
+			background-color: rgba($really-light-gray, 0.98);
+
+			@include breakpoint($layout-breakpoint) {
 
 				.columns:nth-child(1) {
 					left: 50%;
@@ -29,11 +52,7 @@
 
 			}
 
-		}
-
-		@include breakpoint(medium) {
-
-			&:nth-child(2n) {
+			@include breakpoint(medium) {
 
 				.columns:nth-child(1) {
 					left: 58.33333%;
@@ -45,20 +64,14 @@
 
 			}
 
-		}
+			@include breakpoint(xlarge) {
 
-		@include breakpoint(large) {
-			padding-top: $standard-padding*2;
-			padding-bottom: $standard-padding*2;
-		}
+				.media__content {
+					padding-right: $standard-padding;
+				}
 
-		@include breakpoint(xlarge) {
-			padding-top: $standard-padding*3;
-			padding-bottom: $standard-padding*3;
-		}
+			}
 
-		&:nth-child(2n) {
-			background-color: rgba($really-light-gray, 0.98);
 		}
 
 		&:last-child {

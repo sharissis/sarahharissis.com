@@ -25,18 +25,6 @@
 		position: relative;
 	}
 
-	&__background-image {
-		@extend %overlay;
-		filter: blur(1px);
-
-		&:after {
-			@extend %overlay;
-			content: '';
-			background-color: rgba(darken($burnt-orange, 20%), 0.5);
-		}
-
-	}
-
 	&__content {
 
 

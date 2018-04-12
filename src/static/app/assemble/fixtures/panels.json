@@ -4,6 +4,7 @@
 		{
 			"modifiers": ["active"],
 			"id": "hello",
+			"nav-title": "Hello",
 			"title": "Hello!",
 			"subtitle": "I'm Sarah Harissis."
 		},
@@ -20,7 +21,11 @@
 		{
 			"id": "about",
 			"nav-title": "About",
-			"title": "A Bit About Myself"
+			"title": "A Bit About Myself",
+			"bg-image": {
+				"url": "img/SarahPittsburgh-color.jpg",
+				"alt": "Sarah in Pittsburgh"
+			}
 		},
 		{
 			"id": "contact",

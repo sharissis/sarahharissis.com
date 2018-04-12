@@ -8,8 +8,13 @@
 	// Styles
 
 	li {
-		float: left;
+		display: inline-block;
 		margin-right: rem-calc(12);
+
+		&:last-child {
+			margin-right: 0;
+		}
+		
 	}
 
 	a {

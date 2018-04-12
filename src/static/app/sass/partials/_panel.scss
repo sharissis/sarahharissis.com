@@ -8,21 +8,31 @@
 
 	// Styles
 	@extend %standard-section-padding;
+	min-height: 100vh;
 	// opacity: 0;
 	// overflow-y: scroll;
 	// transition: opacity $panel-transition-time;
 	// width: 100%;
 	// height: 100vh;
-	// display: flex;
-	// align-items: center;
-	// justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 
 	// &--active {
 	// 	opacity: 1;
 	// }
 
+	&__inner {
+		width: 100%;
+		position: relative;
+	}
+
 	&--hello {
-		min-height: 100vh;
+
+		.row {
+			max-width: $narrow-max-width;
+		}
 
 		h2 {
 			// @extend %display-font;
@@ -34,13 +44,47 @@
 	&--work {
 		padding: rem-calc(0);
 
-		> .intro {
+		.intro {
 			padding: $standard-padding 0 0;
 
 			@include breakpoint(large) {
 				padding: $standard-padding*2 0 0;
 			}
 
+		}
+
+	}
+
+	&--skills {
+
+		h2 {
+			text-align: center;
+		}
+
+	}
+
+	&--contact {
+		text-align: center;
+
+		.social {
+			margin-top: rem-calc(20);
+		}
+
+	}
+
+	&__background-image {
+		@extend %overlay;
+		overflow: hidden;
+
+		&:after {
+			@extend %overlay;
+			content: '';
+			background-color: rgba(darken($burnt-orange, 20%), 0.5);
+		}
+
+		.image {
+			filter: blur(1px);
+			transform: scale(1.05);
 		}
 
 	}

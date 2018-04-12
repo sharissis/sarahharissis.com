@@ -1,6 +1,42 @@
 // Opinion: No underlines on links, but always underlines on hover (ian)
 a {
 
+	&.cta {
+		font-size: 1.25em;
+		font-weight: 700;
+
+		&:hover,
+		&:focus {
+
+			.icon {
+				left: 0.25em;
+			}
+
+		}
+
+		&,
+		.user-markup & {
+
+			&,
+			&:hover,
+			&:focus {
+				border-bottom: 0;
+			}
+
+		}
+
+		.icon {
+			vertical-align: middle;
+			width: 1.1em;
+			height: 1.1em;
+			position: relative;
+			top: -0.05em;
+			left: 0;
+			transition: left $transition-time;
+		}
+
+	}
+
 	.user-markup & {
 
 		border-bottom: 0.1em solid currentColor;

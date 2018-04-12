@@ -1,0 +1,20 @@
+.navigation {
+
+	// Variables
+	$this: &;
+	$color: $black;
+	$background-color: $white;
+
+	// Styles
+	z-index: 99;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	&__toggle {
+		width: rem-calc(40);
+		height: rem-calc(60);
+		display: inline-block;
+	}
+
+}

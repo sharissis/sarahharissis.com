@@ -45,25 +45,25 @@
 
 		#{$this}__item {
 
-			@include breakpoint($last-breakpoint) {
-				width: 25%;
-			}
-
-			&:nth-child(2n+1) {
-
-				@include breakpoint($last-breakpoint) {
-					clear: none;
-				}
-
-			}
-
-			&:nth-child(4n+1) {
-
-				@include breakpoint($last-breakpoint) {
-					clear: left;
-				}
-
-			}
+			// @include breakpoint($last-breakpoint) {
+			// 	width: 25%;
+			// }
+			//
+			// &:nth-child(2n+1) {
+			//
+			// 	@include breakpoint($last-breakpoint) {
+			// 		clear: none;
+			// 	}
+			//
+			// }
+			//
+			// &:nth-child(4n+1) {
+			//
+			// 	@include breakpoint($last-breakpoint) {
+			// 		clear: left;
+			// 	}
+			//
+			// }
 
 		}
 

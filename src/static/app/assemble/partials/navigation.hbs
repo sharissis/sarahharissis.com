@@ -1,0 +1,22 @@
+<!-- partial:navigation -->
+<div class="navigation">
+
+	{{!-- <a class="navigation__toggle" href="#js-navigation__nav" title="Toggle navigation">
+		{{svg "logo"}}
+		<span class="show-for-sr">Toggle navigation</span>
+	</a> --}}
+
+	{{#parseFixture 'panels.json'}}
+	<nav id="js-navigation__nav" class="navigation__nav">
+		<ul>
+			{{#each panels}}
+
+				<li><a href="#js-panel--{{id}}" title="Jump to the {{{nav-title}}} panel" class="show-on-focus">{{{nav-title}}}</a></li>
+
+			{{/each}}
+		</ul>
+	</nav>
+	{{/parseFixture}}
+
+</div>
+<!-- end partial:navigation -->

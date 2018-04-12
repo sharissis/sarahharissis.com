@@ -20,8 +20,8 @@
 .intro {
 	text-align: center;
 
-	.user-markup {
-		max-width: $global-width*0.66;
+	.row {
+		max-width: $narrow-max-width;
 		margin: 0 auto;
 	}
 
