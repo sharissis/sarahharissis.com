@@ -9,21 +9,10 @@
 	// Styles
 
 	&__row {
+		@extend %standard-section-padding;
 		// border-top: 1px solid darken($really-light-gray, 2%);
 		color: $almost-black;
 		background-color: $alt-almost-white;
-		padding-top: $standard-padding;
-		padding-bottom: $standard-padding;
-
-		@include breakpoint(large) {
-			padding-top: $standard-padding*2;
-			padding-bottom: $standard-padding*2;
-		}
-
-		@include breakpoint(xlarge) {
-			padding-top: $standard-padding*3;
-			padding-bottom: $standard-padding*3;
-		}
 
 		&:nth-child(odd) {
 
@@ -101,7 +90,7 @@
 			overflow: hidden;
 			// max-height: rem-calc(600);
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 			justify-content: center;
 		}
 

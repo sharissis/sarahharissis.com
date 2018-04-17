@@ -45,7 +45,19 @@
 }
 
 %standard-section-padding {
-	padding: $standard-padding 0;
+	padding-top: $standard-padding;
+	padding-bottom: $standard-padding;
+
+	@include breakpoint(large) {
+		padding-top: $standard-padding*2;
+		padding-bottom: $standard-padding*2;
+	}
+
+	@include breakpoint(xlarge) {
+		padding-top: $standard-padding*3;
+		padding-bottom: $standard-padding*3;
+	}
+
 }
 
 %animated-background-gradient {
@@ -58,4 +70,18 @@
 	font-family: $display-font;
 	font-weight: 400;
 	letter-spacing: 0;
+}
+
+%dark-links {
+
+	.user-markup a {
+		color: inherit;
+
+		&:focus,
+		&:hover {
+			color: $dark-link-color;
+		}
+
+	}
+
 }

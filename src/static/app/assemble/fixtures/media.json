@@ -16,7 +16,7 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2",
+						"icon": "code",
 						"type": "code"
 					},
 					{
@@ -53,7 +53,7 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2",
+						"icon": "code",
 						"type": "code"
 					},
 					{
@@ -80,7 +80,7 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2",
+						"icon": "code",
 						"type": "code"
 					},
 					{
@@ -107,7 +107,7 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2",
+						"icon": "code",
 						"type": "code"
 					},
 					{
@@ -134,7 +134,7 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2",
+						"icon": "code",
 						"type": "code"
 					},
 					{
@@ -156,7 +156,7 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2",
+						"icon": "code",
 						"type": "code"
 					},
 					{
@@ -183,7 +183,7 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2",
+						"icon": "code",
 						"type": "code"
 					},
 					{
@@ -203,7 +203,7 @@
 					},
 					{
 						"title": "Google Maps API",
-						"icon": "location-pin",
+						"icon": "location",
 						"type": "maps"
 					}
 				]
@@ -220,7 +220,7 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2",
+						"icon": "code",
 						"type": "code"
 					},
 					{
@@ -247,7 +247,7 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2",
+						"icon": "code",
 						"type": "code"
 					},
 					{
@@ -262,7 +262,7 @@
 					},
 					{
 						"title": "Google Maps API",
-						"icon": "location-pin",
+						"icon": "location",
 						"type": "maps"
 					}
 				]
@@ -279,7 +279,7 @@
 				"roles": [
 					{
 						"title": "Coding",
-						"icon": "code2",
+						"icon": "code",
 						"type": "code"
 					},
 					{

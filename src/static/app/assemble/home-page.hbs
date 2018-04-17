@@ -12,16 +12,4 @@ layout: 'home.hbs'
 
 	{{> _panels }}
 
-	<div>
-
-		{{#parseFixture '../../sass/icons/selection.json'}}
-			{{#each icons}}
-				<span style="display: inline-block; width: 100px; height: 100px;">
-					{{svg properties.name}}
-				</span>
-			{{/each}}
-		{{/parseFixture}}
-
-	</div>
-
 </main>

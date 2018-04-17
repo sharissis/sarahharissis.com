@@ -78,7 +78,7 @@ $purple: #4300b8;
 $fuschia: #c814c8;
 $red-violet: #b80072;
 $red: #e02c00;
-$orange: #f17000;
+$orange: #ee7600;
 $gold: #f2a900;
 $burnt-orange: #a54300;
 $purple2: #6400a8;
@@ -143,20 +143,20 @@ $header-lineheight: 1.1;
 $header-margin-bottom: rem-calc(15);
 $header-styles: (
   small: (
-    'h1': ('font-size': 36),
-    'h2': ('font-size': 30),
-    'h3': ('font-size': 26),
+    'h1': ('font-size': 48),
+    'h2': ('font-size': 36),
+    'h3': ('font-size': 24),
     'h4': ('font-size': 20),
     'h5': ('font-size': 18),
     'h6': ('font-size': 16),
   ),
-  medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 32),
-    'h4': ('font-size': 26),
-    'h5': ('font-size': 24),
-    'h6': ('font-size': 20),
+  large: (
+    'h1': ('font-size': 60),
+    'h2': ('font-size': 48),
+    'h3': ('font-size': 36),
+    'h4': ('font-size': 24),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 18),
   ),
 );
 // $header-text-rendering: optimizeLegibility;
@@ -172,7 +172,7 @@ $paragraph-margin-bottom: rem-calc(15);
 // $code-border: 1px solid $medium-gray;
 // $code-padding: rem-calc(2 5 1);
 $anchor-color: inherit;
-$anchor-color-hover: $red-violet;
+$anchor-color-hover: $gold;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 // $hr-width: $global-width;

@@ -15,6 +15,38 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
+.icon-star {
+  width: 0.9287109375em;
+}
+
+.icon-star-solid {
+  width: 0.9287109375em;
+}
+
+.icon-file-pdf {
+  width: 0.857421875em;
+}
+
+.icon-file {
+  width: 0.857421875em;
+}
+
+.icon-file-text-solid {
+  width: 0.857421875em;
+}
+
+.icon-file-solid {
+  width: 0.857421875em;
+}
+
+.icon-paper-plane {
+  width: 1.0009765625em;
+}
+
+.icon-paper-plane-solid {
+  width: 1.0009765625em;
+}
+
 .icon-bug {
   width: 0.9287109375em;
 }

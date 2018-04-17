@@ -37,6 +37,10 @@ a {
 
 	}
 
+	.icon {
+		transition: color $transition-time;
+	}
+
 	.user-markup & {
 
 		border-bottom: 0.1em solid currentColor;

@@ -8,7 +8,7 @@
 $header-breakpoint: large; // Used for consistent mobile to desktop header style switching
 $layout-breakpoint: medium;
 $below-header-breakpoint: ($layout-breakpoint - rem-calc(1)) down;
-$type-breakpoint: xlarge;
+$type-breakpoint: large;
 
 // Timing
 $transition-time: 0.3s; // Common transition time for hover states, etc.
@@ -22,13 +22,13 @@ $display-font: $shrikhand;
 
 // Colors
 $placeholder-color: $almost-black;
+$dark-link-color: $red-violet;
 
 // Misc
-$standard-padding: rem-calc(20);
 $cool-gradient: linear-gradient($purple 0%, $fuschia 25%, $red-violet 50%, $red 75%, $gold 100%) 1 100%;
 $hover-classes: '.md-no-touchevents &';
 $standard-blur: 2px;
 $standard-border: 4px;
-$standard-padding: rem-calc(30);
+$standard-padding: rem-calc(40);
 $standard-inset-shadow: inset 0 5px 15px 0 rgba($almost-black, 0.1);
-$narrow-max-width: $global-width*0.75;
+$narrow-max-width: $global-width*0.7;

@@ -7,8 +7,12 @@
 		font-size: rem-calc(16);
 	}
 
-	> :last-child {
-		margin-bottom: 0;
+	&.center {
+		text-align: center;
 	}
+
+	// > :last-child {
+	// 	margin-bottom: 0;
+	// }
 
 }

@@ -5,12 +5,12 @@
 		"items": [
 			{
 				"title": "Front-End Coding",
-				"icon": "code2",
+				"icon": "code",
 				"desc": "I develop sites from the ground up using HTML5, CSS3, JavaScript, and other industry-standard technologies. All my code is well-documented, continually refactored, and adheres to strict coding standards. Each website starts with a blank canvas, making every one truly unique and catered to your needs."
 			},
 			{
 				"title": "Responsive Design",
-				"icon": "phone",
+				"icon": "devices",
 				"desc": "I have a breadth of experience developing adaptive interfaces and working within the nuances of various environments. I develop for the best case scenario while using progressive enhancement to ensure the best possible experience within the constraints of all major browsers, devices, and operating systems."
 			},
 			{
@@ -20,7 +20,7 @@
 			},
 			{
 				"title": "Precision &amp; Integrity",
-				"icon": "heart-outlined",
+				"icon": "star",
 				"desc": "My attention to detail, thoroughness, and care for the work that I do is unparalleled. I stand behind every line of code I write, and believe that delivering the highest quality product to my clients is of utmost importance."
 			}
 		]

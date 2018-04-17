@@ -7,11 +7,16 @@
 	$transition-time: $panel-transition-time;
 
 	// Styles
-	border: $standard-border solid rgba($almost-white, 0.5);
+	background-color: rgba($almost-white, 0.5);
 	border-radius: 100%;
 	width: rem-calc(250);
 	height: rem-calc(250);
-	margin: 0 auto;
+	margin: $standard-padding auto;
+
+	@include breakpoint(medium) {
+		width: rem-calc(350);
+		height: rem-calc(350);
+	}
 
 	&:hover,
 	&:focus {

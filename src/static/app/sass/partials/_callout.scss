@@ -10,13 +10,14 @@
 	position: relative;
 
 	&__icon {
-		width: rem-calc(50);
-		height: rem-calc(50);
-		margin: 0 auto $standard-padding;
+		width: rem-calc(75);
+		height: rem-calc(75);
+		margin: 0 auto rem-calc(25);
 
-		@include breakpoint(medium) {
+		@include breakpoint($type-breakpoint) {
 			width: rem-calc(100);
 			height: rem-calc(100);
+			margin: 0 auto $standard-padding;
 		}
 
 	}

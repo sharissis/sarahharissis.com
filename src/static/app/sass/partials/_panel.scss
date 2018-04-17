@@ -42,6 +42,7 @@
 	}
 
 	&--work {
+		@extend %dark-links;
 		padding: rem-calc(0);
 
 		.intro {
@@ -59,6 +60,7 @@
 
 		h2 {
 			text-align: center;
+			margin-bottom: 1.6em;
 		}
 
 	}
