@@ -7,27 +7,15 @@
 
 	// Styles
 
-	ul {
-		display: flex;
-		flex-wrap: wrap;
-		max-width: $global-width*0.3;
-		margin: 0 auto;
+	&__item {
+		display: inline-block;
 	}
 
-	li {
-		flex: 1;
-		margin: rem-calc(0 4 12);
-	}
-
-	a {
+	&__link {
 		display: block;
 		width: rem-calc(40);
 		height: rem-calc(40);
 		margin: 0 auto;
-	}
-
-	.icon {
-
 	}
 
 }

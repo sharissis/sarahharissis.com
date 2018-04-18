@@ -14,7 +14,6 @@
 		{{#stringCompare id "hello"}}
 
 			<div class="row">
-
 				<div class="columns">
 
 					<div class="panel__logo">
@@ -22,11 +21,10 @@
 					</div>
 
 					<div class="user-markup center">
-						<h2><em>Hello!</em>&nbsp;&nbsp;I'm Sarah <span class="nowrap"><span class="tooltip" data-tooltip="(ha-REE-sees)">Harissis</span>.</span></h2>
+						<h2 aria-label="Hello! I'm Sarah Harissis (pronounced ha-REE-sees)."><em>Hello!</em>&nbsp;&nbsp;I'm Sarah <span class="nowrap"><span class="tooltip" data-tooltip="(ha-REE-sees)">Harissis</span>.</span></h2>
 					</div>
 
 				</div>
-
 			</div>
 
 			<div class="row row--flex">
@@ -45,9 +43,10 @@
 
 					</div>
 
-				</div>
+					{{> social }}
 
 				</div>
+
 			</div>
 
 		{{/stringCompare}}

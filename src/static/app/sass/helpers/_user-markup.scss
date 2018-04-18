@@ -1,15 +1,7 @@
 // For all WYSIWYG powered text
 
 .user-markup {
-	font-size: rem-calc(13);
-
-	@include breakpoint(phablet) {
-		font-size: rem-calc(14);
-	}
-
-	@include breakpoint($type-breakpoint) {
-		font-size: rem-calc(16);
-	}
+	@extend %standard-copy-sizes;
 
 	&.center {
 		text-align: center;

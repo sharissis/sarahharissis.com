@@ -69,6 +69,7 @@
 
 	$background-darken: 17.5%;
 
+	background-color: darken($purple, $background-darken); // Fallback
 	background: linear-gradient(150deg, darken($purple, $background-darken) 20%, darken($red-violet, $background-darken) 50%, darken($red, $background-darken) 80%);
 	background-size: 250% 250%;
 	animation: background-color-fade 20s ease infinite;
@@ -91,6 +92,19 @@
 			color: $dark-link-color;
 		}
 
+	}
+
+}
+
+%standard-copy-sizes {
+	font-size: rem-calc(13);
+
+	@include breakpoint(medium) {
+		font-size: rem-calc(14);
+	}
+
+	@include breakpoint($type-breakpoint) {
+		font-size: rem-calc(16);
 	}
 
 }

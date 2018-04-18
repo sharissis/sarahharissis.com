@@ -34,3 +34,16 @@
 .nowrap {
 	white-space: nowrap;
 }
+
+.logo-container {
+
+	&:hover .icon-logo {
+		transform: rotate(180deg);
+	}
+
+	.icon-logo {
+		transform: rotate(0deg);
+		transition: transform $transition-time;
+	}
+
+}
