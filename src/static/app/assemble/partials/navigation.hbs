@@ -1,17 +1,21 @@
 <!-- partial:navigation -->
-<div class="navigation">
+<div class="navigation clearfix">
 
-	{{!-- <a class="navigation__toggle" href="#js-navigation__nav" title="Toggle navigation">
+	<a class="navigation__toggle" href="#js-navigation__nav" title="Toggle navigation">
 		{{svg "logo"}}
 		<span class="show-for-sr">Toggle navigation</span>
-	</a> --}}
+	</a>
 
 	{{#parseFixture 'panels.json'}}
 	<nav id="js-navigation__nav" class="navigation__nav">
-		<ul>
+		<ul class="navigation__list">
 			{{#each panels}}
 
-				<li><a href="#js-panel--{{id}}" title="Jump to the {{{nav-title}}} panel" class="show-on-focus">{{{nav-title}}}</a></li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#js-panel--{{id}}" title="Jump to the {{{nav-title}}} panel">
+						<span class="text">{{{nav-title}}}</span>
+					</a>
+				</li>
 
 			{{/each}}
 		</ul>

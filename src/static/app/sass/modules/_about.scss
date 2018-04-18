@@ -11,11 +11,10 @@
 
 	.row {
 		z-index: 1;
-		position: relative;
 	}
 
-	&__content {
-
+	.columns {
+		position: relative;
 	}
 
 	.user-markup {
@@ -24,7 +23,7 @@
 		p {
 			font-weight: 500;
 		}
-		
+
 	}
 
 }

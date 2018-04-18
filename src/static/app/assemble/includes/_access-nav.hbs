@@ -5,7 +5,7 @@
 	{{#parseFixture 'panels.json'}}
 		{{#each panels}}
 
-			<a class="show-on-focus" href="#{{id}}" tabindex="-1">Jump to {{{title}}} section</a>
+			<a class="show-on-focus" href="#js-panel--{{id}}" tabindex="-1">Jump to {{{title}}} section</a>
 
 		{{/each}}
 	{{/parseFixture}}
