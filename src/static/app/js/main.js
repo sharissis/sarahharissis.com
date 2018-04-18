@@ -29,10 +29,30 @@ var sh = sh || {};
 		},
 
 		bindUIEvents: function () {
+			var _this = this;
 
 			$(window).on('load scroll resize orientationchange', function (event) {
 
 			});
+
+			$('#js-navigation .navigation__link').on('click', function (event) {
+				event.preventDefault();
+
+				var href = $(this).attr('href');
+				var $el = $(href);
+				var offset = -($('#js-navigation__nav').height());
+
+				_this.scrollToElement($el, offset);
+
+			});
+
+		},
+
+		scrollToElement: function ($el, offset) {
+
+			$('html, body').animate({
+				scrollTop: $el.offset().top + offset
+			}, 1250);
 
 		}
 

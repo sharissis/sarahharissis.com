@@ -30,23 +30,34 @@
 	&:focus #{$this}__nav,
 	&__toggle:hover ~ #{$this}__nav,
 	&__toggle:focus ~ #{$this}__nav {
+		box-shadow: 0 1px 10px 0 rgba($almost-black, 0.1);
 		transform: translateY(0%);
 		transition-delay: 0s;
+	}
+
+	&__toggle,
+	&__nav,
+	&__item,
+	&__link {
+		height: rem-calc(48);
+
+		@include breakpoint($global-width + $standard-padding) {
+			height: rem-calc(60);
+		}
+
 	}
 
 	&__toggle {
 		z-index: 1;
 		width: rem-calc(40);
-		height: rem-calc(40);
 		display: inline-block;
-		padding: rem-calc(7 9 1 0);
+		padding: rem-calc(0 10 0 1);
 		position: absolute;
 		top: 0;
 		left: 0;
 
 		@include breakpoint($global-width + $standard-padding) {
-			height: rem-calc(48);
-			padding: rem-calc(8 0 0);
+			padding: rem-calc(0 0 0 1);
 		}
 
 		.icon {
@@ -58,23 +69,13 @@
 
 	}
 
-	&__nav,
-	&__item,
-	&__link {
-		height: rem-calc(48);
-
-		@include breakpoint($global-width + $standard-padding) {
-			height: rem-calc(56);
-		}
-
-	}
-
 	&__nav {
-		background-color: $almost-white;
+		box-shadow: 0 1px 10px 0 transparent;
+		background-color: rgba($white, 0.95);
 		padding-left: rem-calc(40);
 		padding-right: rem-calc(15);
 		transform: translateY(-101%);
-		transition: transform $transition-time;
+		transition: transform $transition-time, box-shadow $transition-time;
 		transition-delay: $nav-close-delay;
 		position: absolute;
 		top: 0;
@@ -108,18 +109,51 @@
 
 	&__item {
 		text-align: center;
-		padding-bottom: 0.125em;
 	}
 
 	&__link {
-		color: $almost-black;
 		font-weight: 500;
 		line-height: 1;
-		padding: 0.25em;
+		padding: 0.25em 0.25em 0.45em;
 		min-width: rem-calc(40);
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		&,
+		&:hover,
+		&:focus {
+			color: $almost-black;
+		}
+
+		&:hover,
+		&:focus {
+
+			#{$this}__link-text:after {
+				width: 100%;
+			}
+
+		}
+
+	}
+
+	&__link-text {
+		display: inline-block;
+		position: relative;
+
+		&:after {
+			content: '';
+			background-color: currentColor;
+			display: block;
+			height: rem-calc(2);
+			position: absolute;
+			left: 50%;
+			transform: translatex(-50%);
+			bottom: -0.25em;
+			width: 0%;
+			transition: width $transition-time;
+		}
+
 	}
 
 }
