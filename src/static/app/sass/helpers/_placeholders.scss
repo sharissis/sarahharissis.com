@@ -58,6 +58,11 @@
 		padding-bottom: $standard-padding*3;
 	}
 
+	@include breakpoint(xxlarge) {
+		padding-top: $standard-padding*4;
+		padding-bottom: $standard-padding*4;
+	}
+
 }
 
 %animated-background-gradient {
@@ -67,7 +72,7 @@
 	background: linear-gradient(150deg, darken($purple, $background-darken) 20%, darken($red-violet, $background-darken) 50%, darken($red, $background-darken) 80%);
 	background-size: 250% 250%;
 	animation: background-color-fade 20s ease infinite;
-	
+
 }
 
 %display-font {

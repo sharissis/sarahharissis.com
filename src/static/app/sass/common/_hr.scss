@@ -1,10 +1,9 @@
 // A better looking default horizontal rule
 hr {
-	border-width: 1px 0 0;
-	border-style: solid;
-	border-color: $silver;
+	border: 0;
+	background-color: currentColor;
 	display: block;
-	height: 1px;
+	height: $standard-border;
 	margin: $standard-padding/2 0;
 	padding: 0;
 
@@ -13,11 +12,12 @@ hr {
 	}
 
 	&.tall {
-		background-color: currentColor;
-		border: 0;
+		margin: $standard-padding 0;
+	}
+
+	&.thick {
 		border-radius: $standard-border*0.75;
 		height: $standard-border*1.5;
-		margin: $standard-padding 0;
 	}
 
 	&.gradient {
@@ -27,6 +27,15 @@ hr {
 	&.centered {
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	&.transparent {
+		opacity: $standard-transparency;
+	}
+
+	&.thin {
+		border-radius: $standard-border/4;
+		height: $standard-border/2;
 	}
 
 }

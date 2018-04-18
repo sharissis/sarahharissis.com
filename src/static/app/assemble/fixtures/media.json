@@ -7,8 +7,7 @@
 				"title": "Chapman University",
 				"subtitle": "Degrees &amp; Programs Finder",
 				"img": "img/site-screenshots/chapman-dp.jpg",
-				"intro": "This powerful program finder is a multi-faceted, interest-oriented search to help prospective students find the perfect academic program to match their passions and strengths.",
-				"desc": "<p>I developed all of the filtering logic for this search myself – no JavaScript libraries or frameworks were used except for jQuery. The programming was complex and had many nuances, but the experience gained along the way made it well worth it. This is one of the best examples of my independant, challenge-driven coding style.</p>",
+				"desc": "<p>This powerful program finder is a multi-faceted, interest-oriented search to help prospective students find the perfect academic program to match their passions and strengths.</p><p>I developed all of the filtering logic for this search myself – no JavaScript libraries or frameworks were used except for jQuery. The programming was complex and had many nuances, but the experience gained along the way made it well worth it. This is one of the best examples of my independant, challenge-driven coding style.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "https://www.chapman.edu/academics/degrees-and-programs.aspx"

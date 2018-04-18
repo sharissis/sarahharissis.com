@@ -62,7 +62,7 @@
 
 							<h2 class="panel__heading">{{{title}}}</h2>
 
-							<hr class="gradient narrow tall centered">
+							<hr class="gradient narrow tall thick centered">
 
 							<p>As a developer at an ever-changing, fast-paced agency, I'm usually working on multiple projects simultaneously. These are a few recent projects I've taken a prominent role in developing, each with a list of tasks I was responsible for.</p>
 
@@ -84,7 +84,10 @@
 				<div class="columns">
 
 					<div class="user-markup">
-						<h2 class="panel__heading">{{{title}}}</h2>
+						<h2 class="panel__heading" aria-label="{{{title}}}">
+							<span>{{{title}}}</span>
+						</h2>
+						<hr class="transparent thin tall centered">
 					</div>
 
 					{{#parseFixture 'callouts.json'}}
