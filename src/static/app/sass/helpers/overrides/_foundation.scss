@@ -75,15 +75,14 @@ $almost-white: rgba($white, 0.89);
 $alt-almost-white: rgba($white, 0.99);
 $almost-black: #1c1910;
 $purple: #4300b8;
-$fuschia: #c814c8;
+$fuschia: #b314dc;
 $red-violet: #b80072;
 $red: #e02c00;
-$orange: #ee7600;
+$orange: #e66400;
 $gold: #f2a900;
 $burnt-orange: #a54300;
 $purple2: #6400a8;
 
-$body-background: $almost-black;
 $body-font-color: $almost-white;
 $body-font-family: 'Barlow', Helvetica, Arial, sans-serif;
 // $body-antialiased: true;
@@ -140,9 +139,17 @@ $header-font-weight: 700;
 $font-family-monospace: 'Lekton', Consolas, monospace;
 // $header-color: inherit;
 $header-lineheight: 1.1;
-$header-margin-bottom: rem-calc(15);
+$header-margin-bottom: rem-calc(30);
 $header-styles: (
   small: (
+    'h1': ('font-size': 36),
+    'h2': ('font-size': 32),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 20),
+    'h5': ('font-size': 18),
+    'h6': ('font-size': 16),
+  ),
+  medium: (
     'h1': ('font-size': 48),
     'h2': ('font-size': 36),
     'h3': ('font-size': 24),

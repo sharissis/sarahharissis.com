@@ -149,13 +149,13 @@
 
 		#{$this}__title,
 		#{$this}__subtitle {
-			margin-bottom: 0.25em;
+			margin-bottom: 0.2em;
 		}
 
 	}
 
 	.roles {
-		margin-top: $standard-padding/2;
+		margin-top: rem-calc(20);
 	}
 
 }

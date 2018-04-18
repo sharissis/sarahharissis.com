@@ -31,28 +31,30 @@
 	margin: 0 0.125em 0.5em;
 	padding: $padding $padding*1.5 $padding $padding*1.25;
 
+	$darken: 2.5%;
+
 	&--code {
-		background-color: $purple;
+		background-color: darken($purple, $darken);
 	}
 
 	&--cms {
-		background-color: $fuschia;
+		background-color: darken($fuschia, $darken);
 	}
 
 	&--bug {
-		background-color: $red-violet;
+		background-color: darken($red-violet, $darken);
 	}
 
 	&--design {
-		background-color: $red;
+		background-color: darken($red, $darken);
 	}
 
 	&--app {
-		background-color: $orange;
+		background-color: darken($orange, $darken);
 	}
 
 	&--maps {
-		background-color: $gold;
+		background-color: darken($gold, $darken);
 	}
 
 	&--teaching { // Maybe

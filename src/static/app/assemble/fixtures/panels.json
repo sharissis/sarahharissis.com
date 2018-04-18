@@ -5,8 +5,7 @@
 			"modifiers": ["active"],
 			"id": "hello",
 			"nav-title": "Hello",
-			"title": "Hello!",
-			"subtitle": "I'm Sarah Harissis."
+			"title": "Hello, I'm Sarah Harissis."
 		},
 		{
 			"id": "work",

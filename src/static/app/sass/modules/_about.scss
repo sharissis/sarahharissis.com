@@ -6,19 +6,8 @@
 	$background-color: $white;
 
 	// Styles
-	padding-top: $standard-padding*2;
-	padding-bottom: $standard-padding*2;
+	padding: $standard-padding 0;
 	position: relative;
-
-	@include breakpoint(medium) {
-		padding-top: $standard-padding*3;
-		padding-bottom: $standard-padding*3;
-	}
-
-	@include breakpoint(xlarge) {
-		padding-top: $standard-padding*4;
-		padding-bottom: $standard-padding*4;
-	}
 
 	.row {
 		z-index: 1;
@@ -27,8 +16,15 @@
 
 	&__content {
 
+	}
 
+	.user-markup {
+		text-shadow: 0.1em 0.15em 0.3em rgba($almost-black, 0.5);
 
+		p {
+			font-weight: 500;
+		}
+		
 	}
 
 }

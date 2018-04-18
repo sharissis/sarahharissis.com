@@ -61,9 +61,13 @@
 }
 
 %animated-background-gradient {
-	background: linear-gradient(150deg, $burnt-orange, $purple);
-	background-size: 400% 400%;
-	animation: background-color-fade 25s ease infinite;
+
+	$background-darken: 17.5%;
+
+	background: linear-gradient(150deg, darken($purple, $background-darken) 20%, darken($red-violet, $background-darken) 50%, darken($red, $background-darken) 80%);
+	background-size: 250% 250%;
+	animation: background-color-fade 20s ease infinite;
+	
 }
 
 %display-font {

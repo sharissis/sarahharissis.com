@@ -7,15 +7,15 @@
 	$transition-time: $panel-transition-time;
 
 	// Styles
-	background-color: rgba($almost-white, 0.5);
+	background-color: rgba($almost-white, $standard-transparency);
 	border-radius: 100%;
-	width: rem-calc(250);
-	height: rem-calc(250);
-	margin: $standard-padding auto;
+	width: 100%;
+	max-width: rem-calc(220);
+	margin: 0 auto $standard-padding;
+	position: relative;
 
-	@include breakpoint(medium) {
-		width: rem-calc(350);
-		height: rem-calc(350);
+	@include breakpoint(phablet) {
+		max-width: none;
 	}
 
 	&:hover,
@@ -38,8 +38,7 @@
 	&__image {
 		border-radius: 100%;
 		display: none;
-		width: 100%;
-		height: 100%;
+		padding: rem-calc(8);
 
 		&--primary {
 			display: block;

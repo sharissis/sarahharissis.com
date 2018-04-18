@@ -6,9 +6,8 @@ h3,
 h4,
 h5,
 h6 {
-	letter-spacing: -0.015em;
+	letter-spacing: -($standard-letter-spacing);
 	// text-transform: uppercase;
-	margin-bottom: 0.8em;
 }
 
 h1 {

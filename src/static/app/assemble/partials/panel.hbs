@@ -14,14 +14,28 @@
 		{{#stringCompare id "hello"}}
 
 			<div class="row">
+
 				<div class="columns">
 
-					<div class="user-markup center">
-						<h2>{{{title}}}</h2>
-						<h3 class="subheading">{{{subtitle}}}</h3>
+					<div class="panel__logo">
+						{{svg "logo"}}
 					</div>
 
+					<div class="user-markup center">
+						<h2><em>Hello!</em>&nbsp;&nbsp;I'm Sarah <span class="nowrap"><span class="tooltip" data-tooltip="(ha-REE-sees)">Harissis</span>.</span></h2>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row row--flex">
+
+				<div class="columns phablet-5 medium-4">
 					{{> portrait }}
+				</div>
+
+				<div class="columns phablet-7 medium-8">
 
 					<div class="user-markup">
 
@@ -30,6 +44,8 @@
 						<p>I'm known to be an avid problem solver with meticulous attention to detail, which shines through in all of the work I produce. My foundation in design and UX is a rare hybrid of form and function, making me stand out amoungst my colleagues.</p>
 
 					</div>
+
+				</div>
 
 				</div>
 			</div>
@@ -44,7 +60,7 @@
 
 						<div class="user-markup">
 
-							<h2>{{{title}}}</h2>
+							<h2 class="panel__heading">{{{title}}}</h2>
 
 							<hr class="gradient narrow tall centered">
 
@@ -68,7 +84,7 @@
 				<div class="columns">
 
 					<div class="user-markup">
-						<h2>{{{title}}}</h2>
+						<h2 class="panel__heading">{{{title}}}</h2>
 					</div>
 
 					{{#parseFixture 'callouts.json'}}
@@ -92,7 +108,7 @@
 				<div class="columns">
 
 					<div class="user-markup">
-						<h2>{{{title}}}</h2>
+						<h2 class="panel__heading">{{{title}}}</h2>
 						<p>Interested in working together? I'd love to hear from you!</p>
 					</div>
 

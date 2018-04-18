@@ -4,16 +4,10 @@
 	$this: &;
 	$color: $black;
 	$background-color: $white;
-	$transition-time: $panel-transition-time;
 
 	// Styles
 	@extend %standard-section-padding;
 	min-height: 100vh;
-	// opacity: 0;
-	// overflow-y: scroll;
-	// transition: opacity $panel-transition-time;
-	// width: 100%;
-	// height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -30,13 +24,110 @@
 
 	&--hello {
 
-		.row {
-			max-width: $narrow-max-width;
+		.row--flex {
+
+			@include breakpoint(phablet) {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+		}
+
+		#{$this}__logo {
+			opacity: 0.89;
+			width: rem-calc(65);
+			height: rem-calc(65);
+			margin: 0 auto $standard-padding;
+
+			@include breakpoint(phablet) {
+				width: rem-calc(90);
+				height: rem-calc(90);
+			}
+
+			@include breakpoint(medium) {
+				width: rem-calc(110);
+				height: rem-calc(110);
+			}
+
+			@include breakpoint(large) {
+				width: rem-calc(125);
+				height: rem-calc(125);
+			}
+
+			@include breakpoint(xlarge) {
+				width: rem-calc(150);
+				height: rem-calc(150);
+			}
+
 		}
 
 		h2 {
-			// @extend %display-font;
-			font-size: rem-calc(48);
+
+			$h2-breakpoint: rem-calc(500);
+
+			margin-bottom: $standard-padding;
+
+			@include breakpoint($h2-breakpoint) {
+				white-space: nowrap;
+			}
+
+			@include breakpoint(phablet) {
+				font-size: rem-calc(48);
+			}
+
+			@include breakpoint(medium) {
+				font-size: rem-calc(54);
+				margin-bottom: $standard-padding*1.5;
+			}
+
+			@include breakpoint($type-breakpoint) {
+				font-size: rem-calc(72);
+				margin-bottom: $standard-padding*2;
+			}
+
+			em {
+				// opacity: 0.89;
+				// color: lighten($gold, 20%);
+				// font-style: normal;
+				letter-spacing: $standard-letter-spacing;
+
+				@include breakpoint(($h2-breakpoint - rem-calc(1)) down) {
+					font-size: 1.625em;
+					display: block;
+					margin-bottom: 0.25em;
+				}
+
+			}
+
+		}
+
+		.tooltip {
+			cursor: pointer;
+			border-bottom: 0.075em dotted rgba($body-font-color, $standard-transparency);
+			display: inline-block;
+			position: relative;
+
+			&:hover:before {
+				opacity: 1;
+				bottom: 95%;
+			}
+
+			&:before {
+				content: attr(data-tooltip);
+				opacity: 0;
+				transition: opacity $transition-time, bottom $transition-time;
+				font-size: 0.375em;
+				font-weight: 500;
+				letter-spacing: 0.0375em;
+				display: inline-block;
+				position: absolute;
+				white-space: nowrap;
+				bottom: 45%;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
 		}
 
 	}
@@ -65,6 +156,10 @@
 
 	}
 
+	&--about {
+		align-items: flex-end;
+	}
+
 	&--contact {
 		text-align: center;
 
@@ -74,14 +169,21 @@
 
 	}
 
+	&__heading {
+		letter-spacing: $standard-letter-spacing;
+		font-style: italic;
+	}
+
 	&__background-image {
 		@extend %overlay;
 		overflow: hidden;
+		opacity: 0.8;
 
 		&:after {
 			@extend %overlay;
 			content: '';
-			background-color: rgba(darken($burnt-orange, 20%), 0.5);
+			opacity: 0.89;
+			background: linear-gradient(transparent 40%, $almost-black 99%);
 		}
 
 		.image {
