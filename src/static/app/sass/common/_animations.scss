@@ -1,4 +1,7 @@
 // scss-lint:disable VendorPrefix
+
+// Background Color Fade
+
 @-webkit-keyframes background-color-fade {
 
 	0% {
@@ -46,4 +49,43 @@
 	}
 
 }
+
+// Spin 180
+
+@-webkit-keyframes spin-180 {
+
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(180deg);
+	}
+
+}
+
+@-moz-keyframes spin-180 {
+
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(180deg);
+	}
+
+}
+
+@keyframes spin-180 {
+
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(180deg);
+	}
+
+}
+
 // scss-lint:enable VendorPrefix

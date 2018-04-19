@@ -6,38 +6,37 @@
 <!--[if gt IE 9]><!--> <html class="md-no-js" lang="en"> <!--<![endif]-->
 <head>
 
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    
-    <meta name="description" content="Static Coding"/>
-    
-    <!-- http://microformats.org/wiki/hcard-cheatsheet -->
-    <link rel="profile" href="http://microformats.org/profile/hcard"/>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	
+	<meta name="description" content="Static Coding"/>
+	
+	<!-- http://microformats.org/wiki/hcard-cheatsheet -->
+	<link rel="profile" href="http://microformats.org/profile/hcard"/>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <title>Static Assets</title>
+	<title>Home Page</title>
 
-    <link rel="stylesheet" href="css/main.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700,700i" rel="stylesheet">
 
-    <style type="text/css">
-        html, body { text-align: center; }
-        .container { max-width: 768px; text-align: left; margin: 0 auto; padding: 20px; }
-        .container h1,
-        .container h2 { line-height: 1.000em; color: #333; }
-        .container h1 { text-align: center; font-size: 2em; }
-        .container h2 { font-size: 1.5em; border-bottom: 1px solid #333; padding-bottom: 5px; margin-top: 1em; }
-        .zebra-striping { list-style: none; margin: 0; padding: 0 0; }
-        .zebra-striping li:nth-child(odd) { background-color: #eee; }
-        .zebra-striping li:hover { background-color: #ccc; }
-        .zebra-striping li a:link,
-        .zebra-striping li a:visited { display: block; color: #333; text-decoration: none; padding: 5px 15px; }
-        .zebra-striping li a:hover { font-weight: bold; }
-    </style>
+	<link rel="stylesheet" href="css/main.css"/>
 
-    <script src="js/plugins/modernizr.optimized.js"></script>
+	<script src="js/plugins/modernizr.optimized.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83193400-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+	
+		gtag('config', 'UA-83193400-2');
+	</script>
 
 </head>
-<body>
+
+<body class="recently-loaded">
 
 	<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>
@@ -434,33 +433,1349 @@
 	</defs>
 	</svg>
 
-    <div class="container">
+	<div class="access-nav" aria-role="navigation">
+	
+		<a class="show-on-focus" href="#main" tabindex="-1">Jump to Main Content</a>
+	
+	
+				<a class="show-on-focus" href="#js-panel--hello" tabindex="-1">Jump to Hello, I'm Sarah Harissis. section</a>
+	
+	
+				<a class="show-on-focus" href="#js-panel--work" tabindex="-1">Jump to Recent Projects section</a>
+	
+	
+				<a class="show-on-focus" href="#js-panel--skills" tabindex="-1">Jump to Skills section</a>
+	
+	
+				<a class="show-on-focus" href="#js-panel--about" tabindex="-1">Jump to A Bit About Myself section</a>
+	
+	
+				<a class="show-on-focus" href="#js-panel--contact" tabindex="-1">Jump to Get in Touch section</a>
+	
+	
+		<a class="show-on-focus" href="#js-global-footer" tabindex="-1">Jump to Footer</a>
+	
+	</div>
 
-        
-
-<h1>Project Name</h1>
-
-<h2>Templates</h2>
-<ul class="zebra-striping">
-			<li><a href="/home-page.html">Home Page</a></li>
-</ul>
-
-<h2>Modules</h2>
-<ul class="zebra-striping">
-			<li><a href="/modules/_about.html">About</a></li>
-			<li><a href="/modules/_callouts.html">Callouts</a></li>
-			<li><a href="/modules/_global-footer.html">Global Footer</a></li>
-			<li><a href="/modules/_global-header.html">Global Header</a></li>
-			<li><a href="/modules/_media.html">Media</a></li>
-			<li><a href="/modules/_panels.html">Panels</a></li>
-</ul>
+	<div class="container">
 
 
-    </div>
+		
 
-    <script src="js/main.js"></script>
+<main id="main" class="main">
+
+	<h1 class="show-for-sr">Sarah Harissis' Portfolio Website</h1>
+
+	<!-- partial:navigation -->
+	<div id="js-navigation" class="navigation navigation--interact-with-me clearfix">
+	
+		<a id="js-navigation__toggle" class="navigation__toggle" href="#js-navigation__nav" title="Hover to toggle hidden navigation, click to toggle sticky navigation">
+			<svg class="icon icon-logo"><use xlink:href="#icon-logo"></use></svg>
+			<span class="show-for-sr">Hover to toggle hidden navigation, click to toggle sticky navigation</span>
+		</a>
+	
+		<nav id="js-navigation__nav" class="navigation__nav">
+			<ul class="navigation__list">
+	
+					<li class="navigation__item">
+						<a class="navigation__link" href="#js-panel--hello" title="Jump to the Hello panel">
+							<span class="navigation__link-text">Hello</span>
+						</a>
+					</li>
+	
+	
+					<li class="navigation__item">
+						<a class="navigation__link" href="#js-panel--work" title="Jump to the Work panel">
+							<span class="navigation__link-text">Work</span>
+						</a>
+					</li>
+	
+	
+					<li class="navigation__item">
+						<a class="navigation__link" href="#js-panel--skills" title="Jump to the Skills panel">
+							<span class="navigation__link-text">Skills</span>
+						</a>
+					</li>
+	
+	
+					<li class="navigation__item">
+						<a class="navigation__link" href="#js-panel--about" title="Jump to the About panel">
+							<span class="navigation__link-text">About</span>
+						</a>
+					</li>
+	
+	
+					<li class="navigation__item">
+						<a class="navigation__link" href="#js-panel--contact" title="Jump to the Contact panel">
+							<span class="navigation__link-text">Contact</span>
+						</a>
+					</li>
+	
+			</ul>
+		</nav>
+	
+	</div>
+	<!-- end partial:navigation -->
+
+	
+	
+	<!-- module:panels -->
+	<div id="panels" class="panels clearfix">
+	
+	
+			<!-- partial:panel -->
+			<section id="js-panel--hello" class="panel panel--hello panel--active">
+			
+			
+				<div class="panel__inner">
+			
+			
+						<div class="row">
+							<div class="columns">
+			
+			
+								<div class="user-markup center">
+									<h2 aria-label="Hello! I'm Sarah Harissis (pronounced ha-REE-sees)."><em>Hello!</em>&nbsp;&nbsp;I'm Sarah <span class="nowrap"><span class="tooltip" data-tooltip="(ha-REE-sees)">Harissis</span>.</span></h2>
+								</div>
+			
+							</div>
+						</div>
+			
+						<div class="row row--flex">
+			
+							<div class="columns phablet-5 medium-4">
+								<!-- partial:portrait -->
+								<figure id="js-portrait" class="portrait">
+								
+									<img src="img/opt/hat1.jpg" alt="Picture of Sarah Harissis" class="portrait__image portrait__image--smile">
+								
+									<img src="img/opt/hat2.jpg" alt="Picture of Sarah Harissis" class="portrait__image portrait__image--eyebrow-raise">
+								
+									<img src="img/opt/hat3.jpg" alt="Picture of Sarah Harissis" class="portrait__image portrait__image--furrowed-brow">
+								
+								</figure>
+								<!-- end partial:portrait -->
+							</div>
+			
+							<div class="columns phablet-7 medium-8">
+			
+								<div class="user-markup">
+			
+									<p>I'm a Front-End developer with strong background in graphic design and user experience. I currently work for <a href="http://barkleyrei.com/" title="BarkleyREI Website" target="_blank">BarkleyREI</a>, a full-service digital agency with clientele primarily in the tourism and higher education industries. My specialty is developing design compositions into beautiful, fully-functional and captivating web experiences. I'm particularly skilled with making ambitious visual concepts come to life with CSS.</p>
+			
+									<p>I'm known to be an avid problem solver with meticulous attention to detail, which shines through in all of the work I produce. My foundation in design and UX is a rare hybrid of form and function, making me stand out amoungst my colleagues.</p>
+			
+								</div>
+			
+								<!-- partial:social -->
+								<nav class="social">
+									<ul class="social__list clearfix">
+										<li class="social__item">
+											<a class="social__link" href="docs/Sarah_Harissis_Resume.pdf" title="Download my resume" download>
+												<svg class="icon icon-file-text-solid"><use xlink:href="#icon-file-text-solid"></use></svg>
+												<span class="show-for-sr">View my resume</span>
+											</a>
+										</li>
+										<li class="social__item">
+											<a class="social__link" href="https://www.linkedin.com/in/sarahharissis" title="Connect with me on LinkedIn" target="_blank">
+												<svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
+												<span class="show-for-sr">Connect with me on LinkedIn</span>
+											</a>
+										</li>
+										<li class="social__item">
+											<a class="social__link" href="https://github.com/sharissis-brei" title="View my work Github account" target="_blank">
+												<svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+												<span class="show-for-sr">View my work Github account</span>
+											</a>
+										</li>
+										<li class="social__item">
+											<a class="social__link" href="https://twitter.com/sarahharissis" title="Follow me on Twitter" target="_blank">
+												<svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+												<span class="show-for-sr">Follow me on Twitter</span>
+											</a>
+										</li>
+										<li class="social__item">
+											<a class="social__link" href="mailto:sarahharissis@gmail.com" title="Email me" target="_blank">
+												<svg class="icon icon-envelope-solid"><use xlink:href="#icon-envelope-solid"></use></svg>
+												<span class="show-for-sr">Email me</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<!-- end partial:social -->
+			
+							</div>
+			
+						</div>
+			
+			
+			
+			
+			
+			
+				</div>
+			
+			</section>
+			<!-- end partial:panel -->
+	
+	
+			<!-- partial:panel -->
+			<section id="js-panel--work" class="panel panel--work">
+			
+			
+				<div class="panel__inner">
+			
+			
+			
+						<div class="intro white-background">
+							<div class="row">
+								<div class="columns">
+			
+									<div class="user-markup">
+			
+										<h2 class="panel__heading">Recent Projects</h2>
+			
+										<hr class="gradient narrow tall thick centered">
+			
+										<p>As a developer at an ever-changing, fast-paced agency, I'm usually working on multiple projects simultaneously. These are a few recent projects I've taken a prominent role in developing, each with a list of tasks I was responsible for.</p>
+			
+									</div>
+			
+								</div>
+							</div>
+						</div>
+			
+							
+							
+							<!-- module:media -->
+							<div class="media media--work">
+							
+									<div class="media__row">
+										<div class="row">
+							
+											<div class="media__column media__column--image columns phablet-6 medium-5">
+												<div class="inner">
+							
+													<div class="media__image">
+							
+															<a href="https://jewell.edu/" title="View Site" target="_blank">
+							
+															<img src="img/site-screenshots/small/wj.jpg" alt="Image associated with William Jewell College">
+							
+															</a>
+							
+													</div>
+							
+												</div>
+											</div>
+							
+											<div class="media__column media__column--content columns phablet-6 medium-7">
+												<div class="inner">
+							
+													<div class="media__content">
+														<div class="media__content-inner">
+							
+															<header class="media__header user-markup">
+							
+																<h3 class="media__title">William Jewell College</h3>
+							
+																	<h4 class="media__subtitle subheading">Website Redesign</h4>
+							
+																	<!-- partial:roles -->
+																	<div class="roles clearfix">
+																		<ul class="roles__list clearfix">
+																	
+																				<li class="role role--code" aria-label="Coding">
+																					<svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg>
+																					<span class="role__text">Coding</span>
+																				</li>
+																	
+																	
+																				<li class="role role--bug" aria-label="QA Resolution">
+																					<svg class="icon icon-bug"><use xlink:href="#icon-bug"></use></svg>
+																					<span class="role__text">QA Resolution</span>
+																				</li>
+																	
+																	
+																				<li class="role role--app" aria-label="App Development">
+																					<svg class="icon icon-window"><use xlink:href="#icon-window"></use></svg>
+																					<span class="role__text">App Development</span>
+																				</li>
+																	
+																		</ul>
+																	</div>
+																	<!-- end partial:roles -->
+							
+															</header>
+							
+															<div class="user-markup">
+							
+																	<div class="media__desc"><p>This project required development of four faceted searches, of which I coded the logic using only JavaScript and jQuery. I created a set of two controllers to power these searches, and wrote them in a way that made them scalable and reusable for future projects. In addition, the design of the site offered me an opportunity to learn bold new approaches to building sites for Higher Education clients. This was one of our first clients that stressed an importance on ADA Compliance, causing me to rethink approaches to many different components we have built for clients in the past.</p></div>
+							
+																<a class="cta" href="https://jewell.edu/" title="View Site">View Site <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></a>
+							
+															</div>
+							
+														</div>
+													</div>
+							
+												</div>
+											</div>
+							
+										</div>
+									</div>
+							
+							
+									<div class="media__row">
+										<div class="row">
+							
+											<div class="media__column media__column--image columns phablet-6 medium-5">
+												<div class="inner">
+							
+													<div class="media__image">
+							
+															<a href="https://www.chapman.edu/academics/degrees-and-programs.aspx" title="View Site" target="_blank">
+							
+															<img src="img/site-screenshots/small/chapman-dp.jpg" alt="Image associated with Chapman University">
+							
+															</a>
+							
+													</div>
+							
+												</div>
+											</div>
+							
+											<div class="media__column media__column--content columns phablet-6 medium-7">
+												<div class="inner">
+							
+													<div class="media__content">
+														<div class="media__content-inner">
+							
+															<header class="media__header user-markup">
+							
+																<h3 class="media__title">Chapman University</h3>
+							
+																	<h4 class="media__subtitle subheading">Degrees &amp; Programs Finder</h4>
+							
+																	<!-- partial:roles -->
+																	<div class="roles clearfix">
+																		<ul class="roles__list clearfix">
+																	
+																				<li class="role role--code" aria-label="Coding">
+																					<svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg>
+																					<span class="role__text">Coding</span>
+																				</li>
+																	
+																	
+																				<li class="role role--cms" aria-label="CMS Integration">
+																					<svg class="icon icon-wrench"><use xlink:href="#icon-wrench"></use></svg>
+																					<span class="role__text">CMS Integration</span>
+																				</li>
+																	
+																	
+																				<li class="role role--bug" aria-label="QA Resolution">
+																					<svg class="icon icon-bug"><use xlink:href="#icon-bug"></use></svg>
+																					<span class="role__text">QA Resolution</span>
+																				</li>
+																	
+																	
+																				<li class="role role--design" aria-label="UI/UX Design">
+																					<svg class="icon icon-design"><use xlink:href="#icon-design"></use></svg>
+																					<span class="role__text">UI/UX Design</span>
+																				</li>
+																	
+																	
+																				<li class="role role--app" aria-label="App Development">
+																					<svg class="icon icon-window"><use xlink:href="#icon-window"></use></svg>
+																					<span class="role__text">App Development</span>
+																				</li>
+																	
+																		</ul>
+																	</div>
+																	<!-- end partial:roles -->
+							
+															</header>
+							
+															<div class="user-markup">
+							
+																	<div class="media__desc"><p>This powerful program finder is a multi-faceted, interest-oriented search to help prospective students find the perfect academic program to match their passions and strengths.</p><p>I developed all of the filtering logic for this search myself – no JavaScript libraries or frameworks were used except for jQuery. The programming was complex and had many nuances, but the experience gained along the way made it well worth it. This is one of the best examples of my independent, challenge-driven coding style.</p></div>
+							
+																<a class="cta" href="https://www.chapman.edu/academics/degrees-and-programs.aspx" title="View Site">View Site <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></a>
+							
+															</div>
+							
+														</div>
+													</div>
+							
+												</div>
+											</div>
+							
+										</div>
+									</div>
+							
+							
+									<div class="media__row">
+										<div class="row">
+							
+											<div class="media__column media__column--image columns phablet-6 medium-5">
+												<div class="inner">
+							
+													<div class="media__image">
+							
+															<a href="http://www.wondersofwildlife.org/" title="View Site" target="_blank">
+							
+															<img src="img/site-screenshots/small/wow.jpg" alt="Image associated with Wonders of Wildlife">
+							
+															</a>
+							
+													</div>
+							
+												</div>
+											</div>
+							
+											<div class="media__column media__column--content columns phablet-6 medium-7">
+												<div class="inner">
+							
+													<div class="media__content">
+														<div class="media__content-inner">
+							
+															<header class="media__header user-markup">
+							
+																<h3 class="media__title">Wonders of Wildlife</h3>
+							
+																	<h4 class="media__subtitle subheading">Website Redesign</h4>
+							
+																	<!-- partial:roles -->
+																	<div class="roles clearfix">
+																		<ul class="roles__list clearfix">
+																	
+																				<li class="role role--code" aria-label="Coding">
+																					<svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg>
+																					<span class="role__text">Coding</span>
+																				</li>
+																	
+																	
+																				<li class="role role--bug" aria-label="QA Resolution">
+																					<svg class="icon icon-bug"><use xlink:href="#icon-bug"></use></svg>
+																					<span class="role__text">QA Resolution</span>
+																				</li>
+																	
+																	
+																				<li class="role role--design" aria-label="UI/UX Design">
+																					<svg class="icon icon-design"><use xlink:href="#icon-design"></use></svg>
+																					<span class="role__text">UI/UX Design</span>
+																				</li>
+																	
+																		</ul>
+																	</div>
+																	<!-- end partial:roles -->
+							
+															</header>
+							
+															<div class="user-markup">
+							
+																	<div class="media__desc"><p>Wonders of Wildlife was developed by our team under an incredibly tight timeline. I worked in tandem with my two fellow Front-End developers at BarkleyREI to launch this as quickly as possible while developing the ambitious designs promised to the client. This project is a reflection of my ability to work with other developers effectively and efficiently to achieve a common goal.</p></div>
+							
+																<a class="cta" href="http://www.wondersofwildlife.org/" title="View Site">View Site <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></a>
+							
+															</div>
+							
+														</div>
+													</div>
+							
+												</div>
+											</div>
+							
+										</div>
+									</div>
+							
+							
+									<div class="media__row">
+										<div class="row">
+							
+											<div class="media__column media__column--image columns phablet-6 medium-5">
+												<div class="inner">
+							
+													<div class="media__image">
+							
+															<a href="https://curry.virginia.edu/" title="View Site" target="_blank">
+							
+															<img src="img/site-screenshots/small/uva-curry.jpg" alt="Image associated with University of Virginia Curry School of Education">
+							
+															</a>
+							
+													</div>
+							
+												</div>
+											</div>
+							
+											<div class="media__column media__column--content columns phablet-6 medium-7">
+												<div class="inner">
+							
+													<div class="media__content">
+														<div class="media__content-inner">
+							
+															<header class="media__header user-markup">
+							
+																<h3 class="media__title">University of Virginia Curry School of Education</h3>
+							
+																	<h4 class="media__subtitle subheading">Website Redesign</h4>
+							
+																	<!-- partial:roles -->
+																	<div class="roles clearfix">
+																		<ul class="roles__list clearfix">
+																	
+																				<li class="role role--code" aria-label="Coding">
+																					<svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg>
+																					<span class="role__text">Coding</span>
+																				</li>
+																	
+																	
+																				<li class="role role--bug" aria-label="QA Resolution">
+																					<svg class="icon icon-bug"><use xlink:href="#icon-bug"></use></svg>
+																					<span class="role__text">QA Resolution</span>
+																				</li>
+																	
+																	
+																				<li class="role role--app" aria-label="App Development">
+																					<svg class="icon icon-window"><use xlink:href="#icon-window"></use></svg>
+																					<span class="role__text">App Development</span>
+																				</li>
+																	
+																		</ul>
+																	</div>
+																	<!-- end partial:roles -->
+							
+															</header>
+							
+															<div class="user-markup">
+							
+																	<div class="media__desc"><p>The designs for UVA Curry had a number of intricacies that posed styling challenges, which I've always enjoyed solving. In particular, these designs involved coding complex responsive grids and learning how to create and work with animated SVGs. The skills I learned from this have since carried over to the implementation of many other projects.</p></div>
+							
+																<a class="cta" href="https://curry.virginia.edu/" title="View Site">View Site <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></a>
+							
+															</div>
+							
+														</div>
+													</div>
+							
+												</div>
+											</div>
+							
+										</div>
+									</div>
+							
+							
+									<div class="media__row">
+										<div class="row">
+							
+											<div class="media__column media__column--image columns phablet-6 medium-5">
+												<div class="inner">
+							
+													<div class="media__image">
+							
+															<a href="https://engineering.virginia.edu/" title="View Site" target="_blank">
+							
+															<img src="img/site-screenshots/small/uva-engineering.jpg" alt="Image associated with University of Virginia School of Engineering">
+							
+															</a>
+							
+													</div>
+							
+												</div>
+											</div>
+							
+											<div class="media__column media__column--content columns phablet-6 medium-7">
+												<div class="inner">
+							
+													<div class="media__content">
+														<div class="media__content-inner">
+							
+															<header class="media__header user-markup">
+							
+																<h3 class="media__title">University of Virginia School of Engineering</h3>
+							
+																	<h4 class="media__subtitle subheading">Website Redesign</h4>
+							
+																	<!-- partial:roles -->
+																	<div class="roles clearfix">
+																		<ul class="roles__list clearfix">
+																	
+																				<li class="role role--code" aria-label="Coding">
+																					<svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg>
+																					<span class="role__text">Coding</span>
+																				</li>
+																	
+																	
+																				<li class="role role--bug" aria-label="QA Resolution">
+																					<svg class="icon icon-bug"><use xlink:href="#icon-bug"></use></svg>
+																					<span class="role__text">QA Resolution</span>
+																				</li>
+																	
+																		</ul>
+																	</div>
+																	<!-- end partial:roles -->
+							
+															</header>
+							
+															<div class="user-markup">
+							
+																	<div class="media__desc"><p>My responsibiltiy for this project was the static development of the redesigned home page. Much like UVA Engineering's sister site mentioned above, UVA Curry, the designs included some design challenges pertaining to the grid. For example, the mosaic-like news section on the home page required meticulous alignment while preserving the allowance of varying amounts of content. This was difficult to get just right, but was a welcomed challenge and taught me many new tricks with CSS flexbox.</p></div>
+							
+																<a class="cta" href="https://engineering.virginia.edu/" title="View Site">View Site <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></a>
+							
+															</div>
+							
+														</div>
+													</div>
+							
+												</div>
+											</div>
+							
+										</div>
+									</div>
+							
+							
+									<div class="media__row">
+										<div class="row">
+							
+											<div class="media__column media__column--image columns phablet-6 medium-5">
+												<div class="inner">
+							
+													<div class="media__image">
+							
+															<a href="https://www.texasstateaquarium.org/" title="View Site" target="_blank">
+							
+															<img src="img/site-screenshots/small/tsa.jpg" alt="Image associated with Texas State Aquarium">
+							
+															</a>
+							
+													</div>
+							
+												</div>
+											</div>
+							
+											<div class="media__column media__column--content columns phablet-6 medium-7">
+												<div class="inner">
+							
+													<div class="media__content">
+														<div class="media__content-inner">
+							
+															<header class="media__header user-markup">
+							
+																<h3 class="media__title">Texas State Aquarium</h3>
+							
+																	<h4 class="media__subtitle subheading">Website Redesign</h4>
+							
+																	<!-- partial:roles -->
+																	<div class="roles clearfix">
+																		<ul class="roles__list clearfix">
+																	
+																				<li class="role role--code" aria-label="Coding">
+																					<svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg>
+																					<span class="role__text">Coding</span>
+																				</li>
+																	
+																	
+																				<li class="role role--cms" aria-label="CMS Integration">
+																					<svg class="icon icon-wrench"><use xlink:href="#icon-wrench"></use></svg>
+																					<span class="role__text">CMS Integration</span>
+																				</li>
+																	
+																	
+																				<li class="role role--bug" aria-label="QA Resolution">
+																					<svg class="icon icon-bug"><use xlink:href="#icon-bug"></use></svg>
+																					<span class="role__text">QA Resolution</span>
+																				</li>
+																	
+																		</ul>
+																	</div>
+																	<!-- end partial:roles -->
+							
+															</header>
+							
+															<div class="user-markup">
+							
+																	<div class="media__desc"><p>Texas State Aquarium was my first real hands-on experience with WordPress. Although I was somewhat familiar with WordPress from past projects, I was able to delve deeper into the inner workings of this CMS and truly begin to understand how it operates. I learned a great deal about custom theme development and expanded my knowledge of PHP templating.</p></div>
+							
+																<a class="cta" href="https://www.texasstateaquarium.org/" title="View Site">View Site <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></a>
+							
+															</div>
+							
+														</div>
+													</div>
+							
+												</div>
+											</div>
+							
+										</div>
+									</div>
+							
+							
+									<div class="media__row">
+										<div class="row">
+							
+											<div class="media__column media__column--image columns phablet-6 medium-5">
+												<div class="inner">
+							
+													<div class="media__image">
+							
+															<a href="http://www.exploreminnesota.com/index.aspx" title="View Site" target="_blank">
+							
+															<img src="img/site-screenshots/small/mn.jpg" alt="Image associated with Explore Minnesota">
+							
+															</a>
+							
+													</div>
+							
+												</div>
+											</div>
+							
+											<div class="media__column media__column--content columns phablet-6 medium-7">
+												<div class="inner">
+							
+													<div class="media__content">
+														<div class="media__content-inner">
+							
+															<header class="media__header user-markup">
+							
+																<h3 class="media__title">Explore Minnesota</h3>
+							
+																	<h4 class="media__subtitle subheading">Home Page Redesign &amp; Website Refresh</h4>
+							
+																	<!-- partial:roles -->
+																	<div class="roles clearfix">
+																		<ul class="roles__list clearfix">
+																	
+																				<li class="role role--code" aria-label="Coding">
+																					<svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg>
+																					<span class="role__text">Coding</span>
+																				</li>
+																	
+																	
+																				<li class="role role--cms" aria-label="CMS Integration">
+																					<svg class="icon icon-wrench"><use xlink:href="#icon-wrench"></use></svg>
+																					<span class="role__text">CMS Integration</span>
+																				</li>
+																	
+																	
+																				<li class="role role--bug" aria-label="QA Resolution">
+																					<svg class="icon icon-bug"><use xlink:href="#icon-bug"></use></svg>
+																					<span class="role__text">QA Resolution</span>
+																				</li>
+																	
+																	
+																				<li class="role role--design" aria-label="UI/UX Design">
+																					<svg class="icon icon-design"><use xlink:href="#icon-design"></use></svg>
+																					<span class="role__text">UI/UX Design</span>
+																				</li>
+																	
+																	
+																				<li class="role role--maps" aria-label="Google Maps API">
+																					<svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>
+																					<span class="role__text">Google Maps API</span>
+																				</li>
+																	
+																		</ul>
+																	</div>
+																	<!-- end partial:roles -->
+							
+															</header>
+							
+															<div class="user-markup">
+							
+																	<div class="media__desc"><p>Explore Minnesota is a long-standing client of BarkleyREI. In 2017, they came to us looking to refresh their website. We usually start all new projects with a fresh codebase, however, Explore Minnesota asked us to work within the existing codebase we had already built for them.</p><p>Revamping the site within the constraints of the existing markup and functionality was a challenge, but I was pleased to find this meant I was able to use my design background: time constraints only allowed us to produce designs for a handful of the dozens existing templates, allowing me the creative freedom to fill in the gaps and design as I coded.</p></div>
+							
+																<a class="cta" href="http://www.exploreminnesota.com/index.aspx" title="View Site">View Site <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></a>
+							
+															</div>
+							
+														</div>
+													</div>
+							
+												</div>
+											</div>
+							
+										</div>
+									</div>
+							
+							
+									<div class="media__row">
+										<div class="row">
+							
+											<div class="media__column media__column--image columns phablet-6 medium-5">
+												<div class="inner">
+							
+													<div class="media__image">
+							
+															<a href="https://veterinary.rossu.edu/" title="View Site" target="_blank">
+							
+															<img src="img/site-screenshots/small/ross-vet.jpg" alt="Image associated with Ross University School of Veterinary Medicine">
+							
+															</a>
+							
+													</div>
+							
+												</div>
+											</div>
+							
+											<div class="media__column media__column--content columns phablet-6 medium-7">
+												<div class="inner">
+							
+													<div class="media__content">
+														<div class="media__content-inner">
+							
+															<header class="media__header user-markup">
+							
+																<h3 class="media__title">Ross University School of Veterinary Medicine</h3>
+							
+																	<h4 class="media__subtitle subheading">Website Redesign</h4>
+							
+																	<!-- partial:roles -->
+																	<div class="roles clearfix">
+																		<ul class="roles__list clearfix">
+																	
+																				<li class="role role--code" aria-label="Coding">
+																					<svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg>
+																					<span class="role__text">Coding</span>
+																				</li>
+																	
+																	
+																				<li class="role role--cms" aria-label="CMS Integration">
+																					<svg class="icon icon-wrench"><use xlink:href="#icon-wrench"></use></svg>
+																					<span class="role__text">CMS Integration</span>
+																				</li>
+																	
+																	
+																				<li class="role role--bug" aria-label="QA Resolution">
+																					<svg class="icon icon-bug"><use xlink:href="#icon-bug"></use></svg>
+																					<span class="role__text">QA Resolution</span>
+																				</li>
+																	
+																		</ul>
+																	</div>
+																	<!-- end partial:roles -->
+							
+															</header>
+							
+															<div class="user-markup">
+							
+																	<div class="media__desc"><p>Ross University uses Adobe Experience Manager as their content management system, which was brand new to our development team. I developed the static templates while concurrently learning how to integrate them into this new CMS. I had to pick up new skills in a very short amount of time while using unfamiliar platforms and languages, including Java and Sightly. It was a test of my ability to adapt quickly and prime example of my prowess as a versatile developer.</p></div>
+							
+																<a class="cta" href="https://veterinary.rossu.edu/" title="View Site">View Site <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></a>
+							
+															</div>
+							
+														</div>
+													</div>
+							
+												</div>
+											</div>
+							
+										</div>
+									</div>
+							
+							
+									<div class="media__row">
+										<div class="row">
+							
+											<div class="media__column media__column--image columns phablet-6 medium-5">
+												<div class="inner">
+							
+													<div class="media__image">
+							
+															<a href="http://map.davidson.edu/" title="View Site" target="_blank">
+							
+															<img src="img/site-screenshots/small/davidson-map.jpg" alt="Image associated with Davidson College">
+							
+															</a>
+							
+													</div>
+							
+												</div>
+											</div>
+							
+											<div class="media__column media__column--content columns phablet-6 medium-7">
+												<div class="inner">
+							
+													<div class="media__content">
+														<div class="media__content-inner">
+							
+															<header class="media__header user-markup">
+							
+																<h3 class="media__title">Davidson College</h3>
+							
+																	<h4 class="media__subtitle subheading">Interactive Campus Map</h4>
+							
+																	<!-- partial:roles -->
+																	<div class="roles clearfix">
+																		<ul class="roles__list clearfix">
+																	
+																				<li class="role role--code" aria-label="Coding">
+																					<svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg>
+																					<span class="role__text">Coding</span>
+																				</li>
+																	
+																	
+																				<li class="role role--bug" aria-label="QA Resolution">
+																					<svg class="icon icon-bug"><use xlink:href="#icon-bug"></use></svg>
+																					<span class="role__text">QA Resolution</span>
+																				</li>
+																	
+																	
+																				<li class="role role--app" aria-label="App Development">
+																					<svg class="icon icon-window"><use xlink:href="#icon-window"></use></svg>
+																					<span class="role__text">App Development</span>
+																				</li>
+																	
+																	
+																				<li class="role role--maps" aria-label="Google Maps API">
+																					<svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>
+																					<span class="role__text">Google Maps API</span>
+																				</li>
+																	
+																		</ul>
+																	</div>
+																	<!-- end partial:roles -->
+							
+															</header>
+							
+															<div class="user-markup">
+							
+																	<div class="media__desc"><p>Developing this interactive map was my first dive into both the Google Maps API and browser history navigation support. This inherently made the map quite JavaScript heavy and complex, but challenged me to author clean, organized code while managing functionality between multiple controllers.</p></div>
+							
+																<a class="cta" href="http://map.davidson.edu/" title="View Site">View Site <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></a>
+							
+															</div>
+							
+														</div>
+													</div>
+							
+												</div>
+											</div>
+							
+										</div>
+									</div>
+							
+							
+									<div class="media__row">
+										<div class="row">
+							
+											<div class="media__column media__column--image columns phablet-6 medium-5">
+												<div class="inner">
+							
+													<div class="media__image">
+							
+															<a href="https://www.chemeketa.edu/" title="View Site" target="_blank">
+							
+															<img src="img/site-screenshots/small/ccc.jpg" alt="Image associated with Chemeketa Community College">
+							
+															</a>
+							
+													</div>
+							
+												</div>
+											</div>
+							
+											<div class="media__column media__column--content columns phablet-6 medium-7">
+												<div class="inner">
+							
+													<div class="media__content">
+														<div class="media__content-inner">
+							
+															<header class="media__header user-markup">
+							
+																<h3 class="media__title">Chemeketa Community College</h3>
+							
+																	<h4 class="media__subtitle subheading">Website Redesign</h4>
+							
+																	<!-- partial:roles -->
+																	<div class="roles clearfix">
+																		<ul class="roles__list clearfix">
+																	
+																				<li class="role role--code" aria-label="Coding">
+																					<svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg>
+																					<span class="role__text">Coding</span>
+																				</li>
+																	
+																	
+																				<li class="role role--bug" aria-label="QA Resolution">
+																					<svg class="icon icon-bug"><use xlink:href="#icon-bug"></use></svg>
+																					<span class="role__text">QA Resolution</span>
+																				</li>
+																	
+																		</ul>
+																	</div>
+																	<!-- end partial:roles -->
+							
+															</header>
+							
+															<div class="user-markup">
+							
+																	<div class="media__desc"><p>For Chemeketa, I was in charge of educating a junior developer who worked side by side with me on static coding. This began with teaching him how to use <a href="https://github.com/BarkleyREI/generator-brei-app" title="See the BarkleyREI app generator repo on Github" target="blank">BarkleyREI's app generator</a>, which is our boilerplate for projects. Using a combination of code reviews and providing direction and advice along the way, I was able to teach him coding standards and practices that were new to him, while working together to complete a full set of static templates.</p></div>
+							
+																<a class="cta" href="https://www.chemeketa.edu/" title="View Site">View Site <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></a>
+							
+															</div>
+							
+														</div>
+													</div>
+							
+												</div>
+											</div>
+							
+										</div>
+									</div>
+							
+							</div>
+							<!-- end module:media -->
+			
+			
+			
+			
+			
+				</div>
+			
+			</section>
+			<!-- end partial:panel -->
+	
+	
+			<!-- partial:panel -->
+			<section id="js-panel--skills" class="panel panel--skills">
+			
+			
+				<div class="panel__inner">
+			
+			
+			
+			
+						<div class="row">
+							<div class="columns">
+			
+								<div class="user-markup">
+									<h2 class="panel__heading" aria-label="Skills">
+										<span>Skills</span>
+									</h2>
+									<hr class="transparent thin tall centered">
+								</div>
+			
+									
+									
+									<!-- module:callouts -->
+									<div class="callouts callouts--skills">
+										<ul class="callouts__list clearfix">
+									
+												<li class="callouts__item">
+									
+													<!-- partial:callout -->
+													<article class="callout">
+													
+													
+													
+													        <div class="callout__icon">
+													            <svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg>
+													        </div>
+													
+													
+													    <div class="callout__content">
+													
+													
+													        <div class="callout__content-inner">
+													
+													            <div class="user-markup">
+													
+													                    <h3 class="callout__heading">Front-End Coding</h3>
+													
+													
+													                    <p class="callout__desc">I develop sites from the ground up using HTML5, CSS3, JavaScript, and other industry-standard technologies. All my code is well-documented, continually refactored, and adheres to strict coding standards. Each website starts with a blank canvas, making every one truly unique and catered to your needs.</p>
+													
+													            </div>
+													
+													        </div>
+													
+													
+													    </div>
+													
+													</article>
+													<!-- end partial:callout -->
+									
+												</li>
+									
+									
+												<li class="callouts__item">
+									
+													<!-- partial:callout -->
+													<article class="callout">
+													
+													
+													
+													        <div class="callout__icon">
+													            <svg class="icon icon-devices"><use xlink:href="#icon-devices"></use></svg>
+													        </div>
+													
+													
+													    <div class="callout__content">
+													
+													
+													        <div class="callout__content-inner">
+													
+													            <div class="user-markup">
+													
+													                    <h3 class="callout__heading">Responsive Design</h3>
+													
+													
+													                    <p class="callout__desc">I have a breadth of experience developing adaptive interfaces and working within the nuances of various environments. I develop for the best case scenario while using progressive enhancement to ensure the best possible experience within the constraints of all major browsers, devices, and operating systems.</p>
+													
+													            </div>
+													
+													        </div>
+													
+													
+													    </div>
+													
+													</article>
+													<!-- end partial:callout -->
+									
+												</li>
+									
+									
+												<li class="callouts__item">
+									
+													<!-- partial:callout -->
+													<article class="callout">
+													
+													
+													
+													        <div class="callout__icon">
+													            <svg class="icon icon-emoji-happy"><use xlink:href="#icon-emoji-happy"></use></svg>
+													        </div>
+													
+													
+													    <div class="callout__content">
+													
+													
+													        <div class="callout__content-inner">
+													
+													            <div class="user-markup">
+													
+													                    <h3 class="callout__heading">User Experience</h3>
+													
+													
+													                    <p class="callout__desc">As a developer with a UX background, my range of knowledge brings a refreshing and insightful perspective to my role. I am able to create ambitious new experiences while maintaining tried-and-true usability principles. I believe in and promote collaboration between design and development teams to bring optimal web experiences to end users.</p>
+													
+													            </div>
+													
+													        </div>
+													
+													
+													    </div>
+													
+													</article>
+													<!-- end partial:callout -->
+									
+												</li>
+									
+									
+												<li class="callouts__item">
+									
+													<!-- partial:callout -->
+													<article class="callout">
+													
+													
+													
+													        <div class="callout__icon">
+													            <svg class="icon icon-star"><use xlink:href="#icon-star"></use></svg>
+													        </div>
+													
+													
+													    <div class="callout__content">
+													
+													
+													        <div class="callout__content-inner">
+													
+													            <div class="user-markup">
+													
+													                    <h3 class="callout__heading">Precision &amp; Integrity</h3>
+													
+													
+													                    <p class="callout__desc">My attention to detail, thoroughness, and care for the work that I do is unparalleled. I stand behind every line of code I write, and believe that delivering the highest quality product to my clients is of utmost importance.</p>
+													
+													            </div>
+													
+													        </div>
+													
+													
+													    </div>
+													
+													</article>
+													<!-- end partial:callout -->
+									
+												</li>
+									
+										</ul>
+									</div>
+									
+									<!-- end module:callouts -->
+			
+							</div>
+						</div>
+			
+			
+			
+			
+				</div>
+			
+			</section>
+			<!-- end partial:panel -->
+	
+	
+			<!-- partial:panel -->
+			<section id="js-panel--about" class="panel panel--about">
+			
+			
+					<div class="panel__background-image">
+						<div class="image" role="img" style="background-image: url('img/opt/SarahPittsburgh-color.jpg')" aria-label="Sarah in Pittsburgh"></div>
+					</div>
+			
+			
+				<div class="panel__inner">
+			
+			
+			
+			
+			
+						
+						
+						<!-- module:about -->
+						<div class="about">
+						
+							<div class="row">
+								<div class="columns">
+									
+									<div class="about__content">
+						
+										<div class="user-markup">
+						
+											<h2>About</h2>
+						
+											<p>I grew up in a ski town in northern Vermont. In 2007, I moved to Pittsburgh, PA to attend <a href="https://www.cmu.edu/" title="Carnegie Mellon University Website" target="_blank">Carnegie Mellon University</a>, where I earned my B.F.A. in Communication Design and Human-Computer Interaction. After graduation, I began my career in user experience, but quickly discovered I had a knack for web development that I was also eager to explore. Since then, I've been learning and refining my development skillset, while utilizing my background in design and UX to make informed decisions as I code.</p>
+						
+											<p>I spend most of my free time cooking, being outdoors, and hanging out with <a href="https://www.instagram.com/ohheybutters/" title="@ohheybutters on Instagram" target="_blank">Butters</a>, my adorable golden retriever. I also enjoy skiing, singing, survivalism, volunteering, traveling, prog rock, good friends, and bad puns. <svg class="icon icon-wink"><use xlink:href="#icon-wink"></use></svg></p>
+						
+										</div>
+						
+									</div>
+						
+								</div>
+							</div>
+						
+						</div>
+						
+						<!-- end module:about -->
+			
+			
+			
+				</div>
+			
+			</section>
+			<!-- end partial:panel -->
+	
+	
+			<!-- partial:panel -->
+			<section id="js-panel--contact" class="panel panel--contact">
+			
+			
+				<div class="panel__inner">
+			
+			
+			
+			
+			
+			
+						<div class="row">
+							<div class="columns">
+			
+								<div class="user-markup">
+									<h2 class="panel__heading">Get in Touch</h2>
+									<p>Interested in working together? I'd love to hear from you!</p>
+								</div>
+			
+								<!-- partial:social -->
+								<nav class="social">
+									<ul class="social__list clearfix">
+										<li class="social__item">
+											<a class="social__link" href="docs/Sarah_Harissis_Resume.pdf" title="Download my resume" download>
+												<svg class="icon icon-file-text-solid"><use xlink:href="#icon-file-text-solid"></use></svg>
+												<span class="show-for-sr">View my resume</span>
+											</a>
+										</li>
+										<li class="social__item">
+											<a class="social__link" href="https://www.linkedin.com/in/sarahharissis" title="Connect with me on LinkedIn" target="_blank">
+												<svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
+												<span class="show-for-sr">Connect with me on LinkedIn</span>
+											</a>
+										</li>
+										<li class="social__item">
+											<a class="social__link" href="https://github.com/sharissis-brei" title="View my work Github account" target="_blank">
+												<svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+												<span class="show-for-sr">View my work Github account</span>
+											</a>
+										</li>
+										<li class="social__item">
+											<a class="social__link" href="https://twitter.com/sarahharissis" title="Follow me on Twitter" target="_blank">
+												<svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+												<span class="show-for-sr">Follow me on Twitter</span>
+											</a>
+										</li>
+										<li class="social__item">
+											<a class="social__link" href="mailto:sarahharissis@gmail.com" title="Email me" target="_blank">
+												<svg class="icon icon-envelope-solid"><use xlink:href="#icon-envelope-solid"></use></svg>
+												<span class="show-for-sr">Email me</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<!-- end partial:social -->
+			
+							</div>
+						</div>
+			
+			
+				</div>
+			
+			</section>
+			<!-- end partial:panel -->
+	
+		
+	</div>
+	
+	<!-- end module:panels -->
+
+</main>
 
 
+		
+		
+		<!-- module:global-footer -->
+		<footer id="js-global-footer" class="global-footer">
+		
+			<a href="" class="show-on-focus" name="global-footer">Footer</a>
+		
+			<div class="global-footer__logo logo-container">
+				<svg class="icon icon-logo"><use xlink:href="#icon-logo"></use></svg>
+			</div>
+		
+			<p class="global-footer__copyright">
+				<span>&copy; Designed and developed by Sarah Harissis, <span id="js-current-year" class="current-year">2018</span>.</span>
+				<span>All Rights Reserved.</span>
+			</p>
+		
+		</footer>
+		<!-- end module:global-footer -->
+
+	</div>
+
+	<script src="js/main.js"></script>
 
 
 

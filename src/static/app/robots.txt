@@ -1,0 +1,6 @@
+# www.robotstxt.org/
+
+# Allow crawling of content
+User-agent: *
+Disallow: /fonts/
+Disallow: /images/

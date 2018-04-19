@@ -4,7 +4,7 @@
 	$this: &;
 	$color: $black;
 	$background-color: $white;
-	$nav-close-delay: $transition-time;
+	$nav-close-delay: 2s; // Delay before nav hides again
 
 	// Styles
 	z-index: 99;
@@ -13,10 +13,22 @@
 	left: 0;
 	width: 100%;
 
+	&--interact-with-me {
+
+		#{$this}__toggle .icon {
+
+			body:not(.recently-loaded) & {
+				animation: spin-180 2.75s ease infinite;
+				animation-fill-mode: forwards;
+			}
+
+		}
+
+	}
+
+	&--active #{$this}__toggle,
 	&:hover #{$this}__toggle,
-	&:focus #{$this}__toggle,
-	&__toggle:hover,
-	&__toggle:focus {
+	&__toggle:hover {
 
 		.icon {
 			color: $almost-black;
@@ -26,10 +38,9 @@
 
 	}
 
+	&--active #{$this}__nav,
 	&:hover #{$this}__nav,
-	&:focus #{$this}__nav,
-	&__toggle:hover ~ #{$this}__nav,
-	&__toggle:focus ~ #{$this}__nav {
+	&__toggle:hover ~ #{$this}__nav {
 		box-shadow: 0 1px 10px 0 rgba($almost-black, 0.1);
 		transform: translateY(0%);
 		transition-delay: 0s;

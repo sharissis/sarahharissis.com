@@ -19,29 +19,64 @@
 		margin: 0;
 	}
 
-	&:hover,
-	&:focus {
+	&--show-eyebrow-raise {
+
+		#{$this}__image--eyebrow-raise {
+			display: block;
+		}
+
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		padding-top: 100%;
+	}
+
+	// scss-lint:disable NestingDepth, SelectorDepth, QualifyingElement
+	html:hover &,
+	.md-js body.recently-loaded & { // When cursor is within document or if page just loaded
+
+		&:hover,
+		&:focus {
+
+			#{$this}__image {
+
+				&--eyebrow-raise {
+					display: block;
+				}
+
+			}
+
+		}
 
 		#{$this}__image {
 
-			&--primary {
-				display: none;
-			}
-
-			&--secondary {
+			&--smile {
 				display: block;
 			}
 
 		}
 
 	}
+	// scss-lint:enable NestingDepth, SelectorDepth, QualifyingElement
 
 	&__image {
+		@extend %overlay;
 		border-radius: 100%;
 		display: none;
 		padding: rem-calc(8);
 
-		&--primary {
+		&--smile {
+			z-index: 2;
+		}
+
+		&--eyebrow-raise {
+			z-index: 3;
+		}
+
+		&--furrowed-brow {
+			z-index: 1;
 			display: block;
 		}
 

@@ -4,10 +4,37 @@
 		"modifiers": ["work"],
 		"items": [
 			{
+				"title": "William Jewell College",
+				"subtitle": "Website Redesign",
+				"img": "img/site-screenshots/small/wj.jpg",
+				"desc": "<p>This project required development of four faceted searches, of which I coded the logic using only JavaScript and jQuery. I created a set of two controllers to power these searches, and wrote them in a way that made them scalable and reusable for future projects. In addition, the design of the site offered me an opportunity to learn bold new approaches to building sites for Higher Education clients. This was one of our first clients that stressed an importance on ADA Compliance, causing me to rethink approaches to many different components we have built for clients in the past.</p>",
+				"link": {
+					"title": "View Site",
+					"url": "https://jewell.edu/"
+				},
+				"roles": [
+					{
+						"title": "Coding",
+						"icon": "code",
+						"type": "code"
+					},
+					{
+						"title": "QA Resolution",
+						"icon": "bug",
+						"type": "bug"
+					},
+					{
+						"title": "App Development",
+						"icon": "window",
+						"type": "app"
+					}
+				]
+			},
+			{
 				"title": "Chapman University",
 				"subtitle": "Degrees &amp; Programs Finder",
 				"img": "img/site-screenshots/small/chapman-dp.jpg",
-				"desc": "<p>This powerful program finder is a multi-faceted, interest-oriented search to help prospective students find the perfect academic program to match their passions and strengths.</p><p>I developed all of the filtering logic for this search myself – no JavaScript libraries or frameworks were used except for jQuery. The programming was complex and had many nuances, but the experience gained along the way made it well worth it. This is one of the best examples of my independant, challenge-driven coding style.</p>",
+				"desc": "<p>This powerful program finder is a multi-faceted, interest-oriented search to help prospective students find the perfect academic program to match their passions and strengths.</p><p>I developed all of the filtering logic for this search myself – no JavaScript libraries or frameworks were used except for jQuery. The programming was complex and had many nuances, but the experience gained along the way made it well worth it. This is one of the best examples of my independent, challenge-driven coding style.</p>",
 				"link": {
 					"title": "View Site",
 					"url": "https://www.chapman.edu/academics/degrees-and-programs.aspx"
@@ -32,33 +59,6 @@
 						"title": "UI/UX Design",
 						"icon": "design",
 						"type": "design"
-					},
-					{
-						"title": "App Development",
-						"icon": "window",
-						"type": "app"
-					}
-				]
-			},
-			{
-				"title": "William Jewell College",
-				"subtitle": "Website Redesign",
-				"img": "img/site-screenshots/small/wj.jpg",
-				"desc": "<p>This project required development of four faceted searches, of which I coded the logic using only JavaScript and jQuery. I created a set of two controllers to power these searches, and wrote them in a way that made them scalable and reusable for future projects. In addition, the design of the site offered me an opportunity to learn bold new approaches to building sites for Higher Education clients. This was one of our first clients that stressed an importance on ADA Compliance, causing me to rethink approaches to many different components we have built for clients in the past.</p>",
-				"link": {
-					"title": "View Site",
-					"url": "https://jewell.edu/"
-				},
-				"roles": [
-					{
-						"title": "Coding",
-						"icon": "code",
-						"type": "code"
-					},
-					{
-						"title": "QA Resolution",
-						"icon": "bug",
-						"type": "bug"
 					},
 					{
 						"title": "App Development",
