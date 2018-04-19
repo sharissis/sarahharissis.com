@@ -72,7 +72,7 @@
 		}
 
 		.icon {
-			color: $gold;
+			color: $fuschia;
 			transform: rotate(0deg);
 			transition: transform $transition-time, color $transition-time;
 			transition-delay: $nav-close-delay;
@@ -84,7 +84,7 @@
 		box-shadow: 0 1px 10px 0 transparent;
 		background-color: rgba($white, 0.95);
 		padding-left: rem-calc(40);
-		padding-right: rem-calc(15);
+		padding-right: rem-calc(20);
 		transform: translateY(-101%);
 		transition: transform $transition-time, box-shadow $transition-time;
 		transition-delay: $nav-close-delay;

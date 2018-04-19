@@ -110,9 +110,6 @@
 	}
 
 	&__image {
-
-		$this: &;
-
 		position: relative;
 
 		&:before {
@@ -155,8 +152,8 @@
 
 	&__image-link {
 
-		&:hover #{$this}-overlay,
-		&:focus #{$this}-overlay {
+		&:hover #{$this}__image-overlay,
+		&:focus #{$this}__image-overlay {
 			opacity: 1;
 
 			.icon {
