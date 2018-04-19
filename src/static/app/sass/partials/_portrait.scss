@@ -4,9 +4,9 @@
 	$this: &;
 	$color: $black;
 	$background-color: $white;
-	$transition-time: $panel-transition-time;
 
 	// Styles
+	@extend %square-scale;
 	background-color: rgba($almost-white, $standard-transparency);
 	border-radius: 100%;
 	width: 100%;
@@ -25,12 +25,6 @@
 			display: block;
 		}
 
-	}
-
-	&:before {
-		content: '';
-		display: block;
-		padding-top: 100%;
 	}
 
 	// scss-lint:disable NestingDepth, SelectorDepth, QualifyingElement

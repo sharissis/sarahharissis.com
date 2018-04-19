@@ -48,7 +48,7 @@ $role-padding: 0.45em;
 
 	&--code {
 		background-color: darken($purple, $darken-1);
-		background: linear-gradient($angle, darken($purple, $darken-1) $stop-1, darken($purple, $darken-2) $stop-2);
+		background: linear-gradient($angle, lighten($purple, 5%) $stop-1, $purple $stop-2);
 	}
 
 	&--cms {
@@ -61,12 +61,12 @@ $role-padding: 0.45em;
 		background: linear-gradient($angle, darken($red-violet, $darken-1) $stop-1, darken($red-violet, $darken-2) $stop-2);
 	}
 
-	&--design {
+	&--app {
 		background-color: darken($red, $darken-1);
 		background: linear-gradient($angle, darken($red, $darken-1) $stop-1, darken($red, $darken-2) $stop-2);
 	}
 
-	&--app {
+	&--design {
 		background-color: darken($orange, $darken-1);
 		background: linear-gradient($angle, darken($orange, $darken-1) $stop-1, darken($orange, $darken-2) $stop-2);
 	}

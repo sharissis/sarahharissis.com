@@ -18,8 +18,7 @@
 		#{$this}__toggle .icon {
 
 			body:not(.recently-loaded) & {
-				animation: spin-180 2.75s ease infinite;
-				animation-fill-mode: forwards;
+				animation: shake 4s ease-out infinite;
 			}
 
 		}
@@ -73,7 +72,7 @@
 
 		.icon {
 			color: $fuschia;
-			transform: rotate(0deg);
+			transform: scale(1);
 			transition: transform $transition-time, color $transition-time;
 			transition-delay: $nav-close-delay;
 		}

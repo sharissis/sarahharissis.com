@@ -56,14 +56,14 @@
 						"type": "bug"
 					},
 					{
-						"title": "UI/UX Design",
-						"icon": "design",
-						"type": "design"
-					},
-					{
 						"title": "App Development",
 						"icon": "window",
 						"type": "app"
+					},
+					{
+						"title": "UI/UX Design",
+						"icon": "design",
+						"type": "design"
 					}
 				]
 			},

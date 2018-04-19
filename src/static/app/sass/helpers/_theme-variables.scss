@@ -12,20 +12,12 @@ $type-breakpoint: large;
 
 // Timing
 $transition-time: 0.3s; // Common transition time for hover states, etc.
-$panel-transition-time: 1.5s;
-
-// Fonts
-$lekton: 'Lekton', monospace;
-$rubik: 'Rubik', Helvetica, Arial, sans-serif;
-$shrikhand: 'Shrikhand', serif;
-$display-font: $shrikhand;
 
 // Colors
 $placeholder-color: $almost-black;
 $dark-link-color: $red-violet;
 
 // Misc
-$cool-gradient: linear-gradient($purple 0%, $fuschia 25%, $red-violet 50%, $red 75%, $gold 100%) 1 100%;
 $hover-classes: '.md-no-touchevents';
 $standard-blur: 2px;
 $standard-border: 4px;
