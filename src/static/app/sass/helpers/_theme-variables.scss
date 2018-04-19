@@ -26,7 +26,7 @@ $dark-link-color: $red-violet;
 
 // Misc
 $cool-gradient: linear-gradient($purple 0%, $fuschia 25%, $red-violet 50%, $red 75%, $gold 100%) 1 100%;
-$hover-classes: '.md-no-touchevents &';
+$hover-classes: '.md-no-touchevents';
 $standard-blur: 2px;
 $standard-border: 4px;
 $standard-padding: rem-calc(30);
