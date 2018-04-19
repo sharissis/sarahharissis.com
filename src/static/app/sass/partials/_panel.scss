@@ -66,7 +66,7 @@
 
 			$h2-breakpoint: rem-calc(500);
 
-			white-space: nowrap;
+			// white-space: nowrap;
 			margin-bottom: $standard-padding;
 
 			@include breakpoint(phablet) {
@@ -87,16 +87,18 @@
 				margin-bottom: $standard-padding*2.5;
 			}
 
-			em {
-				// opacity: 0.89;
-				// color: lighten($gold, 20%);
-				// font-style: normal;
+			.line-1 {
 				letter-spacing: $standard-letter-spacing;
 
 				@include breakpoint(($h2-breakpoint - rem-calc(1)) down) {
 					font-size: 1.5em;
 					display: block;
 					margin-bottom: 0.25em;
+				}
+
+				@include breakpoint($h2-breakpoint) {
+					font-style: italic;
+					margin-right: 0.125em;
 				}
 
 			}

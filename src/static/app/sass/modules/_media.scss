@@ -110,6 +110,9 @@
 	}
 
 	&__image {
+
+		$this: &;
+
 		position: relative;
 
 		&:before {
@@ -128,16 +131,44 @@
 			display: block;
 		}
 
+		&-overlay {
+			@extend %overlay;
+			content: '';
+			opacity: 0;
+			transition: opacity $transition-time;
+			background-color: rgba($almost-black, 0.5);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.icon {
+				color: $alt-almost-white;
+				width: 15%;
+				height: 15%;
+				transform: scale(2);
+				transition: transform $transition-time;
+			}
+
+		}
+
+	}
+
+	&__image-link {
+
+		&:hover #{$this}-overlay,
+		&:focus #{$this}-overlay {
+			opacity: 1;
+
+			.icon {
+				transform: scale(1);
+			}
+
+		}
+
 	}
 
 	&__content {
 		width: 100%;
-
-		@include breakpoint(large) {
-			width: auto;
-			width: 100%;
-		}
-
 	}
 
 	&__header {

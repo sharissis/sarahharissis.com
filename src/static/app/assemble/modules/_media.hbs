@@ -17,10 +17,14 @@ module: true
 						<div class="media__image">
 
 							{{#if link}}
-								<a href="{{link.url}}" title="{{link.title}}" target="_blank">
+								<a href="{{link.url}}" title="{{link.title}}" target="_blank" class="media__image-link">
 							{{/if}}
 
 								<img src="{{img}}" alt="Image associated with {{{title}}}">
+
+								<div class="media__image-overlay">
+									{{svg "arrow-right"}}
+								</div>
 
 							{{#if link}}
 								</a>

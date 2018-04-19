@@ -35,7 +35,9 @@
 
 	// scss-lint:disable NestingDepth, SelectorDepth, QualifyingElement
 	html:hover &,
-	.md-js body.recently-loaded & { // When cursor is within document or if page just loaded
+	body.recently-loaded &,
+	.md-touchevents &,
+	.md-no-js & { // Times when the furrowed brow shouldn't appear
 
 		&:hover,
 		&:focus {
