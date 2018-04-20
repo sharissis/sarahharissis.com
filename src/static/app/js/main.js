@@ -16,6 +16,7 @@ var sh = sh || {};
 	var eyebrowRaiseTimeout = 400;
 	var eyebrowRaiseTimeoutActive = false;
 	var $navigation = $('#js-navigation');
+	var navInteraction = false;
 
 	sh.main = {
 
@@ -44,8 +45,19 @@ var sh = sh || {};
 
 			});
 
+			$(window).on('scroll', function () {
+
+				if (!navInteraction) {
+					_this.navigationPeek();
+				}
+
+				navInteraction = true;
+
+			});
+
 			$('#js-navigation').on('click mouseenter', function () {
-				$(this).removeClass('navigation--interact-with-me');
+				navInteraction = true;
+				$(this).removeClass('navigation--no-interaction');
 			});
 
 			$('#js-navigation .navigation__link').on('click', function (event) {
@@ -59,10 +71,10 @@ var sh = sh || {};
 
 			});
 
-			$('#js-navigation__toggle').on('click', function (event) {
-				event.preventDefault();
-				$navigation.toggleClass('navigation--active');
-			});
+			// $('#js-navigation__toggle').on('click', function (event) {
+			// 	event.preventDefault();
+			// 	$navigation.toggleClass('navigation--active');
+			// });
 
 			// Hovers trigger the portrait image to change, but with timeouts so it's not strobey
 			$('a, .tooltip').on('mouseenter', function () {
@@ -99,6 +111,16 @@ var sh = sh || {};
 			$('html, body').animate({
 				scrollTop: $el.offset().top + offset
 			}, 1250);
+
+		},
+
+		navigationPeek: function () {
+
+			$navigation.addClass('navigation--active').removeClass('navigation--no-interaction');
+
+			setTimeout(function() {
+				$navigation.removeClass('navigation--active');
+			}, 3000);
 
 		}
 

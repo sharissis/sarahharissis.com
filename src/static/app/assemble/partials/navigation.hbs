@@ -1,9 +1,10 @@
 <!-- partial:navigation -->
-<div id="js-navigation" class="navigation navigation--interact-with-me clearfix">
+<div id="js-navigation" class="navigation navigation--no-interaction clearfix">
 
-	<a id="js-navigation__toggle" class="navigation__toggle" href="#js-navigation__nav" title="Hover to toggle hidden navigation, click to toggle sticky navigation">
+	<a id="js-navigation__toggle" class="navigation__toggle" href="#js-navigation__nav" title="Hover or click to toggle navigation">
 		{{svg "logo"}}
-		<span class="show-for-sr">Hover to toggle hidden navigation, click to toggle sticky navigation</span>
+		{{!-- <img src="img/logos/logo-white.svg" alt="Sarah Harissis' Logo"> --}}
+		<span class="show-for-sr">Hover or click to toggle navigation</span>
 	</a>
 
 	{{#parseFixture 'panels.json'}}

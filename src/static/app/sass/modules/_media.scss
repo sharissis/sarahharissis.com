@@ -15,6 +15,7 @@
 		background-color: $alt-almost-white;
 
 		&:nth-child(odd) {
+			background-color: rgba($really-light-gray, 0.98);
 
 			@include breakpoint(xlarge) {
 
@@ -27,7 +28,6 @@
 		}
 
 		&:nth-child(even) {
-			background-color: rgba($really-light-gray, 0.98);
 
 			@include breakpoint($layout-breakpoint) {
 
@@ -99,7 +99,7 @@
 	&__column {
 
 		&--image {
-			margin-bottom: $standard-padding;
+			margin-bottom: rem-calc(20);
 
 			@include breakpoint($layout-breakpoint) {
 				margin-bottom: 0;
@@ -111,6 +111,12 @@
 
 	&__image {
 		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+
+		@include breakpoint(small only) {
+			max-width: rem-calc(300);
+		}
 
 		&:before {
 			@extend %overlay;
@@ -169,7 +175,11 @@
 	}
 
 	&__header {
-		margin-bottom: $standard-padding;
+		margin-bottom: rem-calc(20);
+
+		@include breakpoint($layout-breakpoint) {
+			margin-bottom: $standard-padding;
+		}
 
 		@include breakpoint(large) {
 			margin-bottom: $standard-padding*2;
@@ -183,11 +193,20 @@
 	}
 
 	.roles {
-		margin-top: rem-calc(20);
+		margin-top: rem-calc(15);
+
+		@include breakpoint($layout-breakpoint) {
+			margin-top: rem-calc(20);
+		}
+
 	}
 
 	.cta {
-		margin-top: rem-calc(10);
+
+		@include breakpoint(medium) {
+			margin-top: rem-calc(10);
+		}
+
 	}
 
 }

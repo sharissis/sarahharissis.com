@@ -45,8 +45,8 @@
 }
 
 %standard-section-padding {
-	padding-top: $standard-padding;
-	padding-bottom: $standard-padding;
+	padding-top: $standard-padding*1.5;
+	padding-bottom: $standard-padding*1.5;
 
 	@include breakpoint(large) {
 		padding-top: $standard-padding*2;
@@ -91,14 +91,28 @@
 }
 
 %standard-copy-sizes {
-	font-size: rem-calc(13);
+	font-size: rem-calc(14);
 
-	@include breakpoint(medium) {
-		font-size: rem-calc(14);
+	p,
+	ul,
+	li {
+
+		@include breakpoint(small only) {
+			line-height: $paragraph-lineheight - 0.075;
+		}
+
+		@include breakpoint(phablet only) {
+			line-height: $paragraph-lineheight - 0.0375;
+		}
+
 	}
 
 	@include breakpoint($type-breakpoint) {
 		font-size: rem-calc(16);
+	}
+
+	@include breakpoint(xlarge) {
+		font-size: rem-calc(18);
 	}
 
 }

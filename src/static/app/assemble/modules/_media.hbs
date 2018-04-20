@@ -8,11 +8,25 @@ module: true
 <div class="media{{#each modifiers}} media--{{this}}{{/each}}">
 	{{#each items}}
 
-		<div class="media__row">
+		<article class="media__row">
 			<div class="row">
 
 				<div class="media__column media__column--image columns phablet-6 medium-5">
 					<div class="inner">
+
+						<header class="media__header user-markup show-for-small-only">
+
+							<h3 class="media__title">{{{title}}}</h3>
+
+							{{#if subtitle}}
+								<h4 class="media__subtitle subheading">{{{subtitle}}}</h4>
+							{{/if}}
+
+							{{#if roles}}
+								{{> roles roles}}
+							{{/if}}
+
+						</header>
 
 						<div class="media__image">
 
@@ -41,7 +55,7 @@ module: true
 						<div class="media__content">
 							<div class="media__content-inner">
 
-								<header class="media__header user-markup">
+								<header class="media__header user-markup show-for-phablet" aria-hidden="true">
 
 									<h3 class="media__title">{{{title}}}</h3>
 
@@ -72,7 +86,7 @@ module: true
 				</div>
 
 			</div>
-		</div>
+		</article>
 
 	{{/each}}
 </div>
