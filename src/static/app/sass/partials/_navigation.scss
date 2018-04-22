@@ -1,10 +1,21 @@
+%nav-icon-active {
+	opacity: 1;
+	color: $almost-black;
+	transform: rotate(180deg);
+}
+
+%nav-active {
+	box-shadow: 0 1px 10px 0 rgba($almost-black, 0.1);
+	transform: translateY(0%);
+}
+
 .navigation {
 
 	// Variables
 	$this: &;
 	$color: $black;
 	$background-color: $white;
-	$nav-close-delay: 2s; // Delay before nav hides again
+	$nav-close-delay: 2.25s; // Delay before nav hides again
 
 	// Styles
 	z-index: 99;
@@ -25,25 +36,41 @@
 
 	}
 
-	&--active #{$this}__toggle,
-	&:hover #{$this}__toggle,
-	&__toggle:hover {
+	&--active,
+	.md-no-js &,
+	.md-no-touchevents &:hover,
+	.md-no-touchevents &:focus {
 
-		.icon {
-			opacity: 1;
-			color: $almost-black;
-			transform: rotate(180deg);
+		#{$this}__toggle .icon,
+		#{$this}__nav {
 			transition-delay: 0s;
+		}
+
+		#{$this}__toggle .icon {
+			@extend %nav-icon-active;
+		}
+
+		#{$this}__nav {
+			@extend %nav-active;
 		}
 
 	}
 
-	&--active #{$this}__nav,
-	&:hover #{$this}__nav,
-	&__toggle:hover ~ #{$this}__nav {
-		box-shadow: 0 1px 10px 0 rgba($almost-black, 0.1);
-		transform: translateY(0%);
-		transition-delay: 0s;
+	.md-no-touchevents &__toggle {
+
+		&:hover,
+		&:focus {
+
+			.icon {
+				@extend %nav-icon-active;
+			}
+
+			#{$this}__nav {
+				@extend %nav-active;
+			}
+
+		}
+
 	}
 
 	&__toggle,
@@ -54,6 +81,15 @@
 
 		@include breakpoint($global-width + $standard-padding) {
 			height: $nav-height-large;
+		}
+
+	}
+
+	&__toggle .icon,
+	&__nav {
+
+		.md-no-touchevents & {
+			transition-delay: $nav-close-delay; // Fix opposite
 		}
 
 	}
@@ -75,8 +111,8 @@
 			color: $dark-link-color;
 			opacity: 0.89;
 			transform: scale(1);
-			transition: transform $transition-time, color $transition-time, opacity $transition-time;
-			transition-delay: $nav-close-delay;
+			transition-property: transform, color, opacity;
+			transition-duration: $transition-time, $transition-time, $transition-time;
 		}
 
 	}
@@ -87,8 +123,8 @@
 		padding-left: rem-calc(40);
 		padding-right: rem-calc(20);
 		transform: translateY(-101%);
-		transition: transform $transition-time, box-shadow $transition-time;
-		transition-delay: $nav-close-delay;
+		transition-property: transform, box-shadow;
+		transition-duration: $transition-time, $transition-time;
 		position: absolute;
 		top: 0;
 		left: 0;

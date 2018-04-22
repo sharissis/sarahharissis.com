@@ -31,6 +31,7 @@ var sh = sh || {};
 			$currentYear.text((new Date()).getFullYear());
 
 			this.bindUIEvents();
+			this.portraitFacialExpressions();
 
 			setTimeout(function() {
 				$body.removeClass('recently-loaded');
@@ -41,26 +42,24 @@ var sh = sh || {};
 		bindUIEvents: function () {
 			var _this = this;
 
-			$(window).on('load scroll resize orientationchange', function (event) {
-
-			});
+			// $(window).on('load scroll resize orientationchange', function (event) {});
 
 			$(window).on('scroll', function () {
 
 				if (!navInteraction) {
+					$navigation.removeClass('navigation--no-interaction');
 					_this.navigationPeek();
+					navInteraction = true;
 				}
 
-				navInteraction = true;
-
 			});
 
-			$('#js-navigation').on('click mouseenter', function () {
+			$('#js-navigation').on('click mouseenter touchstart', function () {
+
 				navInteraction = true;
 				$(this).removeClass('navigation--no-interaction');
-			});
 
-			$('#js-navigation .navigation__link').on('click', function (event) {
+			}).on('click', '.navigation__link', function (event) {
 				event.preventDefault();
 
 				var href = $(this).attr('href');
@@ -71,10 +70,46 @@ var sh = sh || {};
 
 			});
 
-			// $('#js-navigation__toggle').on('click', function (event) {
-			// 	event.preventDefault();
-			// 	$navigation.toggleClass('navigation--active');
-			// });
+			// Toggle nav on click, but only on touch devices
+			$('#js-navigation__toggle').on('click touchstart', function (event) {
+				var isTouchDevice = $('.md-touchevents').length;
+
+				if (isTouchDevice) {
+					event.preventDefault();
+					$navigation.toggleClass('navigation--active');
+				}
+
+			});
+
+			console.log($('.md-touchevents').length);
+
+		},
+
+		scrollToElement: function ($el, offset, callback) {
+
+			$('html, body').animate({
+				scrollTop: $el.offset().top + offset
+			}, 1250, function () {
+
+				if (callback) {
+					callback();
+				}
+
+			});
+
+		},
+
+		navigationPeek: function () {
+
+			$navigation.addClass('navigation--active');
+
+			setTimeout(function() {
+				$navigation.removeClass('navigation--active');
+			}, 3000);
+
+		},
+
+		portraitFacialExpressions: function () {
 
 			// Hovers trigger the portrait image to change, but with timeouts so it's not strobey
 			$('a, .tooltip').on('mouseenter', function () {
@@ -103,24 +138,6 @@ var sh = sh || {};
 				}, eyebrowRaiseTimeout);
 
 			});
-
-		},
-
-		scrollToElement: function ($el, offset) {
-
-			$('html, body').animate({
-				scrollTop: $el.offset().top + offset
-			}, 1250);
-
-		},
-
-		navigationPeek: function () {
-
-			$navigation.addClass('navigation--active').removeClass('navigation--no-interaction');
-
-			setTimeout(function() {
-				$navigation.removeClass('navigation--active');
-			}, 3000);
 
 		}
 

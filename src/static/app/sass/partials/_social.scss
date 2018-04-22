@@ -7,6 +7,17 @@
 
 	// Styles
 
+	&__list {
+		margin-left: rem-calc(-5);
+		margin-right: rem-calc(-5);
+
+		@include breakpoint($type-breakpoint) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		
+	}
+
 	&__item {
 		display: inline-block;
 	}
@@ -16,6 +27,12 @@
 		width: rem-calc(40);
 		height: rem-calc(40);
 		margin: 0 auto;
+		padding: rem-calc(5);
+
+		@include breakpoint($type-breakpoint) {
+			padding: 0;
+		}
+
 	}
 
 }

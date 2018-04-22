@@ -7,15 +7,30 @@
 
 	// Styles
 	@extend %standard-section-padding;
-	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
 
+	@include breakpoint(phablet) {
+		min-height: 100vh;
+	}
+
+	.md-no-cssvhunit {
+
+		@include breakpoint(phablet) {
+			min-height: 100%;
+		}
+
+	}
+
 	// &--active {
 	// 	opacity: 1;
 	// }
+
+	&:focus {
+		outline: 0;
+	}
 
 	&__inner {
 		width: 100%;
@@ -34,7 +49,7 @@
 
 			.columns:first-child {
 
-				@include breakpoint(xlagre) {
+				@include breakpoint(xlarge) {
 					padding-right: $standard-padding*1.5;
 				}
 
@@ -142,51 +157,23 @@
 		}
 
 		.social {
-			margin: $standard-padding/2 0 0;
+			margin: $standard-padding 0 0;
 
 			@include breakpoint(phablet) {
-				margin: $standard-padding*0.75 0 rem-calc(10);
+				margin: $standard-padding 0 rem-calc(10);
 			}
 
-			&__list {
-				margin-left: rem-calc(-8);
-				margin-right: rem-calc(-8);
-
-				@include breakpoint($type-breakpoint) {
-					margin-left: rem-calc(-6);
-					margin-right: rem-calc(-6);
-				}
-
-				@include breakpoint(xlarge) {
-					margin-left: rem-calc(-4);
-					margin-right: rem-calc(-4);
-				}
-
-			}
-
-			&__link {
-				padding: rem-calc(8);
-
-				@include breakpoint($type-breakpoint) {
-					padding: rem-calc(6);
-				}
-
-				@include breakpoint(xlarge) {
-					padding: rem-calc(4);
-				}
-
+			@include breakpoint($type-breakpoint) {
+				margin: $standard-padding*1.5 0 rem-calc(10);
 			}
 
 		}
 
 		.social__item {
+			margin-right: rem-calc(5);
 
 			@include breakpoint($type-breakpoint) {
-				margin-right: rem-calc(8);
-			}
-
-			@include breakpoint(xlarge) {
-				margin-right: rem-calc(12);
+				margin-right: rem-calc(15);
 			}
 
 			&:last-child {

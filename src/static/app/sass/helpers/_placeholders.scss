@@ -45,13 +45,8 @@
 }
 
 %standard-section-padding {
-	padding-top: $standard-padding*1.5;
-	padding-bottom: $standard-padding*1.5;
-
-	@include breakpoint(large) {
-		padding-top: $standard-padding*2;
-		padding-bottom: $standard-padding*2;
-	}
+	padding-top: $standard-padding*2;
+	padding-bottom: $standard-padding*2;
 
 	@include breakpoint(xlarge) {
 		padding-top: $standard-padding*3;
