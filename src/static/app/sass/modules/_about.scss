@@ -9,16 +9,8 @@
 	padding: $standard-padding 0;
 	position: relative;
 
-	.row {
-		z-index: 1;
-	}
-
-	.columns {
-		position: relative;
-	}
-
 	.user-markup {
-		text-shadow: 0.1em 0.15em 0.3em rgba($almost-black, 0.5);
+		text-shadow: 0.1em 0.15em 0.3em rgba($almost-black, 0.15);
 
 		p {
 			font-weight: 500;

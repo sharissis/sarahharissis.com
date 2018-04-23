@@ -59,7 +59,7 @@ var sh = sh || {};
 				navInteraction = true;
 				$(this).removeClass('navigation--no-interaction');
 
-			}).on('click', '.navigation__link', function (event) {
+			}).on('click touchstart', '.navigation__link', function (event) {
 				event.preventDefault();
 
 				var href = $(this).attr('href');

@@ -6,23 +6,8 @@
 	$background-color: $white;
 
 	// Styles
-	@extend %standard-section-padding;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	overflow: hidden;
 	position: relative;
-
-	@include breakpoint(phablet) {
-		min-height: 100vh;
-	}
-
-	.md-no-cssvhunit {
-
-		@include breakpoint(phablet) {
-			min-height: 100%;
-		}
-
-	}
 
 	// &--active {
 	// 	opacity: 1;
@@ -33,8 +18,30 @@
 	}
 
 	&__inner {
+		@extend %standard-section-padding;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 100%;
 		position: relative;
+
+		@include breakpoint(phablet) {
+			min-height: 100vh;
+		}
+
+		// .md-no-cssvhunit & {
+		//
+		// 	@include breakpoint(phablet) {
+		// 		min-height: 100%;
+		// 	}
+		//
+		// }
+
+	}
+
+	&__content {
+		width: 100%;
 	}
 
 	&--hello {
@@ -186,7 +193,10 @@
 
 	&--work {
 		@extend %dark-links;
-		padding: rem-calc(0);
+
+		#{$this}__inner {
+			padding: rem-calc(0);
+		}
 
 		.intro {
 			@extend %standard-section-padding;
@@ -210,7 +220,7 @@
 			max-width: $narrow-max-width;
 
 			&.tall {
-				margin-bottom: $standard-padding*1.5;
+				margin-bottom: $standard-padding*2;
 			}
 
 		}
@@ -218,7 +228,11 @@
 	}
 
 	&--about {
-		align-items: flex-end;
+
+		#{$this}__inner {
+			align-items: flex-end;
+		}
+
 	}
 
 	&--contact {
@@ -250,19 +264,16 @@
 
 	&__background-image {
 		@extend %overlay;
-		overflow: hidden;
-		opacity: 0.8;
+		// filter: blur(1px);
+		// transform: scale(1.05);
+		// overflow: hidden;
+		// opacity: 0.8;
 
 		&:after {
 			@extend %overlay;
 			content: '';
-			opacity: 0.89;
-			background: linear-gradient(transparent 40%, $almost-black 99%);
-		}
-
-		.image {
-			filter: blur(1px);
-			transform: scale(1.05);
+			opacity: 0.99;
+			background: linear-gradient(transparent 10%, $almost-black 98%);
 		}
 
 	}

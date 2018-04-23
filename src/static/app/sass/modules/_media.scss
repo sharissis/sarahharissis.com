@@ -115,7 +115,7 @@
 		margin-right: auto;
 
 		@include breakpoint(small only) {
-			max-width: rem-calc(300);
+			max-width: rem-calc(320);
 		}
 
 		&:before {

@@ -3,123 +3,123 @@
 
 	{{#if bg-image}}
 
-		<div class="panel__background-image">
-			<div class="image" role="img" style="background-image: url('{{bg-image.url}}');" aria-label="{{bg-image.alt}}"></div>
-		</div>
+		<div class="panel__background-image image" role="img" style="background-image: url('{{bg-image.url}}');" aria-label="{{bg-image.alt}}"></div>
 
 	{{/if}}
 
 	<div class="panel__inner">
+		<div class="panel__content">
 
-		{{#stringCompare id "hello"}}
+			{{#stringCompare id "hello"}}
 
-			<div class="row">
-				<div class="columns">
-
-					<div class="user-markup center">
-						<h2 aria-label="Hello! I'm Sarah Harissis (pronounced ha-REE-sees).">
-							<span class="line-1">Hello!</span>
-							<span class="line-2">I'm Sarah <span class="nowrap"><span class="tooltip" data-tooltip="(ha-REE-sees)">Harissis</span>.</span></span>
-						</h2>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="row row--flex">
-
-				<div class="columns phablet-5 medium-4">
-					{{> portrait }}
-				</div>
-
-				<div class="columns phablet-7 medium-8">
-
-					<div class="user-markup">
-
-						<p>I'm a Front-End developer with strong background in graphic design and user experience. I currently work for <a href="http://barkleyrei.com/" title="BarkleyREI Website" target="_blank">BarkleyREI</a>, a full-service digital agency with clientele primarily in the tourism and higher education industries. My specialty is developing design compositions into beautiful, fully-functional and captivating web experiences. I'm particularly skilled with making ambitious visual concepts come to life with CSS.</p>
-
-						<p>I'm known to be an avid problem solver with meticulous attention to detail, which shines through in all of the work I produce. My foundation in design and UX is a rare hybrid of form and function, making me stand out amoungst my colleagues.</p>
-
-					</div>
-
-					{{> social }}
-
-				</div>
-
-			</div>
-
-		{{/stringCompare}}
-
-		{{#stringCompare id "work"}}
-
-			<div class="intro white-background">
 				<div class="row">
 					<div class="columns">
 
-						<div class="user-markup">
-
-							<h2 class="panel__heading">{{{title}}}</h2>
-
-							<hr class="gradient narrow tall thick centered">
-
-							<p>As a developer at an ever-changing, fast-paced agency, I'm usually working on multiple projects simultaneously. These are a few recent projects I've taken a prominent role in developing, each with a list of tasks I was responsible for.</p>
-
+						<div class="user-markup center">
+							<h2 aria-label="Hello! I'm Sarah Harissis (pronounced ha-REE-sees).">
+								<span class="line-1">Hello!</span>
+								<span class="line-2">I'm Sarah <span class="nowrap"><span class="tooltip" data-tooltip="(ha-REE-sees)">Harissis</span>.</span></span>
+							</h2>
 						</div>
 
 					</div>
 				</div>
-			</div>
 
-			{{#parseFixture 'media.json'}}
-				{{> _media work }}
-			{{/parseFixture}}
+				<div class="row row--flex">
 
-		{{/stringCompare}}
-
-		{{#stringCompare id "skills"}}
-
-			<div class="row">
-				<div class="columns">
-
-					<div class="user-markup">
-						<h2 class="panel__heading" aria-label="{{{title}}}">
-							<span>{{{title}}}</span>
-						</h2>
-						<hr class="transparent thin tall centered">
+					<div class="columns phablet-5 medium-4">
+						{{> portrait }}
 					</div>
 
-					{{#parseFixture 'callouts.json'}}
-						{{> _callouts skills }}
-					{{/parseFixture}}
+					<div class="columns phablet-7 medium-8">
 
-				</div>
-			</div>
+						<div class="user-markup">
 
-		{{/stringCompare}}
+							<p>I'm a Front-End developer with strong background in graphic design and user experience. I currently work for <a href="http://barkleyrei.com/" title="BarkleyREI Website" target="_blank">BarkleyREI</a>, a full-service digital agency with clientele primarily in the tourism and higher education industries. My specialty is developing design compositions into beautiful, fully-functional and captivating web experiences. I'm particularly skilled with making ambitious visual concepts come to life with CSS.</p>
 
-		{{#stringCompare id "about"}}
+							<p>I'm known to be an avid problem solver with meticulous attention to detail, which shines through in all of the work I produce. My foundation in design and UX is a rare hybrid of form and function, making me stand out amoungst my colleagues.</p>
 
-			{{> _about }}
+						</div>
 
-		{{/stringCompare}}
+						{{> social }}
 
-		{{#stringCompare id "contact"}}
-
-			<div class="row">
-				<div class="columns">
-
-					<div class="user-markup">
-						<h2 class="panel__heading">{{{title}}}</h2>
-						<p>Interested in working together? I'd love to hear from you!</p>
 					</div>
 
-					{{> social }}
-
 				</div>
-			</div>
 
-		{{/stringCompare}}
+			{{/stringCompare}}
 
+			{{#stringCompare id "work"}}
+
+				<div class="intro white-background">
+					<div class="row">
+						<div class="columns">
+
+							<div class="user-markup">
+
+								<h2 class="panel__heading">{{{title}}}</h2>
+
+								<hr class="gradient narrow tall thick centered">
+
+								<p>As a developer at an ever-changing, fast-paced agency, I'm usually working on multiple projects simultaneously. These are a few recent projects I've taken a prominent role in developing, each with a list of tasks I was responsible for.</p>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				{{#parseFixture 'media.json'}}
+					{{> _media work }}
+				{{/parseFixture}}
+
+			{{/stringCompare}}
+
+			{{#stringCompare id "skills"}}
+
+				<div class="row">
+					<div class="columns">
+
+						<div class="user-markup">
+							<h2 class="panel__heading" aria-label="{{{title}}}">
+								<span>{{{title}}}</span>
+							</h2>
+							<hr class="transparent thin tall centered">
+						</div>
+
+						{{#parseFixture 'callouts.json'}}
+							{{> _callouts skills }}
+						{{/parseFixture}}
+
+					</div>
+				</div>
+
+			{{/stringCompare}}
+
+			{{#stringCompare id "about"}}
+
+				{{> _about }}
+
+			{{/stringCompare}}
+
+			{{#stringCompare id "contact"}}
+
+				<div class="row">
+					<div class="columns">
+
+						<div class="user-markup">
+							<h2 class="panel__heading">{{{title}}}</h2>
+							<p>Interested in working together? I'd love to hear from you!</p>
+						</div>
+
+						{{> social }}
+
+					</div>
+				</div>
+
+			{{/stringCompare}}
+			
+		</div>
 	</div>
 
 </section>
