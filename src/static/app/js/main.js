@@ -8,8 +8,9 @@ var sh = sh || {};
 	'use strict';
 
 	// Variables
+	var $html = $('html');
 	var $body = $('body');
-	var loadDelay = 1000;
+	var loadDelay = 250;
 	var $panels = $('#panels');
 	var $currentYear = $('#js-current-year');
 	var $portrait = $('#js-portrait');
@@ -22,6 +23,10 @@ var sh = sh || {};
 
 		init: function () {
 
+			this.bowserClasses();
+			this.bindUIEvents();
+			this.portraitFacialExpressions();
+
 			// Initialize panels
 			setTimeout(function () {
 				$panels.addClass('panels--ready');
@@ -30,12 +35,29 @@ var sh = sh || {};
 			// Add year to footer copyright
 			$currentYear.text((new Date()).getFullYear());
 
-			this.bindUIEvents();
-			this.portraitFacialExpressions();
-
 			setTimeout(function() {
 				$body.removeClass('recently-loaded');
 			}, 5000);
+
+		},
+
+		bowserClasses: function () {
+
+			if (bowser.msie) {
+				$html.addClass('browser-ie');
+			}
+
+			if (bowser.msedge) {
+				$html.addClass('browser-edge');
+			}
+
+			if (bowser.ios) {
+				$html.addClass('os-ios');
+			}
+
+			if (bowser.android) {
+				$html.addClass('os-android');
+			}
 
 		},
 
@@ -80,8 +102,6 @@ var sh = sh || {};
 				}
 
 			});
-
-			console.log($('.md-touchevents').length);
 
 		},
 

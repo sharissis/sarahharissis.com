@@ -9,10 +9,6 @@
 	overflow: hidden;
 	position: relative;
 
-	// &--active {
-	// 	opacity: 1;
-	// }
-
 	&:focus {
 		outline: 0;
 	}
@@ -30,13 +26,15 @@
 			min-height: 100vh;
 		}
 
-		// .md-no-cssvhunit & {
-		//
-		// 	@include breakpoint(phablet) {
-		// 		min-height: 100%;
-		// 	}
-		//
-		// }
+		.md-no-js &,
+		.browser-ie & {
+			display: block;
+
+			@include breakpoint(phablet) {
+				min-height: $panel-min-height;
+			}
+
+		}
 
 	}
 
