@@ -62,6 +62,18 @@
 
 		}
 
+		// Maybe use later?
+		// #{$this}__content {
+		// 	transform: translateY(-4%);
+		// 	transition: transform 1s;
+		//
+		// 	.panels--ready &,
+		// 	.md-no-js & {
+		// 		transform: translateY(0%);
+		// 	}
+		//
+		// }
+
 		#{$this}__logo {
 			opacity: 0.89;
 			width: rem-calc(65);
